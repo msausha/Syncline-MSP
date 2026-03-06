@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "postbuild": "react-snap",
+    "build": "vite build && react-snap",
+    "build:vercel": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -18,7 +18,10 @@
     "saveAs": "html",
     "waitFor": 3000,
     "timeout": 10000,
-    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ],
     "include": [
       "/",
       "/managed-it",
@@ -45,7 +48,7 @@
     "react": "^19.2.0",
     "react-countup": "^6.5.3",
     "react-dom": "^19.2.0",
-    "react-helmet": "^6.1.0",
+    "react-helmet-async": "^3.0.0",
     "react-intersection-observer": "^10.0.0",
     "react-leaflet": "^5.0.0",
     "react-router-dom": "^7.12.0",
