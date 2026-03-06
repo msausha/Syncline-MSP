@@ -1,13 +1,37 @@
 {
-  "name": "shakil-it-solutions",
+  "name": "syncline-main-site",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "postbuild": "react-snap",
     "lint": "eslint .",
     "preview": "vite preview"
+  },
+  "reactSnap": {
+    "source": "dist",
+    "minifyHtml": false,
+    "crawl": true,
+    "headless": true,
+    "saveAs": "html",
+    "waitFor": 3000,
+    "timeout": 10000,
+    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
+    "include": [
+      "/",
+      "/managed-it",
+      "/cloud",
+      "/automation",
+      "/case-studies",
+      "/it-health-check",
+      "/about-Syncline",
+      "/contact",
+      "/security",
+      "/areas",
+      "/customer-portal"
+    ]
   },
   "dependencies": {
     "@maplibre/maplibre-gl-leaflet": "^0.1.3",
@@ -39,6 +63,7 @@
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
     "postcss": "^8.5.6",
+    "react-snap": "^1.23.0",
     "tailwindcss": "^3.4.1",
     "vite": "^7.2.4",
     "vite-tsconfig-paths": "^6.0.4"
