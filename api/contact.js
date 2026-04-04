@@ -58,45 +58,75 @@ function buildHtmlEmail({ name, business, email, phone, message }) {
   const phoneRow = phone
     ? `<tr><td class="lbl">Phone</td><td>${esc(phone)}</td></tr>` : '';
 
-  return `<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="UTF-8"/>
-<style>
-  body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f172a; margin: 0; padding: 24px; }
-  .card { max-width: 600px; margin: 0 auto; background: #1e293b; border-radius: 12px; overflow: hidden; }
-  .header { background: linear-gradient(135deg, #2563eb, #0891b2); padding: 28px 32px; color: #fff; }
-  .header h1 { margin: 0; font-size: 22px; font-weight: 800; }
-  .header p  { margin: 4px 0 0; font-size: 13px; opacity: .75; }
-  .body { padding: 28px 32px; }
-  table { width: 100%; border-collapse: collapse; margin-bottom: 24px; }
-  td { padding: 10px 12px; font-size: 14px; color: #cbd5e1; border-bottom: 1px solid #334155; vertical-align: top; }
-  td.lbl { color: #94a3b8; width: 110px; white-space: nowrap; font-weight: 600; }
-  .msg-label { font-size: 13px; color: #94a3b8; font-weight: 600; margin-bottom: 8px; }
-  .msg-box { background: #0f172a; border-radius: 8px; padding: 16px; color: #e2e8f0; font-size: 14px; line-height: 1.7; white-space: pre-wrap; }
-  .footer { padding: 16px 32px; font-size: 12px; color: #475569; border-top: 1px solid #334155; }
-  a { color: #38bdf8; }
-</style>
-</head>
-<body>
-  <div class="card">
-    <div class="header">
-      <h1>📬 New Website Enquiry</h1>
-      <p>Syncline IT · syncline.com.au</p>
-    </div>
-    <div class="body">
-      <table>
-        <tr><td class="lbl">Name</td><td>${esc(name)}</td></tr>
-        ${businessRow}
-        <tr><td class="lbl">Email</td><td><a href="mailto:${esc(email)}">${esc(email)}</a></td></tr>
-        ${phoneRow}
-      </table>
-      <div class="msg-label">Message</div>
-      <div class="msg-box">${esc(message)}</div>
-    </div>
-    <div class="footer">Received ${timestamp} AEST · via syncline.com.au</div>
-  </div>
-</body>
-</html>`;
+    return `<!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <style>
+          body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background-color: #020617; margin: 0; padding: 40px 10px; -webkit-font-smoothing: antialiased; }
+          .wrapper { max-width: 600px; margin: 0 auto; background: #0f172a; border-radius: 16px; border: 1px solid #1e293b; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5); }
+          
+          /* Header section with a more vibrant tech gradient */
+          .header { background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%); padding: 32px; color: #ffffff; }
+          .header-top { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+          .header h1 { margin: 0; font-size: 24px; font-weight: 800; letter-spacing: -0.025em; text-transform: uppercase; }
+          .header p { margin: 0; font-size: 14px; opacity: 0.9; font-weight: 500; }
+          
+          .content { padding: 32px; }
+          
+          /* Info Grid */
+          .info-table { width: 100%; border-collapse: separate; border-spacing: 0; margin-bottom: 32px; }
+          .info-table td { padding: 12px 0; border-bottom: 1px solid #1e293b; vertical-align: middle; }
+          .lbl { color: #64748b; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; width: 100px; }
+          .val { color: #f1f5f9; font-size: 15px; font-weight: 500; }
+          .val a { color: #38bdf8; text-decoration: none; border-bottom: 1px solid rgba(56, 189, 248, 0.2); }
+          
+          /* Message Section */
+          .msg-container { background: #1e293b; border-radius: 12px; padding: 24px; border-left: 4px solid #3b82f6; }
+          .msg-header { color: #94a3b8; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 12px; display: block; }
+          .msg-content { color: #e2e8f0; font-size: 15px; line-height: 1.6; white-space: pre-wrap; margin: 0; }
+          
+          /* Footer */
+          .footer { padding: 20px 32px; background: #020617; font-size: 11px; color: #475569; text-align: center; border-top: 1px solid #1e293b; }
+          .footer b { color: #64748b; }
+        </style>
+        </head>
+        <body>
+          <div class="wrapper">
+            <div class="header">
+              <div class="header-top">
+                <h1>Inquiry Received</h1>
+              </div>
+              <p>Syncline IT Portal · syncline.com.au</p>
+            </div>
+            
+            <div class="content">
+              <table class="info-table">
+                <tr>
+                  <td class="lbl">Sender</td>
+                  <td class="val">${esc(name)}</td>
+                </tr>
+                ${businessRow}
+                <tr>
+                  <td class="lbl">Email</td>
+                  <td class="val"><a href="mailto:${esc(email)}">${esc(email)}</a></td>
+                </tr>
+                ${phoneRow}
+              </table>
+              
+              <div class="msg-container">
+                <span class="msg-header">Message Brief</span>
+                <div class="msg-content">${esc(message)}</div>
+              </div>
+            </div>
+            
+            <div class="footer">
+              Generated <b>${timestamp} AEST</b> via Syncline Web Systems
+            </div>
+          </div>
+        </body>
+      </html>`;
 }
 
 async function sendEmail({ name, business, email, phone, message }) {
