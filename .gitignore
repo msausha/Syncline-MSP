@@ -32,3 +32,4 @@ dist-ssr
 # Vite temp
 .vite/
 .vercel
+.env*.local
