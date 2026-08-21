@@ -2,23 +2,18 @@
 import React, { Suspense, lazy } from 'react';
 import Navbar from '../components/navbar/Navbar';
 import HeroCTASection from '../components/hero/HeroCTASection';
+import SEO from '../components/SEO';
+import ServiceTeaser from '../components/services/ServiceTeaser';
+import { Server, Cloud as CloudIcon, Shield, Zap } from 'lucide-react';
 
-// Lazy load all below-fold components
-const ServicesSection = lazy(() => import('../components/services/ServicesSection'));
+
 const MonitoringDashboard = lazy(() => import('../components/monitoring/MonitoringDashboard'));
 const CustomToolsSection = lazy(() => import('../components/tools/CustomToolsSection'));
-const SecuritySection = lazy(() => import('../components/security/SecuritySection'));
 const TestimonialsSection = lazy(() => import('../components/testimonials/TestimonialsSection'));
 const AboutSection = lazy(() => import('../components/about/AboutSection'));
-const CTASection = lazy(() => import('../components/cta/CTASection'));
 const ContactSection = lazy(() => import('../components/contact/ContactSection'));
-const Footer = lazy(() => import('../components/footer/Footer'));
 const ChatWidget = lazy(() => import('../components/chat/ChatWidget'));
-const AutomationPage = lazy(() => import('./Automation'));
-const CloudPage = lazy(() => import('./Cloud'));
-const ManagedITPage = lazy(() => import('./ManagedIT'));
 
-// Optimized loading fallback
 const SectionFallback = () => (
   <div className="w-full py-20 lg:py-32 bg-slate-900/30">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -32,12 +27,48 @@ const SectionFallback = () => (
   </div>
 );
 
+const serviceTeasers = [
+  {
+    icon: Server,
+    title: 'Managed IT Support',
+    desc: '24/7 monitoring, rapid response, and a dedicated account manager.',
+    to: '/managed-it',
+    accent: 'text-indigo-400',
+  },
+  {
+    icon: CloudIcon,
+    title: 'Cloud Solutions',
+    desc: 'Migration, Microsoft 365, and secure remote access.',
+    to: '/cloud',
+    accent: 'text-cyan-400',
+  },
+  {
+    icon: Shield,
+    title: 'Business Protection',
+    desc: 'Practical security basics and dependable backups.',
+    to: '/security',
+    accent: 'text-emerald-400',
+  },
+  {
+    icon: Zap,
+    title: 'Automation & AI',
+    desc: 'Custom scripts and smart tooling that save hours a week.',
+    to: '/automation',
+    accent: 'text-purple-400',
+  },
+];
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-slate-950 text-white overflow-x-hidden">
-      {/* Accessibility skip link */}
-      <a 
-        href="#main-content" 
+      <SEO
+        title="Syncline IT Solutions | Managed IT & Cloud Services"
+        description="Professional IT support, cloud services, automation, and security for Victorian SMBs."
+        path="/"
+      />
+
+      <a
+        href="#main-content"
         className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[9999] focus:px-4 focus:py-2 focus:bg-blue-600 focus:text-white focus:rounded"
       >
         Skip to main content
@@ -46,10 +77,8 @@ export default function Home() {
       <Navbar />
 
       <main id="main-content">
-        {/* Hero Section - Always visible, not lazy loaded */}
         <HeroCTASection />
 
-        {/* All below-fold sections - Lazy loaded for performance */}
         <section id="monitoring">
           <Suspense fallback={<SectionFallback />}>
             <MonitoringDashboard />
@@ -62,21 +91,22 @@ export default function Home() {
           </Suspense>
         </section>
 
-        <section id="security">
-          <Suspense fallback={<SectionFallback />}>
-            <SecuritySection />
-          </Suspense>
+        <section id="explore-services" className="py-16 lg:py-24">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-10 text-center">
+              Explore Our Services
+            </h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {serviceTeasers.map((s, i) => (
+                <ServiceTeaser key={i} {...s} />
+              ))}
+            </div>
+          </div>
         </section>
 
         <section id="testimonials">
           <Suspense fallback={<SectionFallback />}>
             <TestimonialsSection />
-          </Suspense>
-        </section>
-
-        <section id="services">
-          <Suspense fallback={<SectionFallback />}>
-            <ServicesSection />
           </Suspense>
         </section>
 
@@ -86,31 +116,12 @@ export default function Home() {
           </Suspense>
         </section>
 
-        <section id="automation">
-          <Suspense fallback={<SectionFallback />}>
-            <AutomationPage />
-          </Suspense>
-        </section>
-
-        <section id="cloud">
-          <Suspense fallback={<SectionFallback />}>
-            <CloudPage />
-          </Suspense>
-        </section>
-
-        <section id="managed-it">
-          <Suspense fallback={<SectionFallback />}>
-            <ManagedITPage />
-          </Suspense>
-        </section>
-
         <section id="contact">
           <Suspense fallback={<SectionFallback />}>
             <ContactSection />
           </Suspense>
         </section>
 
-        {/* Chat Widget - Lazy loaded */}
         <Suspense fallback={null}>
           <ChatWidget />
         </Suspense>

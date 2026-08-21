@@ -1,9 +1,17 @@
+// src/pages/ITHealthCheck.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-const MotionLink = motion(Link);
 import { motion } from 'framer-motion';
+// FIXED: `MotionLink` was previously defined using `motion(Link)` BEFORE
+// `motion` was even imported (the import line came after this line in
+// the original file). ES module imports are hoisted so it happened to
+// work, but it's fragile and confusing. Also switched to `motion.create()`
+// to match the API used consistently in ManagedIT.jsx / MonitoringDashboard.jsx
+// (framer-motion 11+ deprecated the older `motion(Component)` call form).
+const MotionLink = motion.create(Link);
 import { ShieldCheck, ServerCog, Lock, AlertTriangle, ArrowRight } from 'lucide-react';
 import GlassCard from '../components/ui/GlassCard';
+import SEO from '../components/SEO';
 
 const ITHealthCheck = () => {
   const checks = [
@@ -12,11 +20,14 @@ const ITHealthCheck = () => {
     { icon: Lock, title: 'Compliance & Risk', desc: 'Ensure alignment with Australian cybersecurity standards.' },
     { icon: AlertTriangle, title: 'Incident Readiness', desc: 'Evaluate your ability to respond to outages or cyber events.' }
   ];
-
   return (
     <section className="relative py-20 lg:py-32 bg-gradient-to-b from-slate-950 via-indigo-950/20 to-slate-950">
+      <SEO
+        title="Free IT Health Check for Victorian SMBs | Syncline IT Solutions"
+        description="A complete, no-obligation assessment of your IT environment — security, performance, reliability, and business continuity — with a report in 48 hours."
+        path="/it-health-check"
+      />
       <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
-
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
           <h1 className="text-5xl lg:text-6xl font-black text-white mb-6">
             Free IT Health Check
@@ -26,7 +37,6 @@ const ITHealthCheck = () => {
             A complete assessment of your IT environment — security, performance, reliability, and business continuity.
           </p>
         </motion.div>
-
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {checks.map((c, i) => (
             <GlassCard key={i} className="p-6">
@@ -36,12 +46,10 @@ const ITHealthCheck = () => {
             </GlassCard>
           ))}
         </div>
-
         <GlassCard className="p-8 lg:p-12 text-center">
           <h2 className="text-4xl font-black text-white mb-6">
             Ready to Stop Fighting IT? Get Your Free Assessment
           </h2>
-
           <MotionLink
             to="/contact"
             whileHover={{ scale: 1.02 }}
@@ -52,12 +60,8 @@ const ITHealthCheck = () => {
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </MotionLink>
         </GlassCard>
-
-
-
       </div>
     </section>
   );
 };
-
 export default ITHealthCheck;

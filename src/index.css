@@ -1,7 +1,6 @@
 /* src/index.css - FINAL CLEAN VERSION - No top gap, balanced sides, smaller hero fonts */
 
 /* Imports */
-@import 'leaflet/dist/leaflet.css';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 @tailwind base;

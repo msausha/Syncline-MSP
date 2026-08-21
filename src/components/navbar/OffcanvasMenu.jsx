@@ -1,58 +1,62 @@
 // src/components/navbar/OffcanvasMenu.jsx
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-// Individual Lucide icon imports (tree-shake friendly + alias)
-import X from '@lucide/x';
-import ChevronDown from '@lucide/chevron-down';
-import ChevronRight from '@lucide/chevron-right';
-import Phone from '@lucide/phone';
-import Mail from '@lucide/mail';
-import MapPin from '@lucide/map-pin';
-import Server from '@lucide/server';
-import Cloud from '@lucide/cloud';
-import Shield from '@lucide/shield';
-import Zap from '@lucide/zap';
-import BookOpen from '@lucide/book-open';
-import Users from '@lucide/users';
-import FileCheck from '@lucide/file-check';
+// FIXED: these were previously imported as `import X from '@lucide/x'` etc.
+// `@lucide/x` is not a package your project has installed â€” only
+// `lucide-react` is in package.json, and it exports icons as named
+// exports, not per-icon subpackages. That import would fail at build
+// time. Correct usage below.
+import {
+  X,
+  ChevronDown,
+  ChevronRight,
+  Phone,
+  Mail,
+  MapPin,
+  Server,
+  Cloud,
+  Shield,
+  Zap,
+  BookOpen,
+  Users,
+  FileCheck,
+} from 'lucide-react';
 import { Link } from 'react-router-dom';
 import logoPng from "/src/assets/brand/Exports/Old/Syncline_Master_512.png";
 
 const OffcanvasMenu = ({ isOpen, onClose }) => {
   const [expandedSection, setExpandedSection] = useState(null);
 
-
   const directLinks = [
     { title: 'Home', href: '/' },
-    { title: 'Service Areas', href: '/areas' },
     { title: 'Security', href: '/security' },
     { title: 'Contact', href: '/contact' }
   ];
 
   const menuSections = [
-  {
-    id: 'services',
-    title: 'Services',
-    items: [
-      { icon: Server, title: 'Managed IT Support', href: '/managed-it' },
-      { icon: Cloud, title: 'Cloud Solutions', href: '/cloud' },
-      { icon: Shield, title: 'Cybersecurity', href: '/security' },
-      { icon: Zap, title: 'Automation & AI', href: '/automation' }
-    ]
-  },
-  {
-    id: 'resources',
-    title: 'Resources',
-    items: [
-      { icon: BookOpen, title: 'Case Studies', href: '/case-studies' },
-      { icon: Users, title: 'About Syncline', href: '/about-Syncline' },
-      { icon: FileCheck, title: 'IT Health Check', href: '/it-health-check' },
-      { icon: Shield, title: 'Customer Portal', href: '/customer-portal' }
-    ]
-  }
-];
-
-
+    {
+      id: 'services',
+      title: 'Services',
+      items: [
+        { icon: Server, title: 'Managed IT Support', href: '/managed-it' },
+        { icon: Cloud, title: 'Cloud Solutions', href: '/cloud' },
+        { icon: Shield, title: 'Cybersecurity', href: '/security' },
+        { icon: Zap, title: 'Automation & AI', href: '/automation' }
+      ]
+    },
+    {
+      id: 'resources',
+      title: 'Resources',
+      items: [
+        { icon: BookOpen, title: 'Case Studies', href: '/case-studies' },
+        // FIXED: was '/about-Syncline' (capital S), which didn't match
+        // the route registered in App.jsx ('/about-syncline') â€” a 404.
+        { icon: Users, title: 'About Syncline', href: '/about-syncline' },
+        { icon: FileCheck, title: 'IT Health Check', href: '/it-health-check' },
+        { icon: Shield, title: 'Customer Portal', href: '/customer-portal' }
+      ]
+    }
+  ];
 
   return (
     <AnimatePresence>
@@ -78,14 +82,15 @@ const OffcanvasMenu = ({ isOpen, onClose }) => {
             {/* Header */}
             <div className="sticky top-0 bg-slate-900/95 backdrop-blur-xl border-b border-white/10 p-6 flex items-center justify-between">
               <div className="flex items-center gap-3">
-              <div className="flex-shrink-0">
-                <img
-                  src={logoPng}
-                  alt="Syncline IT Logo"
-                  className="h-10 w-auto"
-                />
-              </div>
-
+                <div className="flex-shrink-0">
+              <img
+                src={logoPng}
+                alt="Syncline IT Logo"
+                width="40"
+                height="40"
+                className="h-10 w-auto"
+              />
+                </div>
                 <span className="text-xl font-bold text-white">Syncline IT Solutions</span>
               </div>
               <button
@@ -111,8 +116,10 @@ const OffcanvasMenu = ({ isOpen, onClose }) => {
 
             {/* Navigation */}
             <div className="flex-1 overflow-y-auto p-6 space-y-2">
-              {/* Home Link — added here */} <Link to="/" onClick={onClose} className="block py-3 text-white font-semibold text-lg hover:text-blue-400 transition-colors border-b border-white/5" > Home </Link>
-              
+              <Link to="/" onClick={onClose} className="block py-3 text-white font-semibold text-lg hover:text-blue-400 transition-colors border-b border-white/5">
+                Home
+              </Link>
+
               {menuSections.map((section) => (
                 <div key={section.id} className="border-b border-white/5 pb-2">
                   <button
@@ -181,13 +188,12 @@ const OffcanvasMenu = ({ isOpen, onClose }) => {
                 Get Free IT Assessment
               </Link>
 
-              {/* Location */}
               <div className="pt-4 border-t border-white/5">
                 <div className="flex items-start gap-3 text-slate-400">
                   <MapPin className="w-5 h-5 mt-0.5 text-blue-400" />
                   <div>
                     <p className="text-sm">Serving Victoria, Australia</p>
-                    <p className="text-xs text-slate-500">Melbourne • Geelong • Ballarat • Bendigo</p>
+                    <p className="text-xs text-slate-500">Melbourne Â· Geelong Â· Ballarat Â· Bendigo</p>
                   </div>
                 </div>
               </div>
@@ -200,4 +206,3 @@ const OffcanvasMenu = ({ isOpen, onClose }) => {
 };
 
 export default OffcanvasMenu;
-

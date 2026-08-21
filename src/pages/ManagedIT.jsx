@@ -3,10 +3,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 const MotionLink = motion.create(Link);
-
-
-
 import { Server, Clock, Shield, Users, CheckCircle, ArrowRight } from 'lucide-react';
+import SEO from '../components/SEO';
 import GlassCard from '../components/ui/GlassCard';
 
 const ManagedITPage = () => {
@@ -16,9 +14,13 @@ const ManagedITPage = () => {
     { icon: Users, title: 'Dedicated Account Manager', desc: 'Your single point of contact – no phone menus' },
     { icon: CheckCircle, title: 'Guaranteed Uptime SLA', desc: '99.9% backed by credits if we miss it' }
   ];
-
   return (
     <section className="relative py-20 lg:py-32 bg-gradient-to-b from-slate-950 via-indigo-950/20 to-slate-950">
+      <SEO
+        title="Managed IT Support for Victorian SMBs | Syncline IT Solutions"
+        description="24/7 monitoring, rapid onsite & remote response, a dedicated account manager, and a 99.9% uptime SLA — managed IT support built for Victorian small businesses."
+        path="/managed-it"
+      />
       <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
           <h1 className="text-5xl lg:text-6xl font-black text-white mb-6">
@@ -29,7 +31,6 @@ const ManagedITPage = () => {
             Stop reacting to IT problems. We prevent them — 24/7 monitoring, rapid response, and a dedicated team that treats your business like our own.
           </p>
         </motion.div>
-
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {features.map((f, i) => (
             <GlassCard key={i} className="p-6">
@@ -39,56 +40,45 @@ const ManagedITPage = () => {
             </GlassCard>
           ))}
         </div>
-
-<GlassCard className="p-8 lg:p-12 text-center">
-  <h2 className="text-4xl font-black text-white mb-6">
-    Ready to Stop Fighting IT?
-  </h2>
-
-  <MotionLink
-    to="/contact"
-    whileHover={{ scale: 1.06, y: -3 }}
-    whileTap={{ scale: 0.97 }}
-    className="
-      relative inline-flex items-center gap-3 px-10 py-4
-      font-bold text-lg text-white rounded-2xl transition-all
-      bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
-      shadow-[0_0_25px_rgba(139,92,246,0.45)]
-      hover:shadow-[0_0_40px_rgba(236,72,153,0.55)]
-      hover:brightness-110
-      group overflow-hidden
-    "
-  >
-    {/* Text + Icon */}
-    <span className="relative z-10 flex items-center gap-3">
-      Get Your Free IT Health Check
-      <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-    </span>
-
-    {/* Animated glow aura */}
-    <span
-      className="
-        absolute inset-0 rounded-2xl opacity-60 blur-xl
-        bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
-        animate-pulse
-      "
-    ></span>
-
-    {/* Subtle animated border */}
-    <span
-      className="
-        absolute inset-0 rounded-2xl border border-white/20
-        group-hover:border-white/40 transition-all
-      "
-    ></span>
-  </MotionLink>
-</GlassCard>
-
-
-
+        <GlassCard className="p-8 lg:p-12 text-center">
+          <h2 className="text-4xl font-black text-white mb-6">
+            Ready to Stop Fighting IT?
+          </h2>
+          <MotionLink
+            to="/contact"
+            whileHover={{ scale: 1.06, y: -3 }}
+            whileTap={{ scale: 0.97 }}
+            className="
+              relative inline-flex items-center gap-3 px-10 py-4
+              font-bold text-lg text-white rounded-2xl transition-all
+              bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
+              shadow-[0_0_25px_rgba(139,92,246,0.45)]
+              hover:shadow-[0_0_40px_rgba(236,72,153,0.55)]
+              hover:brightness-110
+              group overflow-hidden
+            "
+          >
+            <span className="relative z-10 flex items-center gap-3">
+              Get Your Free IT Health Check
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </span>
+            <span
+              className="
+                absolute inset-0 rounded-2xl opacity-60 blur-xl
+                bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
+                animate-pulse
+              "
+            ></span>
+            <span
+              className="
+                absolute inset-0 rounded-2xl border border-white/20
+                group-hover:border-white/40 transition-all
+              "
+            ></span>
+          </MotionLink>
+        </GlassCard>
       </div>
     </section>
   );
 };
-
 export default ManagedITPage;

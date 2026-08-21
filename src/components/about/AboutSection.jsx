@@ -1,42 +1,44 @@
-// Replace only this import line in your file:
+// src/components/about/AboutSection.jsx
 import React from 'react';
 import GlassCard from '../ui/GlassCard';
-import { motion, AnimatePresence } from 'framer-motion';
-import Target from '@lucide/target';
-import Eye from '@lucide/eye';
-import Heart from '@lucide/heart';
-import BookOpen from '@lucide/book-open';
-import Code from '@lucide/code';
-import Users from '@lucide/users';
-import CheckCircle from '@lucide/check-circle';
-import Award from '@lucide/award';
-import Clock from '@lucide/clock';
-import Sparkles from '@lucide/sparkles';
+import { motion } from 'framer-motion';
+// FIXED: previously imported from non-existent `@lucide/*` subpaths.
+// Corrected to named exports from `lucide-react`.
+import {
+  Target,
+  Heart,
+  BookOpen,
+  Code,
+  Users,
+  CheckCircle,
+  Award,
+  Clock,
+  Sparkles,
+} from 'lucide-react';
 
 const AboutSection = () => {
-const values = [
-  {
-    icon: Eye,
-    title: 'Transparency',
-    description: 'Clear communication and no surprises — you always know what’s happening.'
-  },
-  {
-    icon: Heart,
-    title: 'Reliability',
-    description: 'We follow through on every commitment because your business depends on it.'
-  },
-  {
-    icon: BookOpen,
-    title: 'Clarity',
-    description: 'No jargon or confusion — we explain things in plain, practical language.'
-  },
-  {
-    icon: Code,
-    title: 'Documentation',
-    description: 'Your systems are clearly documented so nothing is ever hidden or forgotten.'
-  }
-];
-
+  const values = [
+    {
+      icon: Heart,
+      title: 'Transparency',
+      description: 'Clear communication and no surprises â€” you always know what\u2019s happening.'
+    },
+    {
+      icon: Heart,
+      title: 'Reliability',
+      description: 'We follow through on every commitment because your business depends on it.'
+    },
+    {
+      icon: BookOpen,
+      title: 'Clarity',
+      description: 'No jargon or confusion â€” we explain things in plain, practical language.'
+    },
+    {
+      icon: Code,
+      title: 'Documentation',
+      description: 'Your systems are clearly documented so nothing is ever hidden or forgotten.'
+    }
+  ];
 
   const approach = [
     {
@@ -57,16 +59,13 @@ const values = [
     }
   ];
 
-
   return (
     <section id="about" className="relative py-20 lg:py-32 bg-slate-950 overflow-hidden">
-      {/* Background */}
       <div className="absolute inset-0">
         <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-gradient-to-tr from-blue-600/5 to-transparent" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -83,11 +82,10 @@ const values = [
             </span>
           </h2>
           <p className="text-lg text-slate-400">
-            I'm MSA – a hands-on IT consultant who believes small businesses deserve professional-grade technology without the enterprise complexity.
+            I'm MSA â€” a hands-on IT consultant who believes small businesses deserve professional-grade technology without the enterprise complexity.
           </p>
         </motion.div>
 
-        {/* Mission & Vision */}
         <div className="grid md:grid-cols-2 gap-6 mb-16">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -102,7 +100,7 @@ const values = [
                 <h3 className="text-2xl font-bold text-white">Our Mission</h3>
               </div>
               <p className="text-lg text-slate-300 leading-relaxed">
-                To empower Victorian small and medium businesses with technology that just works. We handle the IT complexity so you can focus entirely on what you do best – running your business and serving your customers.
+                To empower Victorian small and medium businesses with technology that just works. We handle the IT complexity so you can focus entirely on what you do best â€” running your business and serving your customers.
               </p>
             </GlassCard>
           </motion.div>
@@ -126,7 +124,6 @@ const values = [
           </motion.div>
         </div>
 
-        {/* Values */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -147,7 +144,6 @@ const values = [
           </div>
         </motion.div>
 
-        {/* Approach */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -175,7 +171,6 @@ const values = [
                 </div>
               </div>
 
-              {/* Credentials */}
               <div className="space-y-4">
                 {[
                   { icon: Award, title: 'Microsoft Certified', description: 'Azure and M365 specialist' },

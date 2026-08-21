@@ -1,43 +1,35 @@
-﻿// Replace your current bulk import with this:
-
-import Shield from '@lucide/shield';
-import Phone from '@lucide/phone';
-import Mail from '@lucide/mail';
-import MapPin from '@lucide/map-pin';
-import Linkedin from '@lucide/linkedin';
-import Facebook from '@lucide/facebook';
-import ArrowUp from '@lucide/arrow-up';
-import ExternalLink from '@lucide/external-link';
+﻿// src/components/footer/Footer.jsx
+import React from 'react';
+import { 
+  Shield, Phone, Mail, MapPin, 
+  Linkedin, Facebook, ArrowUp 
+} from 'lucide-react';
 import footerLogo from "/src/assets/brand/Exports/Old/Syncline_Master_512.png";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
-const footerLinks = {
-  services: [
-    { name: 'Managed IT Support', href: '/managed-it' },
-    { name: 'Cloud Solutions', href: '/cloud' },
-    { name: 'Cybersecurity', href: '/security' },
-    { name: 'Automation & AI', href: '/automation' }
-  ],
-  company: [
-    { name: 'About Us', href: '/about-syncline' },
-    { name: 'Service Areas', href: '/areas' },
-    { name: 'Customer Portal', href: '/customer-portal' },
-    { name: 'Contact', href: '/contact' }
-  ],
-  resources: [
-    { name: 'IT Health Check', href: '/it-health-check' },
-    { name: 'Case Studies', href: '/case-studies' },
-    { name: 'Security Guide', href: '/security-guide' },   // keep if you have this page
-    { name: 'SMB IT Checklist', href: '/checklist' }       // keep if you have this page
-  ]
-};
+  const footerLinks = {
+    services: [
+      { name: 'Managed IT Support', href: '/managed-it' },
+      { name: 'Cloud Solutions', href: '/cloud' },
+      { name: 'Cybersecurity', href: '/security' },
+      { name: 'Automation & AI', href: '/automation' }
+    ],
+    company: [
+      { name: 'About Us', href: '/about-syncline' },
+      { name: 'Customer Portal', href: '/customer-portal' },
+      { name: 'Contact', href: '/contact' }
+    ],
+    resources: [
+      { name: 'IT Health Check', href: '/it-health-check' },
+      { name: 'Case Studies', href: '/case-studies' },
+      { name: 'Security Guide', href: '/security-guide' },
+      { name: 'SMB IT Checklist', href: '/checklist' }
+    ]
+  };
 
 
-  const serviceAreas = [
-    'Melbourne', 'Geelong', 'Ballarat', 'Bendigo', 
-    'Shepparton', 'Mildura', 'Warrnambool', 'Horsham'
-  ];
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -45,17 +37,18 @@ const footerLinks = {
 
   return (
     <footer className="relative bg-slate-950 border-t border-white/5">
-      {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 lg:gap-12">
           {/* Brand Column */}
           <div className="col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <img
-                    src={footerLogo}
-                    alt="Syncline IT Solutions Logo"
-                    className="w-12 h-12 object-contain"
-              />
+            <img
+              src={footerLogo}
+              alt="Syncline IT Solutions Logo"
+              width="48"
+              height="48"
+              className="w-12 h-12 object-contain"
+            />
               <div>
                 <span className="text-xl font-bold text-white">Syncline IT Solutions</span>
                 <span className="block text-xs text-slate-400">Enterprise IT for SMBs</span>
@@ -83,10 +76,10 @@ const footerLinks = {
 
             {/* Social Links */}
             <div className="flex gap-3 mt-6">
-              <a href="#" className="p-2 bg-white/5 rounded-lg hover:bg-blue-500/20 transition-colors">
+              <a href="#" aria-label="LinkedIn" className="p-2 bg-white/5 rounded-lg hover:bg-blue-500/20 transition-colors">
                 <Linkedin className="w-5 h-5 text-slate-400 hover:text-blue-400" />
               </a>
-              <a href="#" className="p-2 bg-white/5 rounded-lg hover:bg-blue-500/20 transition-colors">
+              <a href="#" aria-label="Facebook" className="p-2 bg-white/5 rounded-lg hover:bg-blue-500/20 transition-colors">
                 <Facebook className="w-5 h-5 text-slate-400 hover:text-blue-400" />
               </a>
             </div>
@@ -133,18 +126,6 @@ const footerLinks = {
               ))}
             </ul>
           </div>
-
-          {/* Service Areas */}
-          <div>
-            <h4 className="font-semibold text-white mb-4">Service Areas</h4>
-            <div className="flex flex-wrap gap-2">
-              {serviceAreas.map((area, i) => (
-                <span key={i} className="text-xs text-slate-500 bg-white/5 px-2 py-1 rounded">
-                  {area}
-                </span>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
 
@@ -166,6 +147,7 @@ const footerLinks = {
               </a>
               <button
                 onClick={scrollToTop}
+                aria-label="Scroll to top"
                 className="p-2 bg-white/5 rounded-lg hover:bg-blue-500/20 transition-colors group"
               >
                 <ArrowUp className="w-4 h-4 text-slate-400 group-hover:text-blue-400" />

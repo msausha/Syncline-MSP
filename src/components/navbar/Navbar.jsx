@@ -1,13 +1,11 @@
-﻿// src/components/navbar/Navbar.jsx - FIXED LOGO VERSION
+﻿// src/components/navbar/Navbar.jsx - FIXED LOGO + FIXED LINKS VERSION
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
-import { Menu, Phone, ChevronDown, X } from 'lucide-react';
+import { Menu, Phone, ChevronDown } from 'lucide-react';
 import MegaMenu from './MegaMenu';
 import OffcanvasMenu from './OffcanvasMenu';
 import logo from "/src/assets/brand/Exports/Old/Syncline_Master_512.png";
-
-
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -44,10 +42,16 @@ const Navbar = () => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
   };
 
+  // NOTE: "to" added for services/resources — previously these had
+  // hasDropdown: true and no "to" at all, so they rendered as a plain
+  // <button> with no href. Google (and keyboard/middle-click users)
+  // had no URL to land on for "Services" or "Resources". They now
+  // link to real hub pages (/services, /resources) while keeping the
+  // hover-to-open MegaMenu behaviour on desktop.
   const navItems = [
     { id: 'home', label: 'Home', to: '/', hasDropdown: false },
-    { id: 'services', label: 'Services', hasDropdown: true },
-    { id: 'resources', label: 'Resources', hasDropdown: true },
+    { id: 'services', label: 'Services', to: '/services', hasDropdown: true },
+    { id: 'resources', label: 'Resources', to: '/resources', hasDropdown: true },
     { label: 'Contact', to: '/contact', hasDropdown: false },
   ];
 
@@ -59,30 +63,26 @@ const Navbar = () => {
         transition={{ duration: 0.5, ease: 'easeOut' }}
         className={`fixed top-0 left-0 right-0 z-[1000] transition-all duration-300 ${
           isScrolled
-  ? 'bg-[#0A0F1F]/95 backdrop-blur-xl border-b border-white/10 shadow-lg'
-  : 'bg-[#020617]/90 backdrop-blur-lg'
-
+            ? 'bg-[#0A0F1F]/95 backdrop-blur-xl border-b border-white/10 shadow-lg'
+            : 'bg-[#020617]/90 backdrop-blur-lg'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* FIXED: Added py-3 for vertical padding to prevent logo cutoff */}
           <div className="flex items-center justify-between h-20 py-3">
-            {/* Logo - FIXED sizing */}
+            {/* Logo */}
             <NavLink
               to="/"
               onClick={handleLinkClick}
               className="flex items-center gap-2 sm:gap-3 group focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg px-2 py-1"
             >
               <div className="relative flex-shrink-0">
-                {/* FIXED: Logo now has proper max-height to fit in navbar */}
-
-
-              <img
-                    src={logo}
-                    alt="Syncline IT Logo"
-                    className="h-10 w-auto sm:h-12 lg:h-18 object-contain"
-                  />
-
+            <img
+              src={logo}
+              alt="Syncline IT Logo"
+              width="72"
+              height="72"
+              className="h-10 w-auto sm:h-12 lg:h-18 object-contain"
+            />
                 <div className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 sm:w-3 sm:h-3 bg-green-500 rounded-full border-2 border-slate-900 animate-pulse" />
               </div>
               <div className="min-w-0 hidden sm:block">
@@ -100,34 +100,26 @@ const Navbar = () => {
                   onMouseEnter={() => item.hasDropdown && handleMenuEnter(item.id)}
                   onMouseLeave={() => item.hasDropdown && handleMenuLeave()}
                 >
-                  {item.hasDropdown ? (
-                    <button
-                      className={`flex items-center gap-1 px-3 py-2 text-[15px] font-medium text-slate-300 hover:text-white transition-colors rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 ${
-                        activeMenu === item.id ? 'text-white bg-white/5' : ''
-                      }`}
-                      aria-expanded={activeMenu === item.id}
-                      aria-haspopup="true"
-                    >
-                      {item.label}
+                  <NavLink
+                    to={item.to}
+                    onClick={handleLinkClick}
+                    className={({ isActive }) =>
+                      `flex items-center gap-1 px-3 py-2 text-[15px] font-medium text-slate-300 hover:text-white transition-colors rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                        isActive ? 'text-white bg-white/10 font-semibold' : ''
+                      } ${activeMenu === item.id ? 'text-white bg-white/5' : ''}`
+                    }
+                    aria-haspopup={item.hasDropdown ? 'true' : undefined}
+                    aria-expanded={item.hasDropdown ? activeMenu === item.id : undefined}
+                  >
+                    {item.label}
+                    {item.hasDropdown && (
                       <ChevronDown
                         className={`w-4 h-4 transition-transform duration-200 ${
                           activeMenu === item.id ? 'rotate-180' : ''
                         }`}
                       />
-                    </button>
-                  ) : (
-                    <NavLink
-                      to={item.to}
-                      onClick={handleLinkClick}
-                      className={({ isActive }) =>
-                        `px-3 py-2 text-[15px] font-medium text-slate-300 hover:text-white transition-colors rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 ${
-                          isActive ? 'text-white bg-white/10 font-semibold' : ''
-                        }`
-                      }
-                    >
-                      {item.label}
-                    </NavLink>
-                  )}
+                    )}
+                  </NavLink>
                 </div>
               ))}
             </nav>

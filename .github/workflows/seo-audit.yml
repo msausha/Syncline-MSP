@@ -1,0 +1,36 @@
+name: SEO Audit
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  seo-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browser
+        run: npx playwright install --with-deps chromium
+
+      - name: Build
+        run: npm run build
+
+      - name: Start preview server
+        run: npx vite preview --port 4173 &
+
+      - name: Wait for preview server
+        run: npx wait-on http://localhost:4173
+
+      - name: Run SEO audit
+        run: node scripts/seo-audit.mjs
+        env:
+          SITE_URL: http://localhost:4173

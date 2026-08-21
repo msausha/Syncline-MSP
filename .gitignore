@@ -33,3 +33,8 @@ dist-ssr
 .vite/
 .vercel
 .env*.local
+dist/ 
+crawler.js 
+crawler.jsx 
+RulesToCheck.txt 
+.unlighthouse/ 

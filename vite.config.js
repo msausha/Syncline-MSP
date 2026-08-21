@@ -1,13 +1,11 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 import tsconfigPaths from 'vite-tsconfig-paths';
-
 export default defineConfig({
   plugins: [
     react(),
     tsconfigPaths(),
   ],
-
   build: {
     target: 'es2015',
     minify: 'esbuild',
@@ -15,16 +13,7 @@ export default defineConfig({
     sourcemap: false,
     reportCompressedSize: true,
     chunkSizeWarningLimit: 1200,
-
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          'map': ['leaflet', 'react-leaflet', 'maplibre-gl'],
-        },
-      },
-    },
   },
-
   server: {
     hmr: {
       overlay: true,
@@ -36,11 +25,10 @@ export default defineConfig({
       },
     },
   },
-
   optimizeDeps: {
     include: [
       'react', 'react-dom', 'framer-motion',
-      'lucide-react', 'leaflet', 'react-leaflet',
+      'lucide-react',
     ],
   },
 });

@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Zap, Code, Bot, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
+import SEO from '../components/SEO';
 import GlassCard from '../components/ui/GlassCard';
 
 const AutomationPage = () => {
@@ -12,9 +12,13 @@ const AutomationPage = () => {
     { icon: Code, title: 'Python & PowerShell Automation', desc: 'Tailored scripts for reporting, backups, compliance' },
     { icon: Bot, title: 'AI-Powered Assistance', desc: 'Smart ticketing, anomaly detection, and predictive support' }
   ];
-
   return (
     <section className="relative py-20 lg:py-32 bg-gradient-to-b from-slate-950 via-purple-950/20 to-slate-950">
+      <SEO
+        title="Automation & AI for Victorian SMBs | Syncline IT Solutions"
+        description="Custom workflow automation, Python & PowerShell scripting, and AI-powered IT assistance that saves Victorian small businesses hours every week."
+        path="/automation"
+      />
       <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
           <h1 className="text-5xl lg:text-6xl font-black text-white mb-6">
@@ -25,7 +29,6 @@ const AutomationPage = () => {
             Stop wasting time on manual IT tasks. We build custom automation and intelligent tools that save hours every week and prevent human error.
           </p>
         </motion.div>
-
         <div className="grid md:grid-cols-3 gap-6 mb-16">
           {capabilities.map((c, i) => (
             <GlassCard key={i} className="p-6">
@@ -35,24 +38,18 @@ const AutomationPage = () => {
             </GlassCard>
           ))}
         </div>
-
-<GlassCard className="p-8 lg:p-12 text-center">
-  <h2 className="text-4xl font-black text-white mb-6">Let Technology Work for You</h2>
-
-  <Link
-    to="/contact"
-    className="inline-flex items-center gap-3 px-8 py-4 bg-purple-600 hover:bg-purple-500 text-white font-bold rounded-xl transition-all group"
-  >
-    Discover Your Automation Opportunities
-    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-  </Link>
-</GlassCard>
-
-
-
+        <GlassCard className="p-8 lg:p-12 text-center">
+          <h2 className="text-4xl font-black text-white mb-6">Let Technology Work for You</h2>
+          <Link
+            to="/contact"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-purple-600 hover:bg-purple-500 text-white font-bold rounded-xl transition-all group"
+          >
+            Discover Your Automation Opportunities
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </Link>
+        </GlassCard>
       </div>
     </section>
   );
 };
-
 export default AutomationPage;
