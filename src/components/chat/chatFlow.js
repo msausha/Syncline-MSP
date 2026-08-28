@@ -1,68 +1,59 @@
-// src/components/chat/chatFlow.js
-import knowledgeBase from './data/chatKnowledge.json';
+import knowledgeBase from "./data/chatKnowledge.json";
 
 export const chatFlow = {
-  fallback: knowledgeBase.fallback,
+  fallback: knowledgeBase.fallback.summary || knowledgeBase.fallback,
 
-  getResponse: (message) => {
-    if (!message) return knowledgeBase.fallback;
+  getResponse(message) {
+    if (!message) return this.fallback;
 
     const text = message.toLowerCase();
 
-    const intentMap = {
-      hello: ["hi", "hello", "hey"],
-      services: ["service", "services", "offer", "provide"],
-      security: ["security", "secure", "firewall", "cyber"],
-      monitoring: ["monitor", "monitoring", "uptime", "performance"],
-      pricing: ["price", "pricing", "cost", "plans"],
-      assessment: ["assessment", "audit", "health check"],
-      contact: ["contact", "email", "phone", "call"],
-      emergency: ["emergency", "urgent", "down", "critical"],
-      response: ["response", "sla", "time", "speed"],
-      about: ["about", "Syncline it", "dedicated partner", "professional-grade", "infrastructure architect"],
-      service_area: ["area", "locations", "vic", "victoria", "coverage", "map", "local it support"],
-      custom_it: ["custom", "custom solutions", "bespoke", "tailored", "specialized"]
-    };
+    // Build dynamic intent map from keywords in JSON
+    const intentMap = Object.entries(knowledgeBase).reduce((map, [key, value]) => {
+      if (value && typeof value === "object" && Array.isArray(value.keywords)) {
+        map[key] = value.keywords.map(k => k.toLowerCase());
+      }
+      return map;
+    }, {});
 
-    // Find first matching intent
-    const matchedIntent = Object.entries(intentMap).find(([_, keywords]) =>
+    // Try keyword-based intent detection
+    const matchedIntent = Object.entries(intentMap).find(([intent, keywords]) =>
       keywords.some(word => text.includes(word))
     );
 
-    if (matchedIntent) {
-      const [intent] = matchedIntent;
-      return knowledgeBase[intent] || knowledgeBase.fallback;
+    if (!matchedIntent) {
+      return this.fallback;
     }
 
-    return knowledgeBase.fallback;
+    const [intent] = matchedIntent;
+    const data = knowledgeBase[intent];
+
+    // If category is structured, build a readable response
+    if (typeof data === "object") {
+      let response = "";
+
+      if (data.title) response += `**${data.title}**\n\n`;
+      if (data.summary) response += `${data.summary}\n\n`;
+
+      if (Array.isArray(data.details) && data.details.length > 0) {
+        response += `Here are some key points:\n`;
+        data.details.forEach(item => {
+          response += `• ${item}\n`;
+        });
+        response += `\n`;
+      }
+
+      if (Array.isArray(data.faq) && data.faq.length > 0) {
+        response += `Common questions:\n`;
+        data.faq.forEach(f => {
+          response += `Q: ${f.q}\nA: ${f.a}\n\n`;
+        });
+      }
+
+      return response.trim();
+    }
+
+    // Fallback for legacy string-based entries
+    return data || this.fallback;
   }
 };
-
-
-
-
-
-// // src/components/chat/chatFlow.js
-
-// /**
-//  * chatFlow.js provides structured rules for responses
-//  * and allows easy extension of conversational logic.
-//  */
-
-// export const chatFlow = {
-//   greeting: [
-//     "Hi! 👋 How can we help your business today?",
-//     "Hello! I’m here to assist with services, security, monitoring, or contacting our team.",
-//   ],
-//   fallback:
-//     "I may not have that information. Would you like to contact our team?",
-//   quickOptions: ["services", "security", "monitoring", "contact"],
-
-//   getResponse: (message, knowledgeBase) => {
-//     const key = Object.keys(knowledgeBase).find(
-//       (k) => k.toLowerCase() === message.trim().toLowerCase()
-//     );
-//     return key ? knowledgeBase[key] : chatFlow.fallback;
-//   },
-// };
-

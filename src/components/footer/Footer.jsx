@@ -60,9 +60,9 @@ const Footer = () => {
             
             {/* Contact Info */}
             <div className="space-y-3">
-              <a href="tel:1300000000" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors">
+              <a href="tel:0406001444" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors">
                 <Phone className="w-4 h-4" />
-                1300 XXX XXX
+                0406 001 444
               </a>
               <a href="mailto:info@syncline.com.au" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors">
                 <Mail className="w-4 h-4" />

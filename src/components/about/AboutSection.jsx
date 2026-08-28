@@ -82,8 +82,7 @@ const AboutSection = () => {
             </span>
           </h2>
           <p className="text-lg text-slate-400">
-            I'm MSA — a hands-on IT consultant who believes small businesses deserve professional-grade technology without the enterprise complexity.
-          </p>
+            Syncline IT Solutions helps Melbourne businesses build stable, secure, and easy‑to‑manage IT systems — without the complexity or cost of large providers.</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-6 mb-16">

@@ -22,57 +22,58 @@ import GlassCard from '../ui/GlassCard';
 import SEO from '../SEO';
 
 const SecuritySection = () => {
-  const securityLayers = [
-    {
-      icon: Lock,
-      title: 'Secure Sign-In',
-      description: 'Stronger sign-in practices to help keep your accounts protected.',
-      color: 'text-blue-400',
-      bg: 'bg-blue-500/10'
-    },
-    {
-      icon: Shield,
-      title: 'Device Protection',
-      description: 'Keeping your computers up to date with essential security features.',
-      color: 'text-emerald-400',
-      bg: 'bg-emerald-500/10'
-    },
-    {
-      icon: Eye,
-      title: 'Health & Activity Checks',
-      description: 'Regular reviews to help identify issues early and keep things running smoothly.',
-      color: 'text-purple-400',
-      bg: 'bg-purple-500/10'
-    },
-    {
-      icon: Database,
-      title: 'Backup Setup',
-      description: 'Simple, reliable backup options to help protect your important files.',
-      color: 'text-amber-400',
-      bg: 'bg-amber-500/10'
-    },
-    {
-      icon: FileCheck,
-      title: 'Basic Best Practices',
-      description: 'Guidance on safe usage, password hygiene, and everyday protection.',
-      color: 'text-cyan-400',
-      bg: 'bg-cyan-500/10'
-    },
-    {
-      icon: Users,
-      title: 'Staff Awareness',
-      description: 'Helping your team understand common risks and how to avoid them.',
-      color: 'text-pink-400',
-      bg: 'bg-pink-500/10'
-    }
-  ];
+const securityLayers = [
+  {
+    icon: Lock,
+    title: 'Secure Sign-In',
+    description: 'Modern sign‑in using Microsoft 365 security features — MFA, conditional access, and sensible identity controls.',
+    color: 'text-blue-400',
+    bg: 'bg-blue-500/10'
+  },
+  {
+    icon: Shield,
+    title: 'Device Protection',
+    description: 'Practical protection for laptops and desktops — updates, compliance checks, and baseline security settings.',
+    color: 'text-emerald-400',
+    bg: 'bg-emerald-500/10'
+  },
+  {
+    icon: Eye,
+    title: 'Health & Activity Checks',
+    description: 'Routine reviews of your Microsoft 365 environment to catch issues early and keep your systems stable.',
+    color: 'text-purple-400',
+    bg: 'bg-purple-500/10'
+  },
+  {
+    icon: Database,
+    title: 'Backup Setup',
+    description: 'Reliable backup options for email, files, and devices — using Microsoft 365 tools or trusted third‑party solutions.',
+    color: 'text-amber-400',
+    bg: 'bg-amber-500/10'
+  },
+  {
+    icon: FileCheck,
+    title: 'Basic Best Practices',
+    description: 'Clear guidance on safe usage, password habits, and practical day‑to‑day protection for your team.',
+    color: 'text-cyan-400',
+    bg: 'bg-cyan-500/10'
+  },
+  {
+    icon: Users,
+    title: 'Staff Awareness',
+    description: 'Simple, easy‑to‑follow training so your staff know how to avoid common risks and stay safe online.',
+    color: 'text-pink-400',
+    bg: 'bg-pink-500/10'
+  }
+];
 
-  const stats = [
-    { value: 'Local', label: 'Support Team', sublabel: 'Based in Victoria' },
-    { value: 'Routine', label: 'System Reviews', sublabel: 'Helping keep things running smoothly' },
-    { value: 'Fast', label: 'Remote Assistance', sublabel: 'Most issues resolved quickly' },
-    { value: 'Flexible', label: 'Backup Options', sublabel: 'Cloud and local choices' }
-  ];
+const stats = [
+  { value: 'Local', label: 'Support Team', sublabel: 'Based in Victoria' },
+  { value: 'Routine', label: 'System Reviews', sublabel: 'Helping keep things running smoothly' },
+  { value: 'Fast', label: 'Remote Assistance', sublabel: 'Most issues resolved quickly' },
+  { value: 'Flexible', label: 'Backup Options', sublabel: 'Cloud and local choices' }
+];
+
 
   return (
     <section id="security" className="relative py-20 lg:py-32 bg-slate-900 overflow-hidden">

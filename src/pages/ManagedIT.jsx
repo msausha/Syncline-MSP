@@ -9,28 +9,55 @@ import GlassCard from '../components/ui/GlassCard';
 
 const ManagedITPage = () => {
   const features = [
-    { icon: Clock, title: '24/7 Monitoring & Alerting', desc: 'Proactive detection before issues impact your business' },
-    { icon: Shield, title: 'Rapid Onsite & Remote Response', desc: '<2hr average for critical incidents' },
-    { icon: Users, title: 'Dedicated Account Manager', desc: 'Your single point of contact – no phone menus' },
-    { icon: CheckCircle, title: 'Guaranteed Uptime SLA', desc: '99.9% backed by credits if we miss it' }
+    {
+      icon: Clock,
+      title: 'Proactive Monitoring',
+      desc: 'We keep an eye on your systems so issues are caught early — not after they disrupt your team.',
+    },
+    {
+      icon: Shield,
+      title: 'Reliable Remote Support',
+      desc: 'Fast, practical help when something goes wrong — without long wait times or confusing escalation paths.',
+    },
+    {
+      icon: Users,
+      title: 'Single Point of Contact',
+      desc: 'Clear communication and one person who knows your environment — no phone menus or ticket shuffling.',
+    },
+    {
+      icon: CheckCircle,
+      title: 'Stable, Predictable IT',
+      desc: 'A structured approach to updates, backups, and maintenance so your business stays productive.',
+    },
   ];
+
   return (
     <section className="relative py-20 lg:py-32 bg-gradient-to-b from-slate-950 via-indigo-950/20 to-slate-950">
       <SEO
-        title="Managed IT Support for Victorian SMBs | Syncline IT Solutions"
-        description="24/7 monitoring, rapid onsite & remote response, a dedicated account manager, and a 99.9% uptime SLA — managed IT support built for Victorian small businesses."
+        title="Managed IT Support for Melbourne & Victorian SMBs | Syncline IT Solutions"
+        description="Proactive monitoring, reliable remote support, clear communication, and structured IT management — managed IT support designed for small and medium businesses across Victoria."
         path="/managed-it"
       />
+
       <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
-        <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
           <h1 className="text-5xl lg:text-6xl font-black text-white mb-6">
             Managed IT Support
-            <span className="block text-4xl lg:text-5xl text-indigo-400 mt-2">Always On – So You Can Be</span>
+            <span className="block text-4xl lg:text-5xl text-indigo-400 mt-2">
+              Practical, Reliable, Built for SMBs
+            </span>
           </h1>
+
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            Stop reacting to IT problems. We prevent them — 24/7 monitoring, rapid response, and a dedicated team that treats your business like our own.
+            IT shouldn’t slow your business down. Syncline provides structured, proactive support that keeps your systems stable, secure, and ready for work — without the complexity or cost of a large MSP.
           </p>
         </motion.div>
+
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {features.map((f, i) => (
             <GlassCard key={i} className="p-6">
@@ -40,10 +67,10 @@ const ManagedITPage = () => {
             </GlassCard>
           ))}
         </div>
+
         <GlassCard className="p-8 lg:p-12 text-center">
-          <h2 className="text-4xl font-black text-white mb-6">
-            Ready to Stop Fighting IT?
-          </h2>
+          <h2 className="text-4xl font-black text-white mb-6">Ready to Improve Your IT?</h2>
+
           <MotionLink
             to="/contact"
             whileHover={{ scale: 1.06, y: -3 }}
@@ -62,6 +89,7 @@ const ManagedITPage = () => {
               Get Your Free IT Health Check
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </span>
+
             <span
               className="
                 absolute inset-0 rounded-2xl opacity-60 blur-xl
@@ -69,6 +97,7 @@ const ManagedITPage = () => {
                 animate-pulse
               "
             ></span>
+
             <span
               className="
                 absolute inset-0 rounded-2xl border border-white/20
@@ -81,4 +110,5 @@ const ManagedITPage = () => {
     </section>
   );
 };
+
 export default ManagedITPage;

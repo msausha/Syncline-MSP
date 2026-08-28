@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 import tsconfigPaths from 'vite-tsconfig-paths';
+
 export default defineConfig({
   plugins: [
     react(),
@@ -9,10 +10,8 @@ export default defineConfig({
   build: {
     target: 'es2015',
     minify: 'esbuild',
+    sourcemap: true, // Enables true sourcemaps so line numbers map to your source files
     cssCodeSplit: true,
-    sourcemap: false,
-    reportCompressedSize: true,
-    chunkSizeWarningLimit: 1200,
   },
   server: {
     hmr: {
@@ -24,11 +23,5 @@ export default defineConfig({
         changeOrigin: true,
       },
     },
-  },
-  optimizeDeps: {
-    include: [
-      'react', 'react-dom', 'framer-motion',
-      'lucide-react',
-    ],
   },
 });

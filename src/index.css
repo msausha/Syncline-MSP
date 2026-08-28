@@ -219,3 +219,55 @@ p, li, .text-base { font-size: var(--text-base); line-height: 1.55; }
 nav a, nav button {
   font-size: 15px;
 }
+
+
+
+
+
+
+/* ──────────────────────────────────────────────────────────────
+   LIVE TELEMETRY RIBBON FIXED POSITIONING
+──────────────────────────────────────────────────────────────── */
+.site-telemetry-banner {
+  position: fixed;
+  top: 78px; /* Adjust this slightly if your navbar height differs */
+  left: 0;
+  right: 0;
+  height: 38px;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(10, 15, 31, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(56, 189, 248, 0.15);
+  padding: 0 28px;
+  font-size: 0.8rem;
+  color: #94a3b8;
+  z-index: 980; /* Sits cleanly under navbar z-index */
+}
+
+.telemetry-weather-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  padding-right: 24px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.telemetry-ticker-viewport {
+  flex-grow: 1;
+  overflow: hidden;
+  margin-left: 24px;
+  white-space: nowrap;
+  position: relative;
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.telemetry-ticker-track {
+  display: inline-flex;
+  gap: 30px;
+  will-change: transform;
+}

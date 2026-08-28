@@ -7,11 +7,24 @@ import SEO from '../components/SEO';
 import GlassCard from '../components/ui/GlassCard';
 
 const AutomationPage = () => {
-  const capabilities = [
-    { icon: Zap, title: 'Workflow Automation', desc: 'Eliminate repetitive tasks with custom scripts & integrations' },
-    { icon: Code, title: 'Python & PowerShell Automation', desc: 'Tailored scripts for reporting, backups, compliance' },
-    { icon: Bot, title: 'AI-Powered Assistance', desc: 'Smart ticketing, anomaly detection, and predictive support' }
-  ];
+const capabilities = [
+  {
+    icon: Zap,
+    title: 'Workflow Automation',
+    desc: 'Automate repetitive IT tasks and business processes using practical, reliable workflows.'
+  },
+  {
+    icon: Code,
+    title: 'Python & PowerShell Automation',
+    desc: 'Custom Python and PowerShell scripts for reporting, backups, onboarding, and everyday IT tasks.'
+  },
+  {
+    icon: Bot,
+    title: 'AI-Powered Assistance',
+    desc: 'Helpful AI tools that streamline support, reduce manual work, and make everyday tasks easier for your team.'
+  }
+];
+
   return (
     <section className="relative py-20 lg:py-32 bg-gradient-to-b from-slate-950 via-purple-950/20 to-slate-950">
       <SEO
@@ -26,8 +39,9 @@ const AutomationPage = () => {
             <span className="block text-4xl lg:text-5xl text-purple-400 mt-2">Work Smarter, Not Harder</span>
           </h1>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            Stop wasting time on manual IT tasks. We build custom automation and intelligent tools that save hours every week and prevent human error.
+            Reduce manual work and improve consistency with practical automation built for small businesses. We create tools that save time, reduce mistakes, and make your IT run smoother.
           </p>
+
         </motion.div>
         <div className="grid md:grid-cols-3 gap-6 mb-16">
           {capabilities.map((c, i) => (
@@ -39,7 +53,7 @@ const AutomationPage = () => {
           ))}
         </div>
         <GlassCard className="p-8 lg:p-12 text-center">
-          <h2 className="text-4xl font-black text-white mb-6">Let Technology Work for You</h2>
+          <h2 className="text-4xl font-black text-white mb-6">Practical Automation for Real Business Needs</h2>
           <Link
             to="/contact"
             className="inline-flex items-center gap-3 px-8 py-4 bg-purple-600 hover:bg-purple-500 text-white font-bold rounded-xl transition-all group"

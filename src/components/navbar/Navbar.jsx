@@ -1,4 +1,4 @@
-﻿// src/components/navbar/Navbar.jsx - FIXED LOGO + FIXED LINKS VERSION
+﻿// src/components/navbar/Navbar.jsx
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
@@ -42,12 +42,6 @@ const Navbar = () => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
   };
 
-  // NOTE: "to" added for services/resources — previously these had
-  // hasDropdown: true and no "to" at all, so they rendered as a plain
-  // <button> with no href. Google (and keyboard/middle-click users)
-  // had no URL to land on for "Services" or "Resources". They now
-  // link to real hub pages (/services, /resources) while keeping the
-  // hover-to-open MegaMenu behaviour on desktop.
   const navItems = [
     { id: 'home', label: 'Home', to: '/', hasDropdown: false },
     { id: 'services', label: 'Services', to: '/services', hasDropdown: true },
@@ -76,18 +70,18 @@ const Navbar = () => {
               className="flex items-center gap-2 sm:gap-3 group focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg px-2 py-1"
             >
               <div className="relative flex-shrink-0">
-            <img
-              src={logo}
-              alt="Syncline IT Logo"
-              width="72"
-              height="72"
-              className="h-10 w-auto sm:h-12 lg:h-18 object-contain"
-            />
+                <img
+                  src={logo}
+                  alt="Syncline IT Logo"
+                  width="72"
+                  height="72"
+                  className="h-10 w-auto sm:h-12 lg:h-18 object-contain"
+                />
                 <div className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 sm:w-3 sm:h-3 bg-green-500 rounded-full border-2 border-slate-900 animate-pulse" />
               </div>
               <div className="min-w-0 hidden sm:block">
                 <span className="text-lg sm:text-xl lg:text-2xl font-bold text-white block truncate">Syncline IT Solutions</span>
-                <span className="hidden lg:block ttext-[13px] text-slate-400 truncate">Enterprise IT Solutions</span>
+                <span className="hidden lg:block text-[13px] text-slate-400 truncate">Enterprise IT Solutions</span>
               </div>
             </NavLink>
 

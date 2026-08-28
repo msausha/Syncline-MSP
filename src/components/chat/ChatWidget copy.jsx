@@ -22,7 +22,6 @@ const ChatWidget = () => {
 
   const [nameInput, setNameInput] = useState("");
   const [contactInput, setContactInput] = useState("");
-  const [generalInput, setGeneralInput] = useState("");
 
   const messagesEndRef = useRef(null);
   const timerRef = useRef(null);
@@ -80,36 +79,6 @@ const ChatWidget = () => {
     dispatch({ type: "SET_USER_CONTACT", payload: trimmed });
     setContactInput("");
     handleAddMessage("bot", "Great! How can I help you today?", 800);
-  };
-
-  const handleGeneralSubmit = (e) => {
-    e.preventDefault();
-    const trimmed = generalInput.trim();
-    if (!trimmed) return;
-    
-    handleAddMessage("user", trimmed);
-    setGeneralInput("");
-
-    const lower = trimmed.toLowerCase();
-    let response = chatKnowledge.fallback;
-    
-    if (lower.includes("price") || lower.includes("cost") || lower.includes("fee")) {
-      response = chatKnowledge.pricing;
-    } else if (lower.includes("book") || lower.includes("assessment")) {
-      response = chatKnowledge.assessment;
-    } else if (lower.includes("emergency") || lower.includes("urgent")) {
-      response = chatKnowledge.emergency;
-    } else if (lower.includes("time") || lower.includes("hour")) {
-      response = chatKnowledge.response;
-    } else if (lower.includes("security") || lower.includes("cyber")) {
-      response = chatKnowledge.security;
-    } else if (lower.includes("about") || lower.includes("syncline")) {
-      response = chatKnowledge.about;
-    } else if (lower.includes("custom")) {
-      response = chatKnowledge.custom;
-    }
-
-    handleAddMessage("bot", response, 1200);
   };
 
   const handleToggle = () => setIsOpen((prev) => !prev);
@@ -186,42 +155,22 @@ const ChatWidget = () => {
                 </div>
               )}
 
-              <div ref={messagesEndRef} />
+              <div ref__={messagesEndRef} />
             </div>
 
-            {/* Quick Options & Free-Text Input */}
+            {/* Quick Options */}
             {!showNamePrompt && !showContactPrompt && (
-              <div className="border-t border-white/10 bg-slate-900/70 flex flex-col">
-                <div className="p-3 grid grid-cols-2 sm:grid-cols-3 gap-2 max-h-40 overflow-y-auto">
-                  {quickOptions.map((opt, idx) => (
-                    <button
-                      key={`${opt.value}-${idx}`}
-                      onClick={() => handleQuickOption(opt.value)}
-                      className="flex items-center gap-2 p-2.5 rounded-xl text-xs bg-white/5 hover:bg-white/10 border border-white/5 hover:border-blue-500/30 text-slate-200 hover:text-white transition-colors"
-                    >
-                      <opt.icon className="w-4 h-4 text-blue-400 shrink-0" aria-hidden="true" />
-                      <span className="truncate">{opt.text}</span>
-                    </button>
-                  ))}
-                </div>
-
-                <form onSubmit={handleGeneralSubmit} className="p-3 pt-0 flex gap-2">
-                  <label htmlFor="general-chat-input" className="sr-only">Ask a custom question</label>
-                  <input
-                    id="general-chat-input"
-                    type="text"
-                    value={generalInput}
-                    onChange={(e) => setGeneralInput(e.target.value)}
-                    placeholder="Type your own question here..."
-                    className="flex-1 px-4 py-2.5 bg-slate-800/80 border border-white/10 rounded-xl text-xs text-white placeholder-slate-400 focus:outline-none focus:border-blue-500/50"
-                  />
-                  <button 
-                    type="submit" 
-                    className="px-4 py-2.5 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-xl text-xs font-medium hover:opacity-95 transition-opacity"
+              <div className="p-3 border-t border-white/10 bg-slate-900/70 grid grid-cols-2 sm:grid-cols-3 gap-2">
+                {quickOptions.map((opt, idx) => (
+                  <button
+                    key={`${opt.value}-${idx}`}
+                    onClick={() => handleQuickOption(opt.value)}
+                    className="flex items-center gap-2 p-2.5 rounded-xl text-xs bg-white/5 hover:bg-white/10 border border-white/5 hover:border-blue-500/30 text-slate-200 hover:text-white transition-colors"
                   >
-                    Send
+                    <opt.icon className="w-4 h-4 text-blue-400" aria-hidden="true" />
+                    {opt.text}
                   </button>
-                </form>
+                ))}
               </div>
             )}
 

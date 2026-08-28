@@ -18,30 +18,33 @@ const PROBLEMS = [
 
 
 const TECH = [
-  { Icon: Server,   label: 'Systems & Devices', c: 'cyan' },
-  { Icon: Cloud,    label: 'Cloud Services',    c: 'blue' },
-  { Icon: Database, label: 'Backup Options',    c: 'purple' },
-  { Icon: Lock,     label: 'Protection Basics', c: 'green' },
-  { Icon: Cpu,      label: 'Health Checks',     c: 'orange' },
-  { Icon: Workflow, label: 'Smart Workflows',   c: 'pink' },
+  { Icon: Server,   label: 'Systems & Devices',          c: 'cyan' },
+  { Icon: Cloud,    label: 'Cloud & Microsoft 365',      c: 'blue' },
+  { Icon: Database, label: 'Backup & Recovery',          c: 'purple' },
+  { Icon: Lock,     label: 'Security Essentials',        c: 'green' },
+  { Icon: Cpu,      label: 'Routine Health Checks',      c: 'orange' },
+  { Icon: Workflow, label: 'Smart Workflows & Automation', c: 'pink' },
 ];
+
 
 
 const BENEFITS = [
   { Icon: CheckCircle, text: 'Fewer interruptions with steady system care', c: 'green' },
   { Icon: Activity,    text: 'Smooth, reliable day‑to‑day performance',     c: 'blue' },
-  { Icon: Cloud,       text: 'Simple, organised cloud & Microsoft 365 setup', c: 'cyan' },
+  { Icon: Cloud,       text: 'Organised, easy‑to‑use cloud & Microsoft 365 setup', c: 'cyan' },
   { Icon: Database,    text: 'Backups you can trust when you need them',    c: 'purple' },
   { Icon: TrendingUp,  text: 'Technology that grows with your business',     c: 'orange' },
 ];
 
 
+
 const TERMINAL_LINES = [
-  { text: '> Checking device status…',        cls: 'text-cyan-400' },
-  { text: '> Reviewing cloud setup…',         cls: 'text-blue-400' },
-  { text: '> Confirming backup availability…', cls: 'text-purple-400' },
-  { text: '> Routine checks completed ✓',     cls: 'text-green-400' },
+  { text: '> Checking device status…',         cls: 'text-cyan-400' },
+  { text: '> Reviewing cloud configuration…',  cls: 'text-blue-400' },
+  { text: '> Verifying backup availability…',  cls: 'text-purple-400' },
+  { text: '> Routine checks completed ✓',      cls: 'text-green-400' },
 ];
+
 
 
 const JOURNEY = [
@@ -50,6 +53,7 @@ const JOURNEY = [
   { Icon: Activity,      label: 'Step 2: Steady Support',     c: 'cyan' },
   { Icon: TrendingUp,    label: 'Step 3: Confident Growth',   c: 'green' },
 ];
+
 
 
 const HeroCTASection = () => {

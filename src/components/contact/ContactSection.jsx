@@ -8,11 +8,38 @@ import SEO from '../SEO';
 const EMPTY_FORM = { name: '', business: '', email: '', phone: '', message: '' };
 
 const contactInfo = [
-  { icon: Phone,  title: 'Phone',        content: '1300 XXX XXX',        detail: 'Mon–Fri, 8am–6pm AEST' },
-  { icon: Mail,   title: 'Email',        content: 'info@syncline.com.au', detail: 'Fast response times' },
-  { icon: MapPin, title: 'Service Area', content: 'Victoria, Australia',  detail: 'Melbourne & Regional VIC' },
-  { icon: Clock,  title: 'Emergency',   content: '24/7 Available',       detail: 'For managed clients' },
+  {
+    icon: Phone,
+    title: 'Phone',
+    content: '0406 001 444',
+    detail: 'Mon–Fri, 8am–6pm AEST'
+  },
+  {
+    icon: Mail,
+    title: 'Email',
+    content: 'info@syncline.com.au',
+    detail: 'Fast response times'
+  },
+  {
+    icon: MapPin,
+    title: 'Service Area',
+    content: 'Melbourne & Victoria',
+    detail: 'Local support for SMBs'
+  },
+  {
+    icon: Clock,
+    title: 'Emergency',
+    content: 'After-hours available',
+    detail: 'For managed clients'
+  },
+  {
+    icon: Building2,
+    title: 'ABN',
+    content: '79 397 8212',
+    detail: 'Syncline IT Solutions'
+  }
 ];
+
 
 const nextSteps = [
   'We review your inquiry within 24 hours',

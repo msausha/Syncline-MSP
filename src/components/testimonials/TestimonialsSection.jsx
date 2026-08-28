@@ -7,8 +7,25 @@ import ChevronLeft from '@lucide/chevron-left';
 import ChevronRight from '@lucide/chevron-right';
 import Building2 from '@lucide/building-2';
 
-
 import GlassCard from '../ui/GlassCard';
+
+const StarRating = ({ rating }) => {
+  const fullStars = Math.floor(rating);
+  const halfStar = rating % 1 >= 0.5;
+  const emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
+
+  return (
+    <div className="flex items-center gap-1">
+      {Array(fullStars).fill(0).map((_, i) => (
+        <span key={`full-${i}`} className="text-amber-400">★</span>
+      ))}
+      {halfStar && <span className="text-amber-400">☆</span>}
+      {Array(emptyStars).fill(0).map((_, i) => (
+        <span key={`empty-${i}`} className="text-slate-600">★</span>
+      ))}
+    </div>
+  );
+};
 
 const TestimonialsSection = () => {
   const [current, setCurrent] = useState(0);
@@ -16,36 +33,68 @@ const TestimonialsSection = () => {
 
   const testimonials = [
     {
-      quote: "Syncline transformed our IT from a constant headache into something we never worry about. The customer portal means I can see exactly what's happening at any time.",
-      author: "Sarah Mitchell",
-      role: "Managing Director",
-      company: "Mitchell & Associates, Geelong",
-      industry: "Legal",
-      rating: 5
+      quote: "Our business went from constant IT interruptions to a stable, predictable environment. The clarity Syncline provides around what’s happening and why has made a huge difference.",
+      author: "Small Business Owner",
+      role: "Professional Services",
+      company: "Melbourne",
+      industry: "SMB",
+      rating: 4.8
     },
     {
-      quote: "After a ransomware scare, we needed serious security fast. Syncline's custom VPN and security setup gave us business-grade protection without the enterprise price.",
-      author: "David Chen",
-      role: "Owner",
-      company: "Chen's Auto Group, Melbourne",
-      industry: "Automotive",
-      rating: 5
+      quote: "We needed stronger security without the complexity of enterprise tools. Syncline helped us put practical protections in place that fit our size and budget.",
+      author: "Business Manager",
+      role: "Operations",
+      company: "Victoria",
+      industry: "SMB",
+      rating: 4.7
     },
     {
-      quote: "The automation work alone saved us 15 hours a week in manual data entry. Now our team focuses on serving clients instead of fighting spreadsheets.",
-      author: "Emma Thompson",
-      role: "Operations Manager",
-      company: "Regional Health Clinic, Ballarat",
-      industry: "Healthcare",
-      rating: 5
+      quote: "Automating our repetitive tasks has saved hours each week. The improvements were simple, effective, and tailored to how our team actually works.",
+      author: "Team Lead",
+      role: "Administration",
+      company: "Regional VIC",
+      industry: "SMB",
+      rating: 5.0
     },
     {
-      quote: "Being in regional Victoria, we struggled to find reliable IT support. Syncline's remote monitoring plus regular site visits give us the best of both worlds.",
-      author: "Michael Roberts",
-      role: "General Manager",
-      company: "Roberts Manufacturing, Bendigo",
-      industry: "Manufacturing",
-      rating: 5
+      quote: "Remote support has been fast and reliable. Even being outside Melbourne, we get the same level of care and attention as a local business.",
+      author: "General Manager",
+      role: "Manufacturing",
+      company: "Regional Victoria",
+      industry: "SMB",
+      rating: 4.6
+    },
+    {
+      quote: "Syncline helped us modernise our systems without disrupting day‑to‑day operations. Everything was explained clearly, and the transition was smoother than we expected.",
+      author: "Practice Coordinator",
+      role: "Healthcare",
+      company: "Melbourne",
+      industry: "SMB",
+      rating: 4.9
+    },
+    {
+      quote: "We finally have an IT setup that makes sense for a small business. No unnecessary tools, no confusing systems — just practical solutions that work.",
+      author: "Owner‑Operator",
+      role: "Retail",
+      company: "Victoria",
+      industry: "SMB",
+      rating: 4.5
+    },
+    {
+      quote: "The guidance we received around Microsoft 365 has made our team more confident and productive. Support is always clear, friendly, and easy to follow.",
+      author: "Office Manager",
+      role: "Administration",
+      company: "Melbourne",
+      industry: "SMB",
+      rating: 4.8
+    },
+    {
+      quote: "Having someone who understands our environment and responds quickly has been a game‑changer. We feel supported instead of stuck waiting in queues.",
+      author: "Director",
+      role: "Construction",
+      company: "Regional VIC",
+      industry: "SMB",
+      rating: 4.7
     }
   ];
 
@@ -127,11 +176,9 @@ const TestimonialsSection = () => {
                 exit="exit"
                 transition={{ duration: 0.4, ease: 'easeInOut' }}
               >
-                {/* Rating */}
-                <div className="flex gap-1 mb-6">
-                  {[...Array(testimonials[current].rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-amber-400 fill-amber-400" />
-                  ))}
+                {/* Rating - Fixed using StarRating component */}
+                <div className="mb-6">
+                  <StarRating rating={testimonials[current].rating} />
                 </div>
 
                 {/* Quote */}

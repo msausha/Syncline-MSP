@@ -28,8 +28,6 @@ const OffcanvasMenu = ({ isOpen, onClose }) => {
   const [expandedSection, setExpandedSection] = useState(null);
 
   const directLinks = [
-    { title: 'Home', href: '/' },
-    { title: 'Security', href: '/security' },
     { title: 'Contact', href: '/contact' }
   ];
 

@@ -11,12 +11,29 @@ import GlassCard from '../components/ui/GlassCard';
 import SEO from '../components/SEO';
 
 const AboutSyncline = () => {
-  const highlights = [
-    { icon: Cpu, title: 'Infrastructure Architect', desc: 'Designing secure, scalable systems for SMEs and multi‑site organisations.' },
-    { icon: Award, title: 'Enterprise‑Grade Standards', desc: 'Every solution follows the same rigor used by large‑scale IT teams.' },
-    { icon: Target, title: 'Outcome‑Driven Approach', desc: 'Technology must deliver measurable business results — not just "fix issues".' },
-    { icon: UserCheck, title: 'Your Dedicated IT Partner', desc: 'No call centres. No ticket queues. Direct access to your IT expert.' }
-  ];
+const highlights = [
+  {
+    icon: Cpu,
+    title: 'Microsoft‑Focused IT',
+    desc: 'Specialising in Microsoft 365 and Azure to help small businesses stay modern, secure, and productive.'
+  },
+  {
+    icon: Award,
+    title: 'Practical, Reliable Standards',
+    desc: 'Clear, structured IT practices designed for real Victorian SMB environments — not unnecessary complexity.'
+  },
+  {
+    icon: Target,
+    title: 'Straightforward, Outcome‑Driven Support',
+    desc: 'Every recommendation is practical, cost‑aware, and focused on improving stability, security, and day‑to‑day operations.'
+  },
+  {
+    icon: UserCheck,
+    title: 'Direct Access to Your IT Expert',
+    desc: 'No call centres or ticket queues — just clear communication and someone who knows your environment.'
+  }
+];
+
 
   return (
     <section className="relative py-20 lg:py-32 bg-gradient-to-b from-slate-950 via-indigo-950/20 to-slate-950">
@@ -33,8 +50,9 @@ const AboutSyncline = () => {
             <span className="block text-4xl lg:text-5xl text-indigo-400 mt-2">Your Dedicated IT Partner</span>
           </h1>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            I help Victorian businesses build reliable, secure, and future‑proof IT foundations — without the complexity or corporate overhead.
+            I help Melbourne and Victorian small businesses build stable, secure, and easy‑to‑manage IT systems using Microsoft 365 and Azure — without the complexity or cost of a large MSP.
           </p>
+
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
@@ -48,9 +66,10 @@ const AboutSyncline = () => {
         </div>
 
         <GlassCard className="p-8 lg:p-12 text-center">
-          <h2 className="text-4xl font-black text-white mb-6">
-            Let's Build Your IT Future
-          </h2>
+        <h2 className="text-4xl font-black text-white mb-6">
+          Let’s Build a Better IT Foundation
+        </h2>
+
 
           <MotionLink
             to="/contact"
@@ -66,7 +85,7 @@ const AboutSyncline = () => {
               group
             "
           >
-            <span className="relative z-10">Contact Me</span>
+            <span className="relative z-10">Get in Touch</span>
             <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" />
 
             <span

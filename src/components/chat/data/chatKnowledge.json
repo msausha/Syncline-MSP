@@ -1,5 +1,31 @@
 {
-  "services": "We offer comprehensive IT solutions including Managed IT Support, Cloud Services, Cybersecurity, Network Monitoring, and Software Development. Would you like more details on any specific service?",
+  "services": {
+  "title": "Managed IT & Cloud Services",
+  "summary": "We provide Managed IT Support, Cloud Solutions, Cybersecurity, Monitoring, and Automation.",
+  "details": [
+    "Unlimited remote support",
+    "Microsoft 365 management",
+    "Azure cloud architecture",
+    "Cybersecurity protection",
+    "24/7 monitoring"
+  ],
+  "keywords": ["services", "support", "it help", "cloud", "cybersecurity", "monitoring"],
+  "examples": [
+    "What IT services do you offer?",
+    "Can you help with Microsoft 365?",
+    "Do you provide cloud solutions?"
+  ],
+  "faq": [
+    {
+      "q": "Do you support small businesses?",
+      "a": "Yes, Syncline IT specialises in SMB support across Victoria."
+    },
+    {
+      "q": "Do you offer onsite visits?",
+      "a": "Yes, onsite visits are available in Melbourne metro."
+    }
+  ]
+},
   "security": "Our security services cover firewall management, endpoint protection, vulnerability assessments, security audits, and incident response. We ensure your business data is fully protected.",
   "monitoring": "We provide 24/7 system monitoring, performance tracking, and alert management. Our proactive monitoring ensures minimal downtime and optimal performance for your IT infrastructure.",
   "contact": "You can contact our team via phone at 1300 XXX XXX, email at info@syncline.com.au, or book a consultation using our online form. Which method would you prefer?",
@@ -18,4 +44,3 @@
   
   "fallback": "I may not have that information. Would you like to contact our team for assistance?"
 }
-
