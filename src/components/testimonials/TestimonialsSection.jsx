@@ -131,11 +131,32 @@ const TestimonialsSection = () => {
                 transition={{ duration: 0.4, ease: 'easeInOut' }}
               >
                 {/* Rating */}
-              <div className="flex gap-1 mb-6">
-                {[...Array(Math.round(testimonials[current].rating))].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-amber-400 fill-amber-400" />
-                ))}
-              </div>
+                
+                <div className="flex gap-1 mb-6">
+                  {[...Array(5)].map((_, i) => {
+                    const rating = testimonials[current].rating;
+                    const fill = i + 1 <= Math.floor(rating)
+                      ? "full"
+                      : i + 0.5 <= rating
+                      ? "half"
+                      : "empty";
+                    return (
+                      <Star
+                        key={i}
+                        className={`w-5 h-5 ${
+                          fill === "empty" ? "text-slate-600" : "text-amber-400"
+                        } ${fill === "full" ? "fill-amber-400" : ""}`}
+                        style={fill === "half" ? { fill: "url(#half-grad)" } : undefined}
+                      />
+                    );
+                  })}
+                  <svg width="0" height="0" className="absolute">
+                    <linearGradient id="half-grad">
+                      <stop offset="50%" stopColor="currentColor" />
+                      <stop offset="50%" stopColor="transparent" />
+                    </linearGradient>
+                  </svg>
+                </div>
 
 
                 {/* Quote */}
