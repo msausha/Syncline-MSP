@@ -1,8 +1,6 @@
 import React, { useReducer, useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
-// Icons
-import { MessageCircle, X, Zap, Calendar, Phone, Clock, Shield, User, MapPin, MessageSquare } from "lucide-react";
+import { MessageCircle, X, Zap, Calendar, Phone, Clock, Shield, User, MessageSquare } from "lucide-react";
 
 import { chatReducer, initialState } from "./chatReducer";
 import chatKnowledge from "./data/chatKnowledge.json";
@@ -19,16 +17,26 @@ const quickOptions = [
 
 const ChatWidget = () => {
   const [state, dispatch] = useReducer(chatReducer, initialState);
-  const { messages, showNamePrompt, userName, showContactPrompt, userEmailOrPhone, isTyping } = state;
-  const [isOpen, setIsOpen] = useState(false); // control widget open/close
-  const messagesEndRef = useRef(null);
+  const { messages, showNamePrompt, showContactPrompt, isTyping } = state;
+  const [isOpen, setIsOpen] = useState(false);
 
-  const scrollToBottom = () => messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  useEffect(scrollToBottom, [messages]);
+  const [nameInput, setNameInput] = useState("");
+  const [contactInput, setContactInput] = useState("");
+
+  const messagesEndRef = useRef(null);
+  const timerRef = useRef(null);
+
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages]);
+
+  // Clear any pending bot-message timer if the widget unmounts mid-flow
+  useEffect(() => () => clearTimeout(timerRef.current), []);
 
   const handleAddMessage = (type, text, delay = 0) => {
+    clearTimeout(timerRef.current); // cancel the previous pending dispatch
     dispatch({ type: "SET_TYPING", payload: type === "bot" });
-    setTimeout(() => {
+    timerRef.current = setTimeout(() => {
       dispatch({ type: type === "bot" ? "BOT_MESSAGE" : "USER_MESSAGE", payload: text });
       dispatch({ type: "SET_TYPING", payload: false });
     }, delay);
@@ -42,36 +50,34 @@ const ChatWidget = () => {
     handleAddMessage("bot", response, 1200);
   };
 
-  // Validate Australian phone number
   const isValidPhone = (phone) => {
     const regex = /^(?:\+?61|0)[2-478]\d{8}$/;
     return regex.test(phone.replace(/\s+/g, ""));
   };
 
-  // Validate email
-  const isValidEmail = (email) => {
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return regex.test(email);
-  };
+  const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
   const handleNameSubmit = (e) => {
     e.preventDefault();
-    if (userName.trim()) {
-      dispatch({ type: "SET_USER_NAME", payload: userName.trim() });
-      handleAddMessage("bot", `Nice to meet you, ${userName}! Can I have your email or Australian phone number for follow-up?`, 800);
-    }
+    const trimmed = nameInput.trim();
+    if (!trimmed) return;
+    dispatch({ type: "SET_USER_NAME", payload: trimmed });
+    setNameInput("");
+    handleAddMessage("bot", `Nice to meet you, ${trimmed}! Can I have your email or Australian phone number for follow-up?`, 800);
   };
 
   const handleContactSubmit = (e) => {
     e.preventDefault();
-    if (!userEmailOrPhone.trim()) return;
+    const trimmed = contactInput.trim();
+    if (!trimmed) return;
 
-    if (!isValidEmail(userEmailOrPhone.trim()) && !isValidPhone(userEmailOrPhone.trim())) {
+    if (!isValidEmail(trimmed) && !isValidPhone(trimmed)) {
       handleAddMessage("bot", "Please enter a valid email or Australian phone number.", 500);
       return;
     }
 
-    dispatch({ type: "SET_USER_CONTACT", payload: userEmailOrPhone.trim() });
+    dispatch({ type: "SET_USER_CONTACT", payload: trimmed });
+    setContactInput("");
     handleAddMessage("bot", "Great! How can I help you today?", 800);
   };
 
@@ -80,7 +86,6 @@ const ChatWidget = () => {
 
   return (
     <div className="fixed bottom-5 right-5 z-[10000]">
-      {/* Floating Button */}
       {!isOpen && (
         <motion.button
           onClick={handleToggle}
@@ -91,7 +96,6 @@ const ChatWidget = () => {
         </motion.button>
       )}
 
-      {/* Chat Panel */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -118,7 +122,7 @@ const ChatWidget = () => {
             </div>
 
             {/* Messages */}
-            <div className="flex-1 overflow-y-auto p-4 space-y-3.5 scrollbar-thin scrollbar-thumb-blue-600/30 scrollbar-track-transparent">
+            <div className="flex-1 overflow-y-auto p-4 space-y-3.5">
               {messages.map((msg) => (
                 <motion.div
                   key={msg.id}
@@ -151,7 +155,7 @@ const ChatWidget = () => {
                 </div>
               )}
 
-              <div ref={messagesEndRef} />
+              <div ref__={messagesEndRef} />
             </div>
 
             {/* Quick Options */}
@@ -178,13 +182,13 @@ const ChatWidget = () => {
                   <input
                     id="chat-name"
                     type="text"
-                    value={userName}
-                    onChange={(e) => dispatch({ type: "SET_USER_NAME_INPUT", payload: e.target.value })}
+                    value={nameInput}
+                    onChange={(e) => setNameInput(e.target.value)}
                     placeholder="Enter your name..."
                     className="w-full px-4 py-3 bg-slate-800/70 border border-white/10 rounded-xl text-white placeholder-slate-400 focus:outline-none"
                     autoFocus
                   />
-                  <button className="w-full py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-xl">Next</button>
+                  <button type="submit" className="w-full py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-xl">Next</button>
                 </form>
               </div>
             )}
@@ -197,13 +201,13 @@ const ChatWidget = () => {
                   <input
                     id="chat-contact"
                     type="text"
-                    value={userEmailOrPhone}
-                    onChange={(e) => dispatch({ type: "SET_USER_CONTACT_INPUT", payload: e.target.value })}
+                    value={contactInput}
+                    onChange={(e) => setContactInput(e.target.value)}
                     placeholder="Enter your email or contact number..."
                     className="w-full px-4 py-3 bg-slate-800/70 border border-white/10 rounded-xl text-white placeholder-slate-400 focus:outline-none"
                     autoFocus
                   />
-                  <button className="w-full py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-xl">Start Chat</button>
+                  <button type="submit" className="w-full py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-xl">Start Chat</button>
                 </form>
               </div>
             )}
