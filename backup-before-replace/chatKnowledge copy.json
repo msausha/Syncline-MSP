@@ -1,17 +1,16 @@
-﻿{
+{
   "services": "We offer comprehensive IT solutions including Managed IT Support, Cloud Services, Cybersecurity, Network Monitoring, and Software Development. Would you like more details on any specific service?",
   "security": "Our security services cover firewall management, endpoint protection, vulnerability assessments, security audits, and incident response. We ensure your business data is fully protected.",
   "monitoring": "We provide 24/7 system monitoring, performance tracking, and alert management. Our proactive monitoring ensures minimal downtime and optimal performance for your IT infrastructure.",
-  "contact": "You can contact our team via phone at 0406 001 444, email at info@syncline.com.au, or book a consultation using our online form. Which method do you prefer?",
-  "pricing": "Our IT support plans start from $199/month for small businesses, including proactive monitoring, unlimited remote support, and security management. Interested in a custom quote?",
+  "contact": "You can contact our team via phone at 1300 XXX XXX, email at info@syncline.com.au, or book a consultation using our online form. Which method do you prefer?",
+  "pricing": "Our IT support plans start from $199/month for small businesses, including 24/7 monitoring, unlimited remote support, and security management. Interested in a custom quote?",
   "assessment": "Our free IT health check includes a full security audit, performance review, and custom recommendations. I can help schedule a session with Syncline. What time works best for you?",
-  "emergency": "For urgent IT issues, please call 0406 001 444 immediately. Our emergency line is monitored 24/7 for managed clients. Are you experiencing a critical issue right now?",
+  "emergency": "For urgent IT issues, please call 1300 XXX XXX immediately. Our emergency line is monitored 24/7 for managed clients. Are you experiencing a critical issue right now?",
   "response": "We guarantee less than 2-hour response times for all managed clients, with 24/7 emergency support available. Same-day onsite visits are available in Melbourne metro. Would you like more details on our SLA?",
-  "hello": "Hello! ðŸ‘‹ How can I assist you today with services, security, monitoring, or contacting our team?",
-  "hi": "Hi there! ðŸ‘‹ Welcome to Syncline IT Solutions. How can I help you today?",
-  "how can i contact support": "You can contact our support team via phone at 0406 001 444, email at info@syncline.com.au, or book a consultation online. Which option would you like?",
+  "hello": "Hello! 👋 How can I assist you today with services, security, monitoring, or contacting our team?",
+  "hi": "Hi there! 👋 Welcome to Syncline IT Solutions. How can I help you today?",
+  "how can i contact support": "You can contact our support team via phone at 1300 XXX XXX, email at info@syncline.com.au, or book a consultation online. Which option would you like?",
   "what services do you offer": "We provide Managed IT Support, Cybersecurity, Network Monitoring, Cloud Services, and Software Development. Would you like details on any specific service?",
   "fallback": "I may not have that information. Would you like to contact our team for assistance?"
 }
-
 

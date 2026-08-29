@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 // Individual Lucide icon imports (tree-shake friendly + alias)
 import Quote from '@lucide/quote';
@@ -13,44 +13,41 @@ import GlassCard from '../ui/GlassCard';
 const TestimonialsSection = () => {
   const [current, setCurrent] = useState(0);
   const [direction, setDirection] = useState(0);
+
   const testimonials = [
-  {
-    quote:
-      "Our business went from constant IT interruptions to a stable, predictable environment. The clarity Syncline provides around what’s happening and why has made a huge difference.",
-    author: "Small Business Owner",
-    role: "Professional Services",
-    company: "Victoria",
-    industry: "SMB",
-    rating: 4.8
-  },
-  {
-    quote:
-      "We needed stronger security without the complexity of enterprise tools. Syncline helped us put practical protections in place that fit our size and workflow.",
-    author: "Business Manager",
-    role: "Operations",
-    company: "Regional VIC",
-    industry: "SMB",
-    rating: 4.7
-  },
-  {
-    quote:
-      "Automating our repetitive tasks has saved hours each week. The improvements were simple, effective, and tailored to how our team actually works.",
-    author: "Team Lead",
-    role: "Administration",
-    company: "Victoria",
-    industry: "SMB",
-    rating: 4.9
-  },
-  {
-    quote:
-      "Remote support has been fast and reliable. Even being outside Melbourne, we get the same level of care and attention as a local business.",
-    author: "General Manager",
-    role: "Manufacturing",
-    company: "Regional VIC",
-    industry: "SMB",
-    rating: 4.6
-  }
-];
+    {
+      quote: "Syncline transformed our IT from a constant headache into something we never worry about. The customer portal means I can see exactly what's happening at any time.",
+      author: "Sarah Mitchell",
+      role: "Managing Director",
+      company: "Mitchell & Associates, Geelong",
+      industry: "Legal",
+      rating: 5
+    },
+    {
+      quote: "After a ransomware scare, we needed serious security fast. Syncline's custom VPN and security setup gave us business-grade protection without the enterprise price.",
+      author: "David Chen",
+      role: "Owner",
+      company: "Chen's Auto Group, Melbourne",
+      industry: "Automotive",
+      rating: 5
+    },
+    {
+      quote: "The automation work alone saved us 15 hours a week in manual data entry. Now our team focuses on serving clients instead of fighting spreadsheets.",
+      author: "Emma Thompson",
+      role: "Operations Manager",
+      company: "Regional Health Clinic, Ballarat",
+      industry: "Healthcare",
+      rating: 5
+    },
+    {
+      quote: "Being in regional Victoria, we struggled to find reliable IT support. Syncline's remote monitoring plus regular site visits give us the best of both worlds.",
+      author: "Michael Roberts",
+      role: "General Manager",
+      company: "Roberts Manufacturing, Bendigo",
+      industry: "Manufacturing",
+      rating: 5
+    }
+  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -131,12 +128,11 @@ const TestimonialsSection = () => {
                 transition={{ duration: 0.4, ease: 'easeInOut' }}
               >
                 {/* Rating */}
-              <div className="flex gap-1 mb-6">
-                {[...Array(Math.round(testimonials[current].rating))].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-amber-400 fill-amber-400" />
-                ))}
-              </div>
-
+                <div className="flex gap-1 mb-6">
+                  {[...Array(testimonials[current].rating)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-amber-400 fill-amber-400" />
+                  ))}
+                </div>
 
                 {/* Quote */}
                 <blockquote className="text-xl lg:text-2xl text-white font-medium leading-relaxed mb-8">
@@ -227,4 +223,3 @@ const TestimonialsSection = () => {
 };
 
 export default TestimonialsSection;
-

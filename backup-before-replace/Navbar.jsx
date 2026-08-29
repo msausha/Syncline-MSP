@@ -131,7 +131,7 @@ const Navbar = () => {
                 className="flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg px-2 py-1"
               >
                 <Phone className="w-4 h-4" />
-                <span className="font-medium text-sm">0406 001 444</span>
+                <span className="font-medium text-sm">1300 XXX XXX</span>
               </a>
               <NavLink
                 to="/contact"
@@ -188,4 +188,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

@@ -52,7 +52,7 @@ const MegaMenu = ({ type, isOpen, onClose }) => {
       // FIXED: was '/about-Syncline' in some places elsewhere in the app —
       // this file already used lowercase, now App.jsx's route matches it.
       { icon: Users, title: 'About Syncline', to: '/about-syncline' },
-      { icon: Database, title: 'Client workspace (coming soon)', to: '/customer-portal' }
+      { icon: Database, title: 'Customer Portal', to: '/customer-portal' }
     ],
     footer: {
       title: 'Helpful Information',
@@ -172,4 +172,3 @@ const MegaMenu = ({ type, isOpen, onClose }) => {
 };
 
 export default MegaMenu;
-

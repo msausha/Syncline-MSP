@@ -1,4 +1,4 @@
-﻿// src/pages/ManagedIT.jsx
+// src/pages/ManagedIT.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -9,26 +9,26 @@ import GlassCard from '../components/ui/GlassCard';
 
 const ManagedITPage = () => {
   const features = [
-    { icon: Clock, title: 'proactive monitoring & Alerting', desc: 'Proactive detection before issues impact your business' },
+    { icon: Clock, title: '24/7 Monitoring & Alerting', desc: 'Proactive detection before issues impact your business' },
     { icon: Shield, title: 'Rapid Onsite & Remote Response', desc: '<2hr average for critical incidents' },
-    { icon: Users, title: 'Dedicated Account Manager', desc: 'Your single point of contact â€“ no phone menus' },
-    { icon: CheckCircle, title: 'High uptime targets', desc: '99.9% backed by credits if we miss it' }
+    { icon: Users, title: 'Dedicated Account Manager', desc: 'Your single point of contact – no phone menus' },
+    { icon: CheckCircle, title: 'Guaranteed Uptime SLA', desc: '99.9% backed by credits if we miss it' }
   ];
   return (
     <section className="relative py-20 lg:py-32 bg-gradient-to-b from-slate-950 via-indigo-950/20 to-slate-950">
       <SEO
         title="Managed IT Support for Victorian SMBs | Syncline IT Solutions"
-        description="proactive monitoring, rapid onsite & remote response, a dedicated account manager, and a High uptime and stable performance SLA â€” managed IT support built for Victorian small businesses."
+        description="24/7 monitoring, rapid onsite & remote response, a dedicated account manager, and a 99.9% uptime SLA — managed IT support built for Victorian small businesses."
         path="/managed-it"
       />
       <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
           <h1 className="text-5xl lg:text-6xl font-black text-white mb-6">
             Managed IT Support
-            <span className="block text-4xl lg:text-5xl text-indigo-400 mt-2">Always On â€“ So You Can Be</span>
+            <span className="block text-4xl lg:text-5xl text-indigo-400 mt-2">Always On – So You Can Be</span>
           </h1>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            Stop reacting to IT problems. We prevent them â€” proactive monitoring, rapid response, and a dedicated team that treats your business like our own.
+            Stop reacting to IT problems. We prevent them — 24/7 monitoring, rapid response, and a dedicated team that treats your business like our own.
           </p>
         </motion.div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
@@ -82,4 +82,3 @@ const ManagedITPage = () => {
   );
 };
 export default ManagedITPage;
-

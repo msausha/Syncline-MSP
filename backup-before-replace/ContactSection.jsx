@@ -1,4 +1,4 @@
-﻿// src/components/contact/ContactSection.jsx
+// src/components/contact/ContactSection.jsx
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Phone, Mail, MapPin, Clock, Send, CheckCircle, Building2, AlertCircle } from 'lucide-react';
@@ -8,7 +8,7 @@ import SEO from '../SEO';
 const EMPTY_FORM = { name: '', business: '', email: '', phone: '', message: '' };
 
 const contactInfo = [
-  { icon: Phone,  title: 'Phone',        content: '0406 001 444',        detail: 'Monâ€“Fri, 8amâ€“6pm AEST' },
+  { icon: Phone,  title: 'Phone',        content: '1300 XXX XXX',        detail: 'Mon–Fri, 8am–6pm AEST' },
   { icon: Mail,   title: 'Email',        content: 'info@syncline.com.au', detail: 'Fast response times' },
   { icon: MapPin, title: 'Service Area', content: 'Victoria, Australia',  detail: 'Melbourne & Regional VIC' },
   { icon: Clock,  title: 'Emergency',   content: '24/7 Available',       detail: 'For managed clients' },
@@ -128,7 +128,7 @@ const ContactSection = () => {
                     </div>
                     <h3 className="text-2xl font-bold text-white mb-3">Thank You!</h3>
                     <p className="text-slate-300 text-lg">
-                      Your message is on its way â€” we'll be in touch within 24 hours.
+                      Your message is on its way — we'll be in touch within 24 hours.
                     </p>
                   </motion.div>
 
@@ -188,7 +188,7 @@ const ContactSection = () => {
                           id="phone" name="phone" type="tel"
                           value={formData.phone} onChange={handleChange}
                           className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-slate-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
-                          placeholder="04XX "
+                          placeholder="04XX XXX XXX"
                           autoComplete="tel"
                         />
                       </div>
@@ -229,7 +229,7 @@ const ContactSection = () => {
                       {isSubmitting ? (
                         <>
                           <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                          Sendingâ€¦
+                          Sending…
                         </>
                       ) : (
                         <>
@@ -288,7 +288,7 @@ const ContactSection = () => {
                   <Building2 className="w-6 h-6 text-slate-400" />
                 </div>
                 <div>
-                  <p className="text-sm text-slate-400">ABN: XX  XXX</p>
+                  <p className="text-sm text-slate-400">ABN: XX XXX XXX XXX</p>
                   <p className="text-xs text-slate-500">Victorian IT Services Pty Ltd</p>
                 </div>
               </div>
@@ -302,4 +302,3 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
-

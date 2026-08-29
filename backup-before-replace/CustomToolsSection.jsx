@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -21,20 +21,20 @@ const CustomToolsSection = () => {
   const tools = [
     {
       icon: Shield,
-      title: 'Secure remote access',
+      title: 'Custom VPN System',
       description: 'Secure remote access built for your business. Not a one-size-fits-all solution.',
       features: [
-        'Modern authentication and secure access',
+        'Zero-trust architecture',
         'Multi-factor authentication',
         'Device compliance checks',
-        'Encrypted connections'
+        'Encrypted tunnels'
       ],
       color: 'from-blue-600 to-indigo-600',
       iconBg: 'bg-blue-500/20'
     },
     {
       icon: Database,
-      title: 'Client workspace (coming soon)',
+      title: 'Customer Portal',
       description: 'Your own branded portal to access documents, tickets, and system status 24/7.',
       features: [
         'Document repository',
@@ -52,7 +52,7 @@ const CustomToolsSection = () => {
       features: [
         'Email & portal submission',
         'Priority-based routing',
-        'Clear ticket visibility',
+        'SLA tracking',
         'Full ticket history'
       ],
       color: 'from-purple-600 to-pink-600',
@@ -83,7 +83,7 @@ const CustomToolsSection = () => {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <span className="inline-block px-4 py-1.5 bg-purple-500/10 border border-purple-500/20 rounded-full text-purple-400 text-sm font-medium mb-4">
-            Trusted platforms with tailored configurations
+            Built In-House
           </span>
           <h2 className="text-4xl lg:text-5xl font-black text-white mb-6">
             Custom Tools That{' '}
@@ -184,4 +184,3 @@ const CustomToolsSection = () => {
 };
 
 export default CustomToolsSection;
-

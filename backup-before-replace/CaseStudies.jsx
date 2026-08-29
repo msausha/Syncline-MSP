@@ -1,4 +1,4 @@
-﻿// src/pages/CaseStudies.jsx
+// src/pages/CaseStudies.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -15,17 +15,17 @@ const CaseStudies = () => {
   const studies = [
     {
       icon: Building2,
-      title: 'Manufacturing â€“ 42% Reduction in Downtime',
-      desc: 'We rebuilt their entire IT stack, implemented proactive monitoring, and eliminated recurring outages.'
+      title: 'Manufacturing – 42% Reduction in Downtime',
+      desc: 'We rebuilt their entire IT stack, implemented 24/7 monitoring, and eliminated recurring outages.'
     },
     {
       icon: Users,
-      title: 'Professional Services â€“ 3x Faster Ticket Resolution',
+      title: 'Professional Services – 3x Faster Ticket Resolution',
       desc: 'Automation, remote support, and a dedicated account manager transformed their workflow.'
     },
     {
       icon: BarChart3,
-      title: 'Retail â€“ Secure, Scalable Multiâ€‘Site Network',
+      title: 'Retail – Secure, Scalable Multi‑Site Network',
       desc: 'We deployed a modern, secure network across 12 locations with zero business disruption.'
     }
   ];
@@ -34,7 +34,7 @@ const CaseStudies = () => {
     <section className="relative py-20 lg:py-32 bg-gradient-to-b from-slate-950 via-indigo-950/20 to-slate-950">
       <SEO
         title="Case Studies | Syncline IT Solutions"
-        description="Real IT outcomes for Victorian businesses â€” downtime reduction, faster ticket resolution, and secure multi-site networks."
+        description="Real IT outcomes for Victorian businesses — downtime reduction, faster ticket resolution, and secure multi-site networks."
         path="/case-studies"
       />
       <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
@@ -45,7 +45,7 @@ const CaseStudies = () => {
             <span className="block text-4xl lg:text-5xl text-indigo-400 mt-2">Real Results from Victorian Businesses</span>
           </h1>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            These aren't theories â€” they're real outcomes delivered to real organisations across Victoria.
+            These aren't theories — they're real outcomes delivered to real organisations across Victoria.
           </p>
         </motion.div>
 
@@ -104,4 +104,3 @@ const CaseStudies = () => {
 };
 
 export default CaseStudies;
-

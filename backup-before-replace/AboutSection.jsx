@@ -1,4 +1,4 @@
-﻿// src/components/about/AboutSection.jsx
+// src/components/about/AboutSection.jsx
 import React from 'react';
 import GlassCard from '../ui/GlassCard';
 import { motion } from 'framer-motion';
@@ -21,7 +21,7 @@ const AboutSection = () => {
     {
       icon: Heart,
       title: 'Transparency',
-      description: 'Clear communication and no surprises â€” you always know what\u2019s happening.'
+      description: 'Clear communication and no surprises — you always know what\u2019s happening.'
     },
     {
       icon: Heart,
@@ -31,7 +31,7 @@ const AboutSection = () => {
     {
       icon: BookOpen,
       title: 'Clarity',
-      description: 'No jargon or confusion â€” we explain things in plain, practical language.'
+      description: 'No jargon or confusion — we explain things in plain, practical language.'
     },
     {
       icon: Code,
@@ -82,7 +82,7 @@ const AboutSection = () => {
             </span>
           </h2>
           <p className="text-lg text-slate-400">
-            I'm MSA â€” a hands-on IT consultant who believes small businesses deserve professional-grade technology without the enterprise complexity.
+            I'm MSA — a hands-on IT consultant who believes small businesses deserve professional-grade technology without the enterprise complexity.
           </p>
         </motion.div>
 
@@ -100,7 +100,7 @@ const AboutSection = () => {
                 <h3 className="text-2xl font-bold text-white">Our Mission</h3>
               </div>
               <p className="text-lg text-slate-300 leading-relaxed">
-                To empower Victorian small and medium businesses with technology that just works. We handle the IT complexity so you can focus entirely on what you do best â€” running your business and serving your customers.
+                To empower Victorian small and medium businesses with technology that just works. We handle the IT complexity so you can focus entirely on what you do best — running your business and serving your customers.
               </p>
             </GlassCard>
           </motion.div>
@@ -175,7 +175,7 @@ const AboutSection = () => {
                 {[
                   { icon: Award, title: 'Microsoft Certified', description: 'Azure and M365 specialist' },
                   { icon: Clock, title: '10+ Years Experience', description: 'Supporting businesses of all sizes' },
-                  { icon: Users, title: 'Victorian SMBs Served', description: 'Across Victoria and regional areas' },
+                  { icon: Users, title: '150+ SMBs Served', description: 'Across Victoria and regional areas' },
                   { icon: CheckCircle, title: '100% Australian', description: 'Local support, local understanding' }
                 ].map((cred, i) => (
                   <div key={i} className="flex items-center gap-4 p-4 bg-white/5 rounded-xl">
@@ -198,4 +198,3 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
-

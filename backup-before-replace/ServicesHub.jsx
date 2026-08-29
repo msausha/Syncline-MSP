@@ -1,6 +1,6 @@
-﻿// src/pages/ServicesHub.jsx
+// src/pages/ServicesHub.jsx
 // Real landing page for the "Services" nav item. Previously "Services"
-// was a hover-only dropdown button with no href â€” there was no single
+// was a hover-only dropdown button with no href — there was no single
 // URL Google or a user could land on for "Syncline IT services".
 import React from 'react';
 import { Server, Cloud, Shield, Zap } from 'lucide-react';
@@ -11,7 +11,7 @@ const services = [
   {
     icon: Server,
     title: 'Managed IT Support',
-    desc: 'proactive monitoring, rapid response, and a dedicated account manager for your business.',
+    desc: '24/7 monitoring, rapid response, and a dedicated account manager for your business.',
     to: '/managed-it',
     accent: 'text-indigo-400',
   },
@@ -43,7 +43,7 @@ export default function ServicesHub() {
     <section className="relative py-20 lg:py-32 bg-gradient-to-b from-slate-950 to-slate-900">
       <SEO
         title="IT Services for Victorian SMBs | Syncline IT Solutions"
-        description="Managed IT support, cloud & Microsoft 365, business security, and automation â€” explore all the IT services Syncline provides for Victorian small businesses."
+        description="Managed IT support, cloud & Microsoft 365, business security, and automation — explore all the IT services Syncline provides for Victorian small businesses."
         path="/services"
       />
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
@@ -62,4 +62,3 @@ export default function ServicesHub() {
     </section>
   );
 }
-

@@ -1,4 +1,4 @@
-﻿// src/pages/Home.jsx
+// src/pages/Home.jsx
 import React, { Suspense, lazy } from 'react';
 import Navbar from '../components/navbar/Navbar';
 import HeroCTASection from '../components/hero/HeroCTASection';
@@ -31,7 +31,7 @@ const serviceTeasers = [
   {
     icon: Server,
     title: 'Managed IT Support',
-    desc: 'proactive monitoring, rapid response, and a dedicated account manager.',
+    desc: '24/7 monitoring, rapid response, and a dedicated account manager.',
     to: '/managed-it',
     accent: 'text-indigo-400',
   },

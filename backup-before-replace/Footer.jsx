@@ -18,7 +18,7 @@ const Footer = () => {
     ],
     company: [
       { name: 'About Us', href: '/about-syncline' },
-      { name: 'Client workspace (coming soon)', href: '/customer-portal' },
+      { name: 'Customer Portal', href: '/customer-portal' },
       { name: 'Contact', href: '/contact' }
     ],
     resources: [
@@ -62,7 +62,7 @@ const Footer = () => {
             <div className="space-y-3">
               <a href="tel:1300000000" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors">
                 <Phone className="w-4 h-4" />
-                0406 001 444
+                1300 XXX XXX
               </a>
               <a href="mailto:info@syncline.com.au" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors">
                 <Mail className="w-4 h-4" />
@@ -135,7 +135,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex flex-wrap items-center gap-4 text-sm text-slate-500">
               <span>© {currentYear} Syncline IT Solutions. All rights reserved.</span>
-              <span>ABN: XX  XXX</span>
+              <span>ABN: XX XXX XXX XXX</span>
             </div>
             
             <div className="flex items-center gap-6">

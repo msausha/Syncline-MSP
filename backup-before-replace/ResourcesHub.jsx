@@ -1,5 +1,5 @@
-﻿// src/pages/ResourcesHub.jsx
-// Real landing page for the "Resources" nav item â€” same fix as
+// src/pages/ResourcesHub.jsx
+// Real landing page for the "Resources" nav item — same fix as
 // ServicesHub.jsx: gives Google and users an actual URL to land on.
 import React from 'react';
 import { BookOpen, Users, FileCheck, Database } from 'lucide-react';
@@ -30,7 +30,7 @@ const resources = [
   },
   {
     icon: Database,
-    title: 'Client workspace (coming soon)',
+    title: 'Customer Portal',
     desc: 'Access documents, raise tickets, and check system status 24/7.',
     to: '/customer-portal',
     accent: 'text-purple-400',
@@ -61,4 +61,3 @@ export default function ResourcesHub() {
     </section>
   );
 }
-

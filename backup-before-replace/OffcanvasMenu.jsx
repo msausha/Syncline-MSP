@@ -1,8 +1,8 @@
-﻿// src/components/navbar/OffcanvasMenu.jsx
+// src/components/navbar/OffcanvasMenu.jsx
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 // FIXED: these were previously imported as `import X from '@lucide/x'` etc.
-// `@lucide/x` is not a package your project has installed â€” only
+// `@lucide/x` is not a package your project has installed — only
 // `lucide-react` is in package.json, and it exports icons as named
 // exports, not per-icon subpackages. That import would fail at build
 // time. Correct usage below.
@@ -50,10 +50,10 @@ const OffcanvasMenu = ({ isOpen, onClose }) => {
       items: [
         { icon: BookOpen, title: 'Case Studies', href: '/case-studies' },
         // FIXED: was '/about-Syncline' (capital S), which didn't match
-        // the route registered in App.jsx ('/about-syncline') â€” a 404.
+        // the route registered in App.jsx ('/about-syncline') — a 404.
         { icon: Users, title: 'About Syncline', href: '/about-syncline' },
         { icon: FileCheck, title: 'IT Health Check', href: '/it-health-check' },
-        { icon: Shield, title: 'Client workspace (coming soon)', href: '/customer-portal' }
+        { icon: Shield, title: 'Customer Portal', href: '/customer-portal' }
       ]
     }
   ];
@@ -106,7 +106,7 @@ const OffcanvasMenu = ({ isOpen, onClose }) => {
             <div className="mx-6 mt-6 p-4 rounded-xl bg-gradient-to-r from-blue-600/20 to-cyan-600/20 border border-blue-500/20">
               <div className="flex items-center gap-3 mb-2">
                 <Phone className="w-4 h-4 text-blue-400" />
-                <a href="tel:1300000000" className="text-white font-medium">0406 001 444</a>
+                <a href="tel:1300000000" className="text-white font-medium">1300 XXX XXX</a>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-blue-400" />
@@ -193,7 +193,7 @@ const OffcanvasMenu = ({ isOpen, onClose }) => {
                   <MapPin className="w-5 h-5 mt-0.5 text-blue-400" />
                   <div>
                     <p className="text-sm">Serving Victoria, Australia</p>
-                    <p className="text-xs text-slate-500">Melbourne Â· Geelong Â· Ballarat Â· Bendigo</p>
+                    <p className="text-xs text-slate-500">Melbourne · Geelong · Ballarat · Bendigo</p>
                   </div>
                 </div>
               </div>
@@ -206,4 +206,3 @@ const OffcanvasMenu = ({ isOpen, onClose }) => {
 };
 
 export default OffcanvasMenu;
-

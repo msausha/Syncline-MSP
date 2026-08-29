@@ -189,15 +189,15 @@ const HeroCTASection = () => {
                            bg-slate-900/60 backdrop-blur-sm
                            hover:border-cyan-400 transition-colors"
               >
-                <Phone className="w-4 h-4" /> 0406 001 444
+                <Phone className="w-4 h-4" /> 1300 XXX XXX
               </motion.a>
             </div>
 
             {/* Trust strip */}
             <div className="flex flex-wrap gap-5 text-sm text-slate-300">
-              <span className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-400" /> High uptime and stable performance</span>
+              <span className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-400" /> 99.9% Uptime</span>
               <span className="flex items-center gap-2"><Clock className="w-4 h-4 text-blue-400" /> &lt;2hr Response</span>
-              <span className="flex items-center gap-2"><Shield className="w-4 h-4 text-cyan-400" /> Victorian SMBs</span>
+              <span className="flex items-center gap-2"><Shield className="w-4 h-4 text-cyan-400" /> 150+ SMBs</span>
             </div>
 
             {/* Tech chips */}

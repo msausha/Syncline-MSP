@@ -1,4 +1,4 @@
-ï»¿// src/components/cta/CTASection.jsx
+// src/components/cta/CTASection.jsx
 import React, { useEffect, useRef, useState } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import { motion, useInView, AnimatePresence } from 'framer-motion';
@@ -65,7 +65,7 @@ const CTASection = () => {
     { text: '> Scanning systems for vulnerabilities...', color: 'text-red-400' },
     { text: '> Deploying zero-trust security protocols...', color: 'text-orange-400' },
     { text: '> Optimising performance & cloud resources...', color: 'text-blue-400' },
-    { text: '> Enabling proactive proactive monitoring...', color: 'text-purple-400' },
+    { text: '> Enabling proactive 24/7 monitoring...', color: 'text-purple-400' },
     { text: '> Transformation complete. Growth unlocked.', color: 'text-green-400' }
   ];
 
@@ -127,7 +127,7 @@ const CTASection = () => {
           transition={{ delay: 0.3 }}
           className="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto mb-12"
         >
-          Australian SMBs trust us to eliminate downtime, defeat cyber threats, and unlock growth â€” 
+          Australian SMBs trust us to eliminate downtime, defeat cyber threats, and unlock growth — 
           with transparent pricing and proven results.
         </motion.p>
 
@@ -370,7 +370,7 @@ const CTASection = () => {
               <div className="w-3 h-3 rounded-full bg-red-500" />
               <div className="w-3 h-3 rounded-full bg-yellow-500" />
               <div className="w-3 h-3 rounded-full bg-green-500" />
-              <span className="text-slate-400 ml-2 text-xs sm:text-sm">terminal@Synclineit.au â€” transformation.sh</span>
+              <span className="text-slate-400 ml-2 text-xs sm:text-sm">terminal@Synclineit.au — transformation.sh</span>
             </div>
 
             {/* Scanline effect */}
@@ -448,7 +448,7 @@ const CTASection = () => {
           {[
             { Icon: CheckCircle, text: 'Free in-depth security & performance assessment', color: 'green' },
             { Icon: Clock, text: 'Clear report within 48 hours', color: 'blue' },
-            { Icon: Zap, text: 'No obligation â€” just actionable insights', color: 'cyan' }
+            { Icon: Zap, text: 'No obligation — just actionable insights', color: 'cyan' }
           ].map((benefit, i) => (
             <motion.div
               key={i}
@@ -490,7 +490,7 @@ const CTASection = () => {
             className="inline-flex items-center justify-center gap-3 sm:gap-4 px-8 sm:px-12 py-4 sm:py-6 text-lg sm:text-xl lg:text-2xl font-bold text-cyan-300 rounded-2xl border-2 sm:border-3 border-cyan-500/60 bg-slate-900/60 backdrop-blur-md hover:bg-slate-800/80 hover:border-cyan-400 transition-all"
           >
             <Phone className="w-6 h-6 sm:w-8 sm:h-8" />
-            <span className="hidden sm:inline">Call 0406 001 444 Now</span>
+            <span className="hidden sm:inline">Call 1300 XXX XXX Now</span>
             <span className="sm:hidden">Call Now</span>
           </motion.a>
         </div>
@@ -509,4 +509,3 @@ const CTASection = () => {
 };
 
 export default CTASection;
-
