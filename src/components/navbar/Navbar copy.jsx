@@ -59,30 +59,6 @@ const Navbar = () => {
     { label: 'Contact', to: '/contact', hasDropdown: false },
   ];
 
-
-const [weather, setWeather] = useState(null);
-
-useEffect(() => {
-  const fetchWeather = async () => {
-    try {
-      const res = await fetch(
-        "https://api.open-meteo.com/v1/forecast?latitude=-37.8136&longitude=144.9631&current_weather=true"
-      );
-      const data = await res.json();
-      setWeather(data.current_weather);
-    } catch (err) {
-      console.error("Weather fetch failed", err);
-    }
-  };
-
-  fetchWeather();
-  const id = setInterval(fetchWeather, 600000); // refresh every 10 min
-
-  return () => clearInterval(id);
-}, []);
-
-
-
   return (
     <>
 <motion.nav
@@ -147,52 +123,22 @@ useEffect(() => {
             </nav>
 
             {/* Desktop CTA */}
-
-          <div className="hidden lg:flex items-center gap-4">
-
-            {/* Phone */}
-            <a
-              href="tel:1300000000"
-              className="flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors 
-                        focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg px-2 py-1"
-            >
-              <Phone className="w-4 h-4" />
-              <span className="font-medium text-sm">0406 001 444</span>
-            </a>
-
-            {/* CTA */}
-            <NavLink
-              to="/contact"
-              onClick={handleLinkClick}
-              className="px-5 py-2.5 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold 
-                        text-sm rounded-xl hover:shadow-lg hover:shadow-blue-500/30 transition-all 
-                        hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 
-                        focus:ring-offset-2 focus:ring-offset-slate-950"
-            >
-              Free Assessment
-            </NavLink>
-
-            {/* Modern Weather Chip */}
-            {weather && (
-              <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl 
-                              bg-white/5 border border-white/10 backdrop-blur-sm
-                              text-slate-200 text-sm font-medium">
-
-                {/* Weather Icon */}
-                <span className="text-cyan-300 text-lg">
-                  {weather.temperature > 18 ? "☀️" : weather.temperature > 10 ? "⛅" : "🌧️"}
-                </span>
-
-                {/* Temperature */}
-                <span className="font-semibold">{weather.temperature}°C</span>
-
-                {/* Location */}
-                <span className="text-slate-400">Melbourne</span>
-              </div>
-            )}
-          </div>
-
-            
+            <div className="hidden lg:flex items-center gap-3">
+              <a
+                href="tel:1300000000"
+                className="flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg px-2 py-1"
+              >
+                <Phone className="w-4 h-4" />
+                <span className="font-medium text-sm">0406 001 444</span>
+              </a>
+              <NavLink
+                to="/contact"
+                onClick={handleLinkClick}
+                className="px-5 py-2.5 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold text-sm rounded-xl hover:shadow-lg hover:shadow-blue-500/30 transition-all hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-slate-950"
+              >
+                Free Assessment
+              </NavLink>
+            </div>
 
             {/* Mobile Menu Button */}
             <button

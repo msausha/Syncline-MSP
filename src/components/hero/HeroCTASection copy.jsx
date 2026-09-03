@@ -1,4 +1,4 @@
-﻿// src/components/hero/HeroCTASection.jsx — Enterprise v8
+﻿// src/components/hero/HeroCTASection.jsx — v6
 import React, { useState, useEffect, useRef } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
@@ -7,7 +7,6 @@ import {
   Server, Cloud, Database, AlertTriangle, TrendingUp, Activity, Zap,
   Cpu, Lock, Workflow,
 } from 'lucide-react';
-import { gsap } from 'gsap';
 import HeroLogoAnimation from './HeroLogoAnimation';
 
 const PROBLEMS = [
@@ -16,6 +15,7 @@ const PROBLEMS = [
   { problem: 'Risk of losing important files', solution: 'Reliable backup and recovery options' },
   { problem: 'Unclear security basics', solution: 'Simple, practical protection for everyday use' },
 ];
+
 
 const TECH = [
   { Icon: Server,   label: 'Systems & Devices', c: 'cyan' },
@@ -26,6 +26,7 @@ const TECH = [
   { Icon: Workflow, label: 'Smart Workflows',   c: 'pink' },
 ];
 
+
 const BENEFITS = [
   { Icon: CheckCircle, text: 'Fewer interruptions with steady system care', c: 'green' },
   { Icon: Activity,    text: 'Smooth, reliable day‑to‑day performance',     c: 'blue' },
@@ -34,12 +35,14 @@ const BENEFITS = [
   { Icon: TrendingUp,  text: 'Technology that grows with your business',     c: 'orange' },
 ];
 
+
 const TERMINAL_LINES = [
   { text: '> Checking device status…',        cls: 'text-cyan-400' },
   { text: '> Reviewing cloud setup…',         cls: 'text-blue-400' },
   { text: '> Confirming backup availability…', cls: 'text-purple-400' },
   { text: '> Routine checks completed ✓',     cls: 'text-green-400' },
 ];
+
 
 const JOURNEY = [
   { Icon: AlertTriangle, label: 'Before: Frequent IT issues', c: 'red' },
@@ -48,75 +51,34 @@ const JOURNEY = [
   { Icon: TrendingUp,    label: 'Step 3: Confident Growth',   c: 'green' },
 ];
 
-// Enterprise-style MSP tech news items
-const TECH_NEWS = [
-  'Microsoft 365 boosts phishing protection for Victorian SMBs',
-  'Azure improves VM restore speed for MSP continuity',
-  'AI‑powered email threat detection enhances email security',
-  'OneDrive backup reliability update strengthens file recovery',
-  'Teams performance upgrade supports hybrid SMB workflows',
-];
 
 const HeroCTASection = () => {
   const [problemIdx,   setProblemIdx]   = useState(0);
   const [terminalStep, setTerminalStep] = useState(0);
-  const [weather,      setWeather]      = useState(null);
 
   const timelineRef = useRef(null);
   const terminalRef = useRef(null);
   const techRef     = useRef(null);
-  const newsRef     = useRef(null);
 
   const isTimelineInView = useInView(timelineRef, { once: true, margin: '-50px' });
   const isTerminalInView = useInView(terminalRef, { once: true, margin: '-50px' });
   const isTechInView     = useInView(techRef,     { once: true, margin: '-50px' });
 
-  // Rotate problem/solution
   useEffect(() => {
     const id = setInterval(() => setProblemIdx(p => (p + 1) % PROBLEMS.length), 3500);
     return () => clearInterval(id);
   }, []);
 
-  // Terminal lines reveal
   useEffect(() => {
     if (!isTerminalInView) return;
     const id = setInterval(() => setTerminalStep(s => Math.min(s + 1, TERMINAL_LINES.length)), 1200);
     return () => clearInterval(id);
   }, [isTerminalInView]);
 
-
-  // Enterprise banner MSP news animation
-  useEffect(() => {
-    const el = newsRef.current;
-    if (!el) return;
-
-    let index = 0;
-
-    const animations = [
-      () => gsap.fromTo(el, { x: -40, opacity: 0 }, { x: 0, opacity: 1, duration: 0.6, ease: 'power2.out' }),
-      () => gsap.fromTo(el, { y: -10, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: 'power2.out' }),
-      () => gsap.fromTo(el, { scale: 0.95, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.4, ease: 'power2.out' }),
-      () => gsap.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.35, ease: 'power1.out' }),
-      () => gsap.fromTo(el, { skewX: 8, opacity: 0 }, { skewX: 0, opacity: 1, duration: 0.45, ease: 'power2.out' }),
-    ];
-
-    const cycle = () => {
-      el.textContent = TECH_NEWS[index];
-      gsap.set(el, { opacity: 0, x: 0, y: 0, scale: 1, skewX: 0 });
-      animations[index % animations.length]();
-      index = (index + 1) % TECH_NEWS.length;
-    };
-
-    cycle();
-    const id = setInterval(cycle, 5000); // 5s enterprise cadence
-
-    return () => clearInterval(id);
-  }, []);
-
-
   return (
     <section className="relative bg-gradient-to-br from-slate-950 via-blue-950/90 to-cyan-950/80">
-      {/* Ambient blobs */}
+
+      {/* Ambient blobs — pinned inside, no overflow */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <motion.div
           animate={{ x: [0, 60, 0], y: [0, -40, 0] }}
@@ -130,29 +92,14 @@ const HeroCTASection = () => {
         />
       </div>
 
-      {/* HERO */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-12">
+      {/* ── HERO ─────────────────────────────────── */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-12">
+
+        {/* Two-column flex row — stacks on mobile */}
         <div className="flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-16 min-h-[calc(100vh-8rem)]">
 
           {/* LEFT — copy */}
           <div className="flex-1 flex flex-col gap-6 min-w-0">
-
-            {/* Enterprise banner: Live Tech + Weather */}
-            <div className="flex items-center gap-4 h-10 px-4 rounded-full 
-                            bg-slate-900/70 border border-cyan-500/40 shadow-sm">
-              <div className="flex items-center gap-1.5 text-xs font-semibold 
-                              text-cyan-300 uppercase tracking-wide">
-                <Activity className="w-3.5 h-3.5 text-cyan-400" />
-                <span>Live Tech Update</span>
-              </div>
-
-              <div className="w-px h-5 bg-cyan-500/40" />
-
-              <p
-                ref={newsRef}
-                className="text-xs sm:text-sm text-slate-100 font-medium truncate"
-              />
-              </div>
 
             <motion.div
               initial={{ opacity: 0, y: 10 }}
@@ -190,7 +137,7 @@ const HeroCTASection = () => {
               Stop firefighting, start scaling.
             </motion.p>
 
-            {/* Problem/Solution */}
+            {/* Problem/Solution — fixed height container so no layout shift */}
             <div className="relative h-[88px]">
               <AnimatePresence mode="wait">
                 <motion.div
@@ -205,9 +152,7 @@ const HeroCTASection = () => {
                     <p className="text-red-400 text-xs font-semibold mb-1 flex items-center gap-1.5">
                       <AlertTriangle className="w-3.5 h-3.5" /> Problem
                     </p>
-                    <p className="text-white font-semibold text-sm leading-snug">
-                      {PROBLEMS[problemIdx].problem}
-                    </p>
+                    <p className="text-white font-semibold text-sm leading-snug">{PROBLEMS[problemIdx].problem}</p>
                   </div>
                   <div className="flex items-center flex-shrink-0">
                     <ArrowRight className="w-5 h-5 text-cyan-400" />
@@ -216,9 +161,7 @@ const HeroCTASection = () => {
                     <p className="text-green-400 text-xs font-semibold mb-1 flex items-center gap-1.5">
                       <CheckCircle className="w-3.5 h-3.5" /> Solution
                     </p>
-                    <p className="text-white font-semibold text-sm leading-snug">
-                      {PROBLEMS[problemIdx].solution}
-                    </p>
+                    <p className="text-white font-semibold text-sm leading-snug">{PROBLEMS[problemIdx].solution}</p>
                   </div>
                 </motion.div>
               </AnimatePresence>
@@ -252,15 +195,9 @@ const HeroCTASection = () => {
 
             {/* Trust strip */}
             <div className="flex flex-wrap gap-5 text-sm text-slate-300">
-              <span className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-green-400" /> High uptime and stable performance
-              </span>
-              <span className="flex items-center gap-2">
-                <Clock className="w-4 h-4 text-blue-400" /> &lt;2hr Response
-              </span>
-              <span className="flex items-center gap-2">
-                <Shield className="w-4 h-4 text-cyan-400" /> Victorian SMBs
-              </span>
+              <span className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-400" /> High uptime and stable performance</span>
+              <span className="flex items-center gap-2"><Clock className="w-4 h-4 text-blue-400" /> &lt;2hr Response</span>
+              <span className="flex items-center gap-2"><Shield className="w-4 h-4 text-cyan-400" /> Victorian SMBs</span>
             </div>
 
             {/* Tech chips */}
@@ -286,10 +223,13 @@ const HeroCTASection = () => {
             </div>
           </div>
 
-          {/* RIGHT — logo */}
+          {/* RIGHT — logo
+              Fixed width column. overflow-hidden clips GSAP scale bleed.
+              HeroLogoAnimation is a plain block — no absolute escapes. */}
           <div className="w-full lg:w-[420px] xl:w-[460px] flex-shrink-0 overflow-hidden">
             <HeroLogoAnimation />
           </div>
+
         </div>
 
         {/* Scroll cue */}
@@ -309,7 +249,7 @@ const HeroCTASection = () => {
         </motion.div>
       </div>
 
-      {/* BELOW FOLD */}
+      {/* ── BELOW FOLD — normal document flow ──────── */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* BENEFITS */}
