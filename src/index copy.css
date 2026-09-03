@@ -1,4 +1,4 @@
-/* src/index.css - UNIQUE ENTERPRISE GLOW NAVBAR VERSION */
+/* src/index.css - FINAL CLEAN VERSION - No top gap, balanced sides, smaller hero fonts */
 
 /* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
@@ -7,16 +7,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    font-family: 'Inter', system-ui, sans-serif;
-  }
+
+fontFamily: {
+  sans: ['Inter', 'system-ui', 'sans-serif'],
 }
 
 /* ──────────────────────────────────────────────────────────────
    ROOT VARIABLES
 ──────────────────────────────────────────────────────────────── */
 :root {
+  /* Compact typography – smaller for hero to fit everything */
+  
   font-size: 15px; /* mobile base */
 
   --text-xs:   clamp(0.625rem, 0.62rem + 0.07vw, 0.6875rem);
@@ -31,13 +32,15 @@
   --text-6xl:  clamp(1.75rem,   1.7rem + 0.22vw,  2rem);
 
   /* Layout */
-  --navbar-height: 80px;
-  --content-max-width: 1600px;
-  --side-padding: 1rem;
-  --side-padding-lg: 2rem;
+  --navbar-height: 80px;          /* Your navbar height */
+--navbar-backdrop-bg: rgba(15, 23, 42, 0.35);
+
+  --content-max-width: 1600px;    /* Wide content – fixes side gaps */
+  --side-padding: 1rem;           /* mobile */
+  --side-padding-lg: 2rem;        /* desktop – balanced */
 }
 
-/* Responsive font scaling */
+/* Responsive font scaling – smaller on large screens for hero fit */
 @media (min-width: 1536px) { :root { font-size: 14.5px; } }
 @media (max-width: 640px)  { :root { font-size: 15.5px; } }
 
@@ -48,51 +51,21 @@ html, body {
   height: auto;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: #020617;
-  color: #f8fafc;
 }
 
-/* Premium frosted glass navbar with ambient top lighting */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: var(--navbar-height);
-  z-index: 1000;
-  background: rgba(2, 6, 23, 0.85) !important;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(59, 130, 246, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
-}
+  z-index: var(--navbar-z-index);
 
-/* Add an ambient light glow container behind the navbar for visual depth */
-.navbar::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.8), transparent);
-}
+  background: var(--navbar-backdrop-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 
-/* Crisp high-contrast links matching the brand palette */
-.navbar span, 
-.navbar a:not(.bg-gradient-to-r), 
-.navbar button:not(.bg-gradient-to-r) {
-  color: #f1f5f9 !important;
-}
-
-.navbar a:hover {
-  color: #38bdf8 !important;
-  text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
-}
-
-.navbar .text-slate-400 {
-  color: #94a3b8 !important;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
 /* Scrollbar starts visually below navbar */
@@ -112,7 +85,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* ──────────────────────────────────────────────────────────────
-   TYPOGRAPHY
+   TYPOGRAPHY – smaller & hero-friendly
 ──────────────────────────────────────────────────────────────── */
 h1, .text-6xl { font-size: var(--text-6xl); font-weight: 800; line-height: 1.05; letter-spacing: -0.025em; }
 h2, .text-5xl { font-size: var(--text-5xl); font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; }
@@ -126,9 +99,9 @@ p, li, .text-base { font-size: var(--text-base); line-height: 1.55; }
 .text-sm, small { font-size: var(--text-sm); line-height: 1.45; }
 .text-xs { font-size: var(--text-xs); line-height: 1.4; }
 
-/* Hero-specific font reduction */
+/* Hero-specific font reduction to prevent overflow */
 #hero h1, #hero .text-6xl, #hero .text-5xl {
-  font-size: clamp(2.5rem, 7vw, 4.5rem) !important;
+  font-size: clamp(2.5rem, 7vw, 4.5rem) !important; /* smaller max on hero */
   line-height: 1.05 !important;
 }
 
@@ -138,7 +111,7 @@ p, li, .text-base { font-size: var(--text-base); line-height: 1.55; }
 }
 
 /* ──────────────────────────────────────────────────────────────
-   WIDER CONTENT – balanced side space
+   WIDER CONTENT – balanced side space (no huge gaps)
 ──────────────────────────────────────────────────────────────── */
 .container,
 .max-w-5xl, .max-w-6xl, .max-w-7xl,
@@ -166,8 +139,22 @@ p, li, .text-base { font-size: var(--text-base); line-height: 1.55; }
 }
 
 /* ──────────────────────────────────────────────────────────────
-   LOTTIE
-────────────────────────────────────────────────────────────── */
+   LOTTIE – bigger & well framed
+──────────────────────────────────────────────────────────────── */
+/* .lottie-wrapper,
+.lottie-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 2rem;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: rgba(15,23,42,0.6);
+  padding: 1.25rem;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+} */
+
 .lottie-wrapper > * {
   width: 92% !important;
   height: 92% !important;
@@ -177,6 +164,7 @@ p, li, .text-base { font-size: var(--text-base); line-height: 1.55; }
   margin: 0 auto;
 }
 
+/* Mobile */
 @media (max-width: 640px) {
   .lottie-wrapper {
     aspect-ratio: 1 / 1;
@@ -193,23 +181,41 @@ p, li, .text-base { font-size: var(--text-base); line-height: 1.55; }
   scrollbar-color: #3b82f6 #020617;
 }
 
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #020617;
+  margin-top: var(--navbar-height);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 5px;
+  border: 3px solid #020617;
+}
+
 ::selection {
   background: rgba(59, 130, 246, 0.3);
   color: white;
 }
 
 *:focus-visible {
-  outline: 2px solid #3b82f6;
+  outline: 2px solid var(--color-primary);
   outline-offset: 2px;
   box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
 }
 
 :focus:not(:focus-visible) { outline: none; }
 
+/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
-
+.navbar{
+  background-color: rgb(212, 218, 224) !important;
+}
 nav a, nav button {
   font-size: 15px;
 }

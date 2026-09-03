@@ -5,7 +5,11 @@ import { NavLink } from 'react-router-dom';
 import { Menu, Phone, ChevronDown } from 'lucide-react';
 import MegaMenu from './MegaMenu';
 import OffcanvasMenu from './OffcanvasMenu';
-import logo from "/src/assets/brand/Exports/Old/Syncline_Master_512.png";
+import logo from "/src/assets/brand/synclineLogo.png"; // Adjust the path to your logo image
+
+
+//"C:\Temp\syncline-website_MAIN\src\assets\brand\syncline-full-768.png"
+
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -57,16 +61,12 @@ const Navbar = () => {
 
   return (
     <>
-      <motion.nav
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.5, ease: 'easeOut' }}
-        className={`fixed top-0 left-0 right-0 z-[1000] transition-all duration-300 ${
-          isScrolled
-            ? 'bg-[#0A0F1F]/95 backdrop-blur-xl border-b border-white/10 shadow-lg'
-            : 'bg-[#020617]/90 backdrop-blur-lg'
-        }`}
-      >
+<motion.nav
+  initial={{ y: -100 }}
+  animate={{ y: 0 }}
+  transition={{ duration: 0.5, ease: 'easeOut' }}
+  className="fixed top-0 left-0 right-0 z-[1000] navbar"
+>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20 py-3">
             {/* Logo */}
@@ -75,19 +75,17 @@ const Navbar = () => {
               onClick={handleLinkClick}
               className="flex items-center gap-2 sm:gap-3 group focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg px-2 py-1"
             >
-              <div className="relative flex-shrink-0">
-            <img
-              src={logo}
-              alt="Syncline IT Logo"
-              width="72"
-              height="72"
-              className="h-10 w-auto sm:h-12 lg:h-18 object-contain"
-            />
-                <div className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 sm:w-3 sm:h-3 bg-green-500 rounded-full border-2 border-slate-900 animate-pulse" />
+              <div className="relative flex-shrink-0 inline-block">
+                <img
+                  src={logo}
+                  alt="Syncline IT Logo"
+                  width="72"
+                  height="72"
+                  className="h-10 w-auto sm:h-12 lg:h-18 object-contain"
+                />
+                <div className="absolute -bottom-0.5 -right-3.5 w-2.5 h-2.5 sm:w-3 sm:h-3 bg-green-500 rounded-full border-2 border-slate-900 animate-pulse flex-shrink-0" />
               </div>
               <div className="min-w-0 hidden sm:block">
-                <span className="text-lg sm:text-xl lg:text-2xl font-bold text-white block truncate">Syncline IT Solutions</span>
-                <span className="hidden lg:block ttext-[13px] text-slate-400 truncate">Enterprise IT Solutions</span>
               </div>
             </NavLink>
 

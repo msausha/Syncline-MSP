@@ -5,9 +5,10 @@
     "module": "ESNext",
     "moduleResolution": "node",
     "allowJs": true,
-    "checkJs": false,                    // safe choice for JS-only (no type checking noise)
+    "checkJs": false,
     "jsx": "react-jsx",
     "paths": {
+      "@/*": ["src/*"],
       "@lucide/*": ["node_modules/lucide-react/dist/esm/icons/*"]
     }
   },

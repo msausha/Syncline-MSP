@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: [
     "./index.html",
@@ -32,39 +33,3 @@ export default {
   },
   plugins: [],
 }
-
-
-
-
-
-// /** @type {import('tailwindcss').Config} */
-// export default {
-//   content: [
-//     './index.html',
-//     './src/**/*.{js,ts,jsx,tsx}',     // ← must cover ALL files using classes
-//   ],
-//   theme: {
-//     extend: {
-//       // your customizations...
-//     },
-//   },
-//   plugins: [],
-//   // Optional but useful in 2026:
-//   future: {
-//     hoverOnlyWhenSupported: true,
-//   },
-// };
-
-
-
-// /** @type {import('tailwindcss').Config} */
-// export default {
-//   content: [
-//     "./index.html",
-//     "./src/**/*.{js,ts,jsx,tsx}",
-//   ],
-//   theme: {
-//     extend: {},
-//   },
-//   plugins: [],
-// }

@@ -22,7 +22,7 @@ import {
   FileCheck,
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import logoPng from "/src/assets/brand/Exports/Old/Syncline_Master_512.png";
+import logoPng from "/src/assets/brand/synclineLogo.png";
 
 const OffcanvasMenu = ({ isOpen, onClose }) => {
   const [expandedSection, setExpandedSection] = useState(null);
@@ -89,7 +89,6 @@ const OffcanvasMenu = ({ isOpen, onClose }) => {
                 className="h-10 w-auto"
               />
                 </div>
-                <span className="text-xl font-bold text-white">Syncline IT Solutions</span>
               </div>
               <button
                 onClick={onClose}

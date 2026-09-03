@@ -1,0 +1,848 @@
+/* ================================================================
+   SYNCLINE IT SOLUTIONS
+   Enterprise Brand / Global Design System
+   ================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ================================================================
+   1. SYNCLINE BRAND TOKENS
+   ================================================================ */
+
+:root {
+  /* --------------------------------------------------------------
+     Core Brand
+     -------------------------------------------------------------- */
+
+  --syncline-navy-950: #030914;
+  --syncline-navy-900: #061120;
+  --syncline-navy-850: #071426;
+  --syncline-navy-800: #09182d;
+  --syncline-navy-750: #0b1c34;
+  --syncline-navy-700: #0d213d;
+
+  /* --------------------------------------------------------------
+     Brand Accents
+     -------------------------------------------------------------- */
+
+  --syncline-blue: #2563eb;
+  --syncline-blue-bright: #3b82f6;
+  --syncline-cyan: #06b6d4;
+  --syncline-cyan-bright: #22d3ee;
+
+  /* Logo / Status Green */
+  --syncline-green: #16a34a;
+  --syncline-green-bright: #22c55e;
+
+  /* --------------------------------------------------------------
+     Text
+     -------------------------------------------------------------- */
+
+  --syncline-text-primary: #f8fafc;
+  --syncline-text-secondary: #cbd5e1;
+  --syncline-text-muted: #94a3b8;
+  --syncline-text-subtle: #64748b;
+
+  /* --------------------------------------------------------------
+     Borders
+     -------------------------------------------------------------- */
+
+  --syncline-border: rgba(148, 163, 184, 0.12);
+  --syncline-border-blue: rgba(37, 99, 235, 0.28);
+  --syncline-border-cyan: rgba(6, 182, 212, 0.22);
+
+  /* --------------------------------------------------------------
+     Backgrounds
+     -------------------------------------------------------------- */
+
+  --syncline-page-bg: #030914;
+  --syncline-surface: #061120;
+  --syncline-surface-elevated: #09182d;
+  --syncline-surface-hover: #0d213d;
+
+  /* --------------------------------------------------------------
+     Navbar
+     -------------------------------------------------------------- */
+
+  --syncline-navbar-top: #09182d;
+  --syncline-navbar-mid: #071426;
+  --syncline-navbar-bottom: #061222;
+
+  --navbar-height: 80px;
+
+  /* --------------------------------------------------------------
+     Layout
+     -------------------------------------------------------------- */
+
+  --content-max-width: 1600px;
+
+  /* --------------------------------------------------------------
+     Shadows
+     -------------------------------------------------------------- */
+
+  --shadow-navbar:
+    0 8px 30px rgba(0, 0, 0, 0.32),
+    0 2px 8px rgba(0, 0, 0, 0.18);
+
+  --shadow-blue:
+    0 12px 40px rgba(37, 99, 235, 0.18);
+
+  /* --------------------------------------------------------------
+     Typography
+     -------------------------------------------------------------- */
+
+  font-family:
+    'Inter',
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+
+/* ================================================================
+   2. RESPONSIVE ROOT SIZING
+   ================================================================ */
+
+@media (max-width: 640px) {
+  :root {
+    --navbar-height: 72px;
+  }
+}
+
+
+/* ================================================================
+   3. GLOBAL RESET
+   ================================================================ */
+
+html {
+  min-height: 100%;
+  background: var(--syncline-page-bg);
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+
+  font-family:
+    'Inter',
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+
+  background:
+    var(--syncline-page-bg);
+
+  color: var(--syncline-text-primary);
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* ================================================================
+   4. ROOT APPLICATION
+   ================================================================ */
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+  background: var(--syncline-page-bg);
+}
+
+
+/* ================================================================
+   5. SELECTION
+   ================================================================ */
+
+::selection {
+  background: rgba(37, 99, 235, 0.38);
+  color: #ffffff;
+}
+
+
+/* ================================================================
+   6. SYNCLINE ENTERPRISE NAVBAR
+   ================================================================ */
+
+/*
+   Design philosophy:
+
+   NOT pure black.
+   NOT bright blue.
+   NOT gaming-style neon.
+
+   Deep midnight navy + extremely subtle blue/cyan illumination.
+*/
+
+.navbar {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  width: 100%;
+  height: var(--navbar-height);
+
+  z-index: 1000;
+
+  /*
+     Premium enterprise navy gradient.
+  */
+  background:
+    linear-gradient(
+      180deg,
+      var(--syncline-navbar-top) 0%,
+      var(--syncline-navbar-mid) 52%,
+      var(--syncline-navbar-bottom) 100%
+    ) !important;
+
+  /*
+     Very subtle transparency.
+     This allows background depth without making text unstable.
+  */
+  background-color: rgba(7, 20, 38, 0.96) !important;
+
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+
+  /*
+     Fine enterprise-style divider.
+  */
+  border-bottom:
+    1px solid var(--syncline-border-blue);
+
+  box-shadow:
+    var(--shadow-navbar);
+
+  isolation: isolate;
+}
+
+
+/* ================================================================
+   7. NAVBAR TOP BRAND LIGHT
+   ================================================================ */
+
+.navbar::before {
+  content: '';
+
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+
+  width: min(720px, 55vw);
+  height: 1px;
+
+  transform: translateX(-50%);
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(37, 99, 235, 0.05) 15%,
+      rgba(37, 99, 235, 0.65) 42%,
+      rgba(6, 182, 212, 0.60) 58%,
+      rgba(37, 99, 235, 0.05) 85%,
+      transparent 100%
+    );
+
+  opacity: 0.9;
+
+  pointer-events: none;
+}
+
+
+/* ================================================================
+   8. VERY SUBTLE NAVBAR AMBIENT GLOW
+   ================================================================ */
+
+.navbar::after {
+  content: '';
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: -1px;
+
+  height: 24px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(37, 99, 235, 0.045),
+      transparent
+    );
+
+  pointer-events: none;
+
+  z-index: -1;
+}
+
+
+/* ================================================================
+   9. NAVBAR CONTENT
+   ================================================================ */
+
+.navbar > div {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* ================================================================
+   10. NAVIGATION LINKS
+   ================================================================ */
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar nav a {
+  color: var(--syncline-text-secondary);
+
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+
+/*
+   Hover state:
+   restrained blue/cyan brand interaction.
+*/
+
+.navbar nav a:hover {
+  color: #ffffff;
+
+  background:
+    rgba(37, 99, 235, 0.075);
+
+  text-shadow:
+    0 0 18px rgba(56, 189, 248, 0.18);
+}
+
+
+/*
+   Active navigation item.
+*/
+
+.navbar nav a[aria-current='page'] {
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(59, 130, 246, 0.16),
+      rgba(37, 99, 235, 0.08)
+    );
+
+  box-shadow:
+    inset 0 0 0 1px rgba(59, 130, 246, 0.58),
+    0 4px 14px rgba(37, 99, 235, 0.08);
+}
+
+
+/* ================================================================
+   11. NAVBAR PHONE
+   ================================================================ */
+
+.navbar a[href^='tel:'] {
+  color: var(--syncline-text-muted);
+}
+
+.navbar a[href^='tel:']:hover {
+  color: #ffffff;
+}
+
+
+/* ================================================================
+   12. NAVBAR CTA
+   ================================================================ */
+
+/*
+   Free Assessment button.
+
+   Blue → cyan is deliberately reserved for the primary CTA.
+*/
+
+.navbar a.bg-gradient-to-r {
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb 0%,
+      #0ea5e9 55%,
+      #06b6d4 100%
+    ) !important;
+
+  border:
+    1px solid rgba(125, 211, 252, 0.20);
+
+  box-shadow:
+    0 8px 24px rgba(37, 99, 235, 0.20);
+
+  color: #ffffff !important;
+}
+
+.navbar a.bg-gradient-to-r:hover {
+  box-shadow:
+    0 12px 32px rgba(37, 99, 235, 0.32);
+
+  transform: translateY(-1px) scale(1.02);
+}
+
+
+/* ================================================================
+   13. LOGO CONTAINER
+   ================================================================ */
+
+.navbar img {
+  display: block;
+
+  object-fit: contain;
+
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*
+   Prevent accidental image rendering artifacts.
+*/
+
+.navbar img {
+  image-rendering: auto;
+}
+
+
+/* ================================================================
+   14. LOGO STATUS DOT
+   ================================================================ */
+
+.navbar .bg-green-500 {
+  background-color: var(--syncline-green-bright) !important;
+
+  box-shadow:
+    0 0 0 1px rgba(34, 197, 94, 0.18),
+    0 0 12px rgba(34, 197, 94, 0.40);
+}
+
+
+/* ================================================================
+   15. MEGA MENU
+   ================================================================ */
+
+.navbar > .absolute {
+  background:
+    linear-gradient(
+      180deg,
+      #071426 0%,
+      #061120 100%
+    ) !important;
+
+  border-top:
+    1px solid rgba(59, 130, 246, 0.16);
+
+  border-bottom:
+    1px solid rgba(59, 130, 246, 0.10);
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.42);
+}
+
+
+/* ================================================================
+   16. ENTERPRISE PAGE BACKGROUND
+   ================================================================ */
+
+main {
+  position: relative;
+  background:
+    var(--syncline-page-bg);
+}
+
+
+/*
+   A subtle ambient light field behind the application.
+
+   This should be almost invisible.
+   It adds depth without becoming decorative noise.
+*/
+
+main::before {
+  content: '';
+
+  position: fixed;
+
+  top: 0;
+  left: 50%;
+
+  width: min(1200px, 100vw);
+  height: 700px;
+
+  transform: translateX(-50%);
+
+  background:
+    radial-gradient(
+      ellipse at 50% 0%,
+      rgba(37, 99, 235, 0.075) 0%,
+      rgba(37, 99, 235, 0.025) 30%,
+      transparent 70%
+    );
+
+  pointer-events: none;
+
+  z-index: -1;
+}
+
+
+/* ================================================================
+   17. GENERAL ENTERPRISE SURFACES
+   ================================================================ */
+
+.bg-slate-950 {
+  background-color: var(--syncline-navy-950);
+}
+
+.bg-slate-900 {
+  background-color: var(--syncline-navy-900);
+}
+
+
+/*
+   These don't force all Tailwind components to change.
+   They simply give your existing dark surfaces a more coherent
+   Syncline palette.
+*/
+
+.bg-slate-950\/95 {
+  background-color: rgba(3, 9, 20, 0.95);
+}
+
+.bg-slate-950\/90 {
+  background-color: rgba(3, 9, 20, 0.90);
+}
+
+
+/* ================================================================
+   18. ENTERPRISE CARDS
+   ================================================================ */
+
+.syncline-card {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(9, 24, 45, 0.96),
+      rgba(6, 17, 32, 0.96)
+    );
+
+  border:
+    1px solid rgba(148, 163, 184, 0.10);
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.20);
+
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.syncline-card:hover {
+  border-color:
+    rgba(59, 130, 246, 0.28);
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.26),
+    0 0 30px rgba(37, 99, 235, 0.055);
+
+  transform: translateY(-2px);
+}
+
+
+/* ================================================================
+   19. BRAND GRADIENT TEXT
+   ================================================================ */
+
+.syncline-gradient-text {
+  background:
+    linear-gradient(
+      90deg,
+      #60a5fa 0%,
+      #38bdf8 50%,
+      #22d3ee 100%
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+
+/* ================================================================
+   20. BRAND DIVIDER
+   ================================================================ */
+
+.syncline-divider {
+  height: 1px;
+
+  width: 100%;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(59, 130, 246, 0.35),
+      rgba(6, 182, 212, 0.25),
+      transparent
+    );
+}
+
+
+/* ================================================================
+   21. BUTTON / CTA GLOW
+   ================================================================ */
+
+.syncline-primary-button {
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #0ea5e9,
+      #06b6d4
+    );
+
+  color: #ffffff;
+
+  border:
+    1px solid rgba(125, 211, 252, 0.18);
+
+  box-shadow:
+    0 10px 30px rgba(37, 99, 235, 0.20);
+
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.syncline-primary-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 15px 38px rgba(37, 99, 235, 0.30);
+}
+
+
+/* ================================================================
+   22. TYPOGRAPHY
+   ================================================================ */
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+
+/*
+   Don't globally override Tailwind's heading sizes.
+   Let component classes such as text-4xl/text-6xl work normally.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+
+/* ================================================================
+   23. HERO TYPOGRAPHY
+   ================================================================ */
+
+#hero h1 {
+  letter-spacing: -0.035em;
+  line-height: 1.04;
+}
+
+#hero p {
+  color: var(--syncline-text-secondary);
+}
+
+
+/* ================================================================
+   24. FOCUS ACCESSIBILITY
+   ================================================================ */
+
+*:focus-visible {
+  outline:
+    2px solid var(--syncline-blue-bright);
+
+  outline-offset: 3px;
+
+  box-shadow:
+    0 0 0 4px rgba(37, 99, 235, 0.14);
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+
+/* ================================================================
+   25. SCROLLBAR
+   ================================================================ */
+
+* {
+  scrollbar-width: thin;
+
+  scrollbar-color:
+    #1d4ed8
+    #030914;
+}
+
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background:
+    #030914;
+}
+
+body::-webkit-scrollbar-thumb {
+  background:
+    linear-gradient(
+      180deg,
+      #2563eb,
+      #164eab
+    );
+
+  border:
+    2px solid #030914;
+
+  border-radius: 999px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background:
+    linear-gradient(
+      180deg,
+      #3b82f6,
+      #2563eb
+    );
+}
+
+
+/* ================================================================
+   26. MOBILE NAVIGATION
+   ================================================================ */
+
+@media (max-width: 1023px) {
+  .navbar {
+    height: var(--navbar-height);
+  }
+
+  .navbar::before {
+    width: 70vw;
+  }
+}
+
+
+/* ================================================================
+   27. SMALL MOBILE
+   ================================================================ */
+
+@media (max-width: 640px) {
+  .navbar {
+    background:
+      linear-gradient(
+        180deg,
+        #08172b 0%,
+        #061222 100%
+      ) !important;
+  }
+
+  .navbar::before {
+    width: 85vw;
+  }
+
+  .navbar::after {
+    height: 16px;
+  }
+}
+
+
+/* ================================================================
+   28. REDUCED MOTION
+   ================================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* ================================================================
+   29. PRINT
+   ================================================================ */
+
+@media print {
+  .navbar {
+    position: static;
+    background: #ffffff !important;
+    color: #000000 !important;
+    box-shadow: none;
+  }
+
+  body {
+    background: #ffffff;
+    color: #000000;
+  }
+}
