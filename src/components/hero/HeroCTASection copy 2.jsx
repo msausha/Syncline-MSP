@@ -1,4 +1,4 @@
-﻿// src/components/hero/HeroCTASection.jsx — Enterprise v8 (stable layout + live feed)
+﻿// src/components/hero/HeroCTASection.jsx — Enterprise v8
 import React, { useState, useEffect, useRef } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
@@ -18,12 +18,12 @@ const PROBLEMS = [
 ];
 
 const TECH = [
-  { Icon: Server,   label: 'Systems & Devices' },
-  { Icon: Cloud,    label: 'Cloud Services' },
-  { Icon: Database, label: 'Backup Options' },
-  { Icon: Lock,     label: 'Protection Basics' },
-  { Icon: Cpu,      label: 'Health Checks' },
-  { Icon: Workflow, label: 'Smart Workflows' },
+  { Icon: Server,   label: 'Systems & Devices', c: 'cyan' },
+  { Icon: Cloud,    label: 'Cloud Services',    c: 'blue' },
+  { Icon: Database, label: 'Backup Options',    c: 'purple' },
+  { Icon: Lock,     label: 'Protection Basics', c: 'green' },
+  { Icon: Cpu,      label: 'Health Checks',     c: 'orange' },
+  { Icon: Workflow, label: 'Smart Workflows',   c: 'pink' },
 ];
 
 const BENEFITS = [
@@ -35,10 +35,10 @@ const BENEFITS = [
 ];
 
 const TERMINAL_LINES = [
-  { text: '> Checking device status…',         cls: 'text-cyan-400' },
-  { text: '> Reviewing cloud setup…',          cls: 'text-blue-400' },
+  { text: '> Checking device status…',        cls: 'text-cyan-400' },
+  { text: '> Reviewing cloud setup…',         cls: 'text-blue-400' },
   { text: '> Confirming backup availability…', cls: 'text-purple-400' },
-  { text: '> Routine checks completed ✓',      cls: 'text-green-400' },
+  { text: '> Routine checks completed ✓',     cls: 'text-green-400' },
 ];
 
 const JOURNEY = [
@@ -48,6 +48,7 @@ const JOURNEY = [
   { Icon: TrendingUp,    label: 'Step 3: Confident Growth',   c: 'green' },
 ];
 
+// Enterprise-style MSP tech news items
 const TECH_NEWS = [
   'Microsoft 365 boosts phishing protection for Victorian SMBs',
   'Azure improves VM restore speed for MSP continuity',
@@ -56,38 +57,10 @@ const TECH_NEWS = [
   'Teams performance upgrade supports hybrid SMB workflows',
 ];
 
-/* Static class maps — Tailwind cannot generate dynamic bg-${c} classes at runtime */
-const ICON_COLOR = {
-  green:  'text-green-400',
-  blue:   'text-blue-400',
-  cyan:   'text-cyan-400',
-  purple: 'text-purple-400',
-  orange: 'text-orange-400',
-  red:    'text-red-400',
-};
-
-const BOX_COLOR = {
-  red:   'bg-red-500/15 border-red-500/50',
-  blue:  'bg-blue-500/15 border-blue-500/50',
-  cyan:  'bg-cyan-500/15 border-cyan-500/50',
-  green: 'bg-green-500/15 border-green-500/50',
-};
-
-const BAR_COLOR = {
-  cyan:  'from-cyan-500 to-cyan-400',
-  blue:  'from-blue-500 to-blue-400',
-  green: 'from-green-500 to-green-400',
-};
-
-const LABEL_COLOR = {
-  cyan:  'text-cyan-400',
-  blue:  'text-blue-400',
-  green: 'text-green-400',
-};
-
 const HeroCTASection = () => {
   const [problemIdx,   setProblemIdx]   = useState(0);
   const [terminalStep, setTerminalStep] = useState(0);
+  const [weather,      setWeather]      = useState(null);
 
   const timelineRef = useRef(null);
   const terminalRef = useRef(null);
@@ -98,21 +71,21 @@ const HeroCTASection = () => {
   const isTerminalInView = useInView(terminalRef, { once: true, margin: '-50px' });
   const isTechInView     = useInView(techRef,     { once: true, margin: '-50px' });
 
+  // Rotate problem/solution
   useEffect(() => {
     const id = setInterval(() => setProblemIdx(p => (p + 1) % PROBLEMS.length), 3500);
     return () => clearInterval(id);
   }, []);
 
+  // Terminal lines reveal
   useEffect(() => {
     if (!isTerminalInView) return;
-    setTerminalStep(0);
-    const id = setInterval(
-      () => setTerminalStep(s => Math.min(s + 1, TERMINAL_LINES.length)),
-      1200,
-    );
+    const id = setInterval(() => setTerminalStep(s => Math.min(s + 1, TERMINAL_LINES.length)), 1200);
     return () => clearInterval(id);
   }, [isTerminalInView]);
 
+
+  // Enterprise banner MSP news animation
   useEffect(() => {
     const el = newsRef.current;
     if (!el) return;
@@ -134,16 +107,16 @@ const HeroCTASection = () => {
       index = (index + 1) % TECH_NEWS.length;
     };
 
-    el.textContent = TECH_NEWS[0];
-    gsap.set(el, { opacity: 1, x: 0, y: 0, scale: 1, skewX: 0 });
-    index = 1 % TECH_NEWS.length;
+    cycle();
+    const id = setInterval(cycle, 5000); // 5s enterprise cadence
 
-    const id = setInterval(cycle, 5000);
     return () => clearInterval(id);
   }, []);
 
+
   return (
     <section className="relative bg-gradient-to-br from-slate-950 via-blue-950/90 to-cyan-950/80">
+      {/* Ambient blobs */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <motion.div
           animate={{ x: [0, 60, 0], y: [0, -40, 0] }}
@@ -158,32 +131,27 @@ const HeroCTASection = () => {
       </div>
 
       {/* HERO */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-12">
-        
-        <div className="flex flex-col lg:flex-row lg:items-start gap-10 lg:gap-16 min-h-[calc(100vh-8rem)]">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-12">
+        <div className="flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-16 min-h-[calc(100vh-8rem)]">
 
-          {/* LEFT */}
-          <div className="flex-1 flex flex-col gap-8 min-w-0">
+          {/* LEFT — copy */}
+          <div className="flex-1 flex flex-col gap-6 min-w-0">
 
-            {/* Live Tech Update — 34px matches .sl-badge */}
-            <div className="flex items-center gap-3 h-[34px] px-4 rounded-full
-                          bg-slate-900/70 border border-cyan-500/40 shadow-sm w-full max-w-4xl
-                          mb-4">
-              <div className="flex items-center gap-1.5 text-[11px] sm:text-xs font-semibold
-                              text-cyan-300 uppercase tracking-wide flex-shrink-0">
-                <Activity className="w-3.5 h-3.5 text-cyan-400 animate-pulse" />
+            {/* Enterprise banner: Live Tech + Weather */}
+            <div className="flex items-center gap-4 h-10 px-4 rounded-full 
+                            bg-slate-900/70 border border-cyan-500/40 shadow-sm">
+              <div className="flex items-center gap-1.5 text-xs font-semibold 
+                              text-cyan-300 uppercase tracking-wide">
+                <Activity className="w-3.5 h-3.5 text-cyan-400" />
                 <span>Live Tech Update</span>
               </div>
 
               <p
                 ref={newsRef}
-                className="text-sm sm:text-[15px] font-medium truncate select-none
-             leading-none min-w-0 flex-1 text-right
-             italic text-cyan-300"
-              >
-                {TECH_NEWS[0]}
-              </p>
-            </div>
+                className="text-xs sm:text-sm text-slate-100 font-medium truncate"
+              />
+              </div>
+
             <motion.h1
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
@@ -193,7 +161,9 @@ const HeroCTASection = () => {
               <span className="block text-4xl sm:text-5xl xl:text-6xl text-white">
                 Reliable IT Support
               </span>
-              <span className="block text-4xl sm:text-5xl xl:text-6xl bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+              <span className="block text-4xl sm:text-5xl xl:text-6xl
+                               bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400
+                               bg-clip-text text-transparent">
                 for Victorian SMBs
               </span>
             </motion.h1>
@@ -208,6 +178,7 @@ const HeroCTASection = () => {
               Stop firefighting, start scaling.
             </motion.p>
 
+            {/* Problem/Solution */}
             <div className="relative h-[88px]">
               <AnimatePresence mode="wait">
                 <motion.div
@@ -241,25 +212,33 @@ const HeroCTASection = () => {
               </AnimatePresence>
             </div>
 
+            {/* CTAs */}
             <div className="flex flex-wrap gap-4">
               <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                 <RouterLink
                   to="/contact"
-                  className="inline-flex items-center gap-2 px-7 py-3.5 text-base font-bold text-white rounded-xl bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500 shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 transition-shadow"
+                  className="inline-flex items-center gap-2 px-7 py-3.5 text-base font-bold
+                             text-white rounded-xl
+                             bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500
+                             shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 transition-shadow"
                 >
                   Book Free Health Check <ArrowRight className="w-4 h-4" />
                 </RouterLink>
               </motion.div>
               <motion.a
-                href="tel:0406001444"
+                href="tel:1300000000"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="inline-flex items-center gap-2 px-7 py-3.5 text-base font-bold text-cyan-300 border-2 border-cyan-500/50 rounded-xl bg-slate-900/60 backdrop-blur-sm hover:border-cyan-400 transition-colors"
+                className="inline-flex items-center gap-2 px-7 py-3.5 text-base font-bold
+                           text-cyan-300 border-2 border-cyan-500/50 rounded-xl
+                           bg-slate-900/60 backdrop-blur-sm
+                           hover:border-cyan-400 transition-colors"
               >
                 <Phone className="w-4 h-4" /> 0406 001 444
               </motion.a>
             </div>
 
+            {/* Trust strip */}
             <div className="flex flex-wrap gap-5 text-sm text-slate-300">
               <span className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-green-400" /> High uptime and stable performance
@@ -272,6 +251,7 @@ const HeroCTASection = () => {
               </span>
             </div>
 
+            {/* Tech chips */}
             <div ref={techRef}>
               <p className="text-xs uppercase tracking-widest text-slate-500 mb-3 font-medium">
                 Powered by enterprise tech
@@ -283,7 +263,9 @@ const HeroCTASection = () => {
                     initial={{ opacity: 0, scale: 0.7 }}
                     animate={isTechInView ? { opacity: 1, scale: 1 } : {}}
                     transition={{ delay: i * 0.07 }}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-cyan-500/15 border border-cyan-500/30 text-cyan-300"
+                    className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full
+                                text-xs font-semibold
+                                bg-${t.c}-500/10 border border-${t.c}-500/30 text-${t.c}-300`}
                   >
                     <t.Icon className="w-3.5 h-3.5" /> {t.label}
                   </motion.span>
@@ -292,12 +274,13 @@ const HeroCTASection = () => {
             </div>
           </div>
 
-          {/* RIGHT */}
+          {/* RIGHT — logo */}
           <div className="w-full lg:w-[420px] xl:w-[460px] flex-shrink-0 overflow-hidden">
             <HeroLogoAnimation />
           </div>
         </div>
 
+        {/* Scroll cue */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -317,6 +300,7 @@ const HeroCTASection = () => {
       {/* BELOW FOLD */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
+        {/* BENEFITS */}
         <div className="py-16 lg:py-24">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-10 text-center">
             How We Support Victorian SMBs
@@ -331,13 +315,14 @@ const HeroCTASection = () => {
                 transition={{ delay: i * 0.08 }}
                 className="flex items-start gap-4 p-5 bg-slate-900/60 rounded-xl border border-white/10"
               >
-                <b.Icon className={`w-6 h-6 ${ICON_COLOR[b.c] || 'text-cyan-400'} flex-shrink-0 mt-0.5`} />
+                <b.Icon className={`w-6 h-6 text-${b.c}-400 flex-shrink-0 mt-0.5`} />
                 <span className="text-slate-300 text-base">{b.text}</span>
               </motion.div>
             ))}
           </div>
         </div>
 
+        {/* JOURNEY */}
         <div ref={timelineRef} className="py-16 lg:py-24">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
             Your IT Journey
@@ -345,16 +330,12 @@ const HeroCTASection = () => {
           <div className="relative flex flex-col sm:flex-row justify-between items-center gap-8 max-w-4xl mx-auto">
             <svg
               className="absolute inset-0 w-full h-full pointer-events-none hidden sm:block"
-              viewBox="0 0 1000 160"
-              preserveAspectRatio="none"
+              viewBox="0 0 1000 160" preserveAspectRatio="none"
             >
               <motion.path
                 d="M 130,80 Q 330,30 500,80 T 870,80"
-                fill="none"
-                stroke="rgb(6,182,212)"
-                strokeWidth="2"
-                strokeOpacity="0.4"
-                strokeLinecap="round"
+                fill="none" stroke="rgb(6,182,212)" strokeWidth="2"
+                strokeOpacity="0.4" strokeLinecap="round"
                 initial={{ pathLength: 0 }}
                 animate={isTimelineInView ? { pathLength: 1 } : {}}
                 transition={{ duration: 2.5 }}
@@ -368,8 +349,8 @@ const HeroCTASection = () => {
                 transition={{ delay: i * 0.3, type: 'spring', stiffness: 100 }}
                 className="z-10 flex flex-col items-center gap-3"
               >
-                <div className={`p-5 rounded-2xl border-2 ${BOX_COLOR[s.c] || BOX_COLOR.cyan}`}>
-                  <s.Icon className={`w-10 h-10 ${ICON_COLOR[s.c] || 'text-cyan-400'}`} />
+                <div className={`p-5 rounded-2xl bg-${s.c}-500/15 border-2 border-${s.c}-500/50`}>
+                  <s.Icon className={`w-10 h-10 text-${s.c}-400`} />
                 </div>
                 <p className="text-base font-semibold text-white text-center">{s.label}</p>
               </motion.div>
@@ -377,6 +358,7 @@ const HeroCTASection = () => {
           </div>
         </div>
 
+        {/* TERMINAL */}
         <div ref={terminalRef} className="py-16 lg:py-24">
           <div className="max-w-3xl mx-auto">
             <div className="relative p-6 bg-slate-900/90 rounded-2xl border border-cyan-500/30 backdrop-blur-xl font-mono overflow-hidden shadow-2xl">
@@ -410,6 +392,7 @@ const HeroCTASection = () => {
           </div>
         </div>
 
+        {/* METRICS */}
         <div className="py-16 lg:py-24">
           <div className="grid sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {[
@@ -425,14 +408,14 @@ const HeroCTASection = () => {
                 transition={{ delay: i * 0.15 }}
                 className="p-6 bg-slate-900/60 rounded-2xl border border-white/10"
               >
-                <p className={`${LABEL_COLOR[m.c]} text-base mb-3 font-semibold`}>{m.label}</p>
+                <p className={`text-${m.c}-400 text-base mb-3 font-semibold`}>{m.label}</p>
                 <div className="h-2.5 bg-slate-800 rounded-full overflow-hidden mb-4">
                   <motion.div
                     initial={{ width: 0 }}
                     whileInView={{ width: `${m.value}%` }}
                     viewport={{ once: true }}
                     transition={{ duration: 1.8, delay: 0.3 + i * 0.15 }}
-                    className={`h-full bg-gradient-to-r ${BAR_COLOR[m.c]} rounded-full`}
+                    className={`h-full bg-gradient-to-r from-${m.c}-500 to-${m.c}-400 rounded-full`}
                   />
                 </div>
                 <p className="text-4xl font-black text-white">{m.value}%</p>
@@ -441,6 +424,7 @@ const HeroCTASection = () => {
           </div>
         </div>
 
+        {/* FINAL CTA */}
         <div className="py-16 lg:py-24 text-center">
           <div className="flex flex-wrap justify-center gap-4 mb-10">
             {[
@@ -456,7 +440,7 @@ const HeroCTASection = () => {
                 transition={{ delay: i * 0.1 }}
                 className="flex items-center gap-2.5 text-white text-base bg-white/5 px-5 py-3 rounded-xl border border-white/10"
               >
-                <item.Icon className={`w-5 h-5 ${ICON_COLOR[item.c] || 'text-cyan-400'}`} /> {item.text}
+                <item.Icon className={`w-5 h-5 text-${item.c}-400`} /> {item.text}
               </motion.div>
             ))}
           </div>
@@ -464,7 +448,9 @@ const HeroCTASection = () => {
           <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} className="inline-block mb-6">
             <RouterLink
               to="/contact"
-              className="inline-flex items-center gap-3 px-10 py-4 text-xl font-bold text-white rounded-2xl bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500 shadow-2xl shadow-blue-500/30 hover:shadow-blue-500/50 transition-shadow"
+              className="inline-flex items-center gap-3 px-10 py-4 text-xl font-bold text-white rounded-2xl
+                         bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500
+                         shadow-2xl shadow-blue-500/30 hover:shadow-blue-500/50 transition-shadow"
             >
               Get Started Today <ArrowRight className="w-6 h-6" />
             </RouterLink>

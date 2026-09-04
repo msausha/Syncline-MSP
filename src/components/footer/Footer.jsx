@@ -1,10 +1,20 @@
 ﻿// src/components/footer/Footer.jsx
 import React from 'react';
-import { 
-  Shield, Phone, Mail, MapPin, 
-  Linkedin, Facebook, ArrowUp 
+import { Link } from 'react-router-dom';
+import {
+  Phone, Mail, MapPin,
+  Linkedin, Facebook, ArrowUp,
 } from 'lucide-react';
-import footerLogo from "/src/assets/brand/Exports/Old/Syncline_Master_512.png";
+
+// --- Syncline Brand Assets ---
+import BrandPrimary from '/src/assets/brand/synclineLogo.png';
+import BrandSymbol from '/src/assets/brand/syncline-symbol-512.png';
+import BrandFull1024 from '/src/assets/brand/syncline-full-1024.png';
+import BrandFullWhite512 from '/src/assets/brand/syncline-full-white-512.png';
+import BrandSocialBlue from '/src/assets/brand/syncline-social-blue-1024.png';
+import BrandSocialWhite from '/src/assets/brand/syncline-social-white-1024.png';
+import BrandSocialNavy from '/src/assets/brand/syncline-social-navy-1024.png';
+import BrandSocialGrey from '/src/assets/brand/syncline-social-grey-1024.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -14,22 +24,20 @@ const Footer = () => {
       { name: 'Managed IT Support', href: '/managed-it' },
       { name: 'Cloud Solutions', href: '/cloud' },
       { name: 'Cybersecurity', href: '/security' },
-      { name: 'Automation & AI', href: '/automation' }
+      { name: 'Automation & AI', href: '/automation' },
     ],
     company: [
       { name: 'About Us', href: '/about-syncline' },
       { name: 'Client workspace (coming soon)', href: '/customer-portal' },
-      { name: 'Contact', href: '/contact' }
+      { name: 'Contact', href: '/contact' },
     ],
     resources: [
       { name: 'IT Health Check', href: '/it-health-check' },
       { name: 'Case Studies', href: '/case-studies' },
       { name: 'Security Guide', href: '/security-guide' },
-      { name: 'SMB IT Checklist', href: '/checklist' }
-    ]
+      { name: 'SMB IT Checklist', href: '/checklist' },
+    ],
   };
-
-
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -37,120 +45,315 @@ const Footer = () => {
 
   return (
     <footer className="relative bg-slate-950 border-t border-white/5">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 lg:gap-12">
-          {/* Brand Column */}
-          <div className="col-span-2">
-            <div className="flex items-center gap-3 mb-6">
-            <img
-              src={footerLogo}
-              alt="Syncline IT Solutions Logo"
-              width="48"
-              height="48"
-              className="w-12 h-12 object-contain"
-            />
-              <div>
-                <span className="text-xl font-bold text-white">Syncline IT Solutions</span>
-                <span className="block text-xs text-slate-400">Enterprise IT for SMBs</span>
-              </div>
-            </div>
-            <p className="text-slate-400 mb-6 max-w-sm">
-              Your trusted IT partner for secure, reliable, and scalable technology solutions across Victoria.
+
+      {/* ═══════════ MAIN FOOTER ═══════════ */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
+
+          {/* Brand + contact — wider column */}
+          <div className="sm:col-span-2 lg:col-span-4">
+            <Link to="/" className="inline-flex items-center gap-3 mb-5 group">
+              <img
+                src={BrandPrimary}
+                alt="Syncline IT Solutions"
+                className="h-12 w-auto object-contain"
+              />
+            </Link>
+
+            <p className="text-slate-400 text-sm leading-relaxed max-w-sm mb-6">
+              Your trusted IT partner for secure, reliable, and scalable
+              technology solutions across Victoria.
             </p>
-            
-            {/* Contact Info */}
-            <div className="space-y-3">
-              <a href="tel:1300000000" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors">
-                <Phone className="w-4 h-4" />
+
+            <div className="space-y-2.5">
+              <a
+                href="tel:0406001444"
+                className="flex items-center gap-2.5 text-sm text-slate-400 hover:text-cyan-300 transition-colors"
+              >
+                <Phone className="w-4 h-4 flex-shrink-0 text-cyan-500/80" />
                 0406 001 444
               </a>
-              <a href="mailto:info@syncline.com.au" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors">
-                <Mail className="w-4 h-4" />
+              <a
+                href="mailto:info@syncline.com.au"
+                className="flex items-center gap-2.5 text-sm text-slate-400 hover:text-cyan-300 transition-colors"
+              >
+                <Mail className="w-4 h-4 flex-shrink-0 text-cyan-500/80" />
                 info@syncline.com.au
               </a>
-              <div className="flex items-center gap-3 text-slate-400">
-                <MapPin className="w-4 h-4" />
+              <div className="flex items-center gap-2.5 text-sm text-slate-400">
+                <MapPin className="w-4 h-4 flex-shrink-0 text-cyan-500/80" />
                 Victoria, Australia
               </div>
             </div>
 
-            {/* Social Links */}
-            <div className="flex gap-3 mt-6">
-              <a href="#" aria-label="LinkedIn" className="p-2 bg-white/5 rounded-lg hover:bg-blue-500/20 transition-colors">
-                <Linkedin className="w-5 h-5 text-slate-400 hover:text-blue-400" />
+            <div className="flex gap-2.5 mt-6">
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="p-2 rounded-lg bg-white/5 border border-white/5
+                           hover:bg-blue-500/15 hover:border-blue-500/30 transition-colors"
+              >
+                <Linkedin className="w-4 h-4 text-slate-400 hover:text-blue-400" />
               </a>
-              <a href="#" aria-label="Facebook" className="p-2 bg-white/5 rounded-lg hover:bg-blue-500/20 transition-colors">
-                <Facebook className="w-5 h-5 text-slate-400 hover:text-blue-400" />
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="p-2 rounded-lg bg-white/5 border border-white/5
+                           hover:bg-blue-500/15 hover:border-blue-500/30 transition-colors"
+              >
+                <Facebook className="w-4 h-4 text-slate-400 hover:text-blue-400" />
               </a>
             </div>
           </div>
 
           {/* Services */}
-          <div>
-            <h4 className="font-semibold text-white mb-4">Services</h4>
-            <ul className="space-y-3">
-              {footerLinks.services.map((link, i) => (
-                <li key={i}>
-                  <a href={link.href} className="text-slate-400 hover:text-white transition-colors">
+          <div className="lg:col-span-2">
+            <h4 className="text-sm font-semibold text-white tracking-wide mb-4">
+              Services
+            </h4>
+            <ul className="space-y-2.5">
+              {footerLinks.services.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    to={link.href}
+                    className="text-sm text-slate-400 hover:text-white transition-colors"
+                  >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
           {/* Company */}
-          <div>
-            <h4 className="font-semibold text-white mb-4">Company</h4>
-            <ul className="space-y-3">
-              {footerLinks.company.map((link, i) => (
-                <li key={i}>
-                  <a href={link.href} className="text-slate-400 hover:text-white transition-colors">
+          <div className="lg:col-span-2">
+            <h4 className="text-sm font-semibold text-white tracking-wide mb-4">
+              Company
+            </h4>
+            <ul className="space-y-2.5">
+              {footerLinks.company.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    to={link.href}
+                    className="text-sm text-slate-400 hover:text-white transition-colors"
+                  >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
           {/* Resources */}
-          <div>
-            <h4 className="font-semibold text-white mb-4">Resources</h4>
-            <ul className="space-y-3">
-              {footerLinks.resources.map((link, i) => (
-                <li key={i}>
-                  <a href={link.href} className="text-slate-400 hover:text-white transition-colors flex items-center gap-1">
+          <div className="lg:col-span-2">
+            <h4 className="text-sm font-semibold text-white tracking-wide mb-4">
+              Resources
+            </h4>
+            <ul className="space-y-2.5">
+              {footerLinks.resources.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    to={link.href}
+                    className="text-sm text-slate-400 hover:text-white transition-colors"
+                  >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
+
+          {/* Mini logo mark card */}
+          <div className="lg:col-span-2 flex lg:justify-end">
+            <div className="rounded-2xl border border-white/10 bg-slate-900/60 p-5
+                            flex flex-col items-center justify-center gap-3 w-full max-w-[180px]">
+              <img
+                src={BrandSymbol}
+                alt="Syncline symbol"
+                className="h-16 w-16 object-contain"
+              />
+              <p className="text-[11px] text-slate-500 text-center leading-snug">
+                Syncline IT Solutions
+                <br />
+                Victoria, Australia
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Bottom Bar */}
-      <div className="border-t border-white/5">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex flex-wrap items-center gap-4 text-sm text-slate-500">
-              <span>© {currentYear} Syncline IT Solutions. All rights reserved.</span>
-              <span>ABN: XX  XXX</span>
+      {/* ═══════════ BRAND SHOWCASE ═══════════
+          Professional introduction of logo variants for web viewers.
+          Each tile uses a background that suits that asset. */}
+      <div className="border-t border-white/5 bg-slate-900/40">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-6">
+            <div>
+              <p className="text-xs uppercase tracking-widest text-slate-500 font-medium mb-1">
+                Brand system
+              </p>
+              <h3 className="text-base font-semibold text-white">
+                Syncline logos & marks
+              </h3>
             </div>
-            
-            <div className="flex items-center gap-6">
-              <a href="#privacy" className="text-sm text-slate-500 hover:text-white transition-colors">
+            <p className="text-xs text-slate-500 max-w-md sm:text-right">
+              Primary, symbol, full lockup, and social variants — shown on the
+              backgrounds they are designed for.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+
+            {/* Primary — dark */}
+            <div className="group rounded-xl border border-white/10 bg-slate-950 p-5
+                            flex flex-col items-center justify-center gap-3 min-h-[120px]
+                            hover:border-cyan-500/30 transition-colors">
+              <img
+                src={BrandPrimary}
+                alt="Primary logo"
+                className="h-10 w-auto object-contain max-w-full"
+              />
+              <span className="text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-400">
+                Primary
+              </span>
+            </div>
+
+            {/* Symbol — dark */}
+            <div className="group rounded-xl border border-white/10 bg-slate-950 p-5
+                            flex flex-col items-center justify-center gap-3 min-h-[120px]
+                            hover:border-cyan-500/30 transition-colors">
+              <img
+                src={BrandSymbol}
+                alt="Symbol mark"
+                className="h-12 w-12 object-contain"
+              />
+              <span className="text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-400">
+                Symbol
+              </span>
+            </div>
+
+            {/* Full colour lockup — dark */}
+            <div className="group rounded-xl border border-white/10 bg-slate-950 p-5
+                            flex flex-col items-center justify-center gap-3 min-h-[120px]
+                            hover:border-cyan-500/30 transition-colors">
+              <img
+                src={BrandFull1024}
+                alt="Full colour lockup"
+                className="h-9 w-auto object-contain max-w-full"
+              />
+              <span className="text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-400">
+                Full colour
+              </span>
+            </div>
+
+            {/* White full — dark (white asset needs dark ground) */}
+            <div className="group rounded-xl border border-white/10 bg-slate-950 p-5
+                            flex flex-col items-center justify-center gap-3 min-h-[120px]
+                            hover:border-cyan-500/30 transition-colors">
+              <img
+                src={BrandFullWhite512}
+                alt="White lockup"
+                className="h-9 w-auto object-contain max-w-full"
+              />
+              <span className="text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-400">
+                White lockup
+              </span>
+            </div>
+
+            {/* Social blue — light tile so blue mark reads clearly */}
+            <div className="group rounded-xl border border-white/10 bg-slate-100 p-5
+                            flex flex-col items-center justify-center gap-3 min-h-[120px]
+                            hover:border-cyan-500/40 transition-colors">
+              <img
+                src={BrandSocialBlue}
+                alt="Social blue"
+                className="h-11 w-11 object-contain"
+              />
+              <span className="text-[10px] uppercase tracking-wider text-slate-600 group-hover:text-slate-800">
+                Social · blue
+              </span>
+            </div>
+
+            {/* Social white — dark */}
+            <div className="group rounded-xl border border-white/10 bg-slate-950 p-5
+                            flex flex-col items-center justify-center gap-3 min-h-[120px]
+                            hover:border-cyan-500/30 transition-colors">
+              <img
+                src={BrandSocialWhite}
+                alt="Social white"
+                className="h-11 w-11 object-contain"
+              />
+              <span className="text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-400">
+                Social · white
+              </span>
+            </div>
+
+            {/* Social navy — light */}
+            <div className="group rounded-xl border border-white/10 bg-slate-100 p-5
+                            flex flex-col items-center justify-center gap-3 min-h-[120px]
+                            hover:border-cyan-500/40 transition-colors">
+              <img
+                src={BrandSocialNavy}
+                alt="Social navy"
+                className="h-11 w-11 object-contain"
+              />
+              <span className="text-[10px] uppercase tracking-wider text-slate-600 group-hover:text-slate-800">
+                Social · navy
+              </span>
+            </div>
+
+            {/* Watermark / grey — dark, muted */}
+            <div className="group rounded-xl border border-white/10 bg-slate-950 p-5
+                            flex flex-col items-center justify-center gap-3 min-h-[120px]
+                            hover:border-cyan-500/30 transition-colors">
+              <img
+                src={BrandSocialGrey}
+                alt="Watermark"
+                className="h-11 w-11 object-contain opacity-70 group-hover:opacity-100 transition-opacity"
+              />
+              <span className="text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-400">
+                Watermark
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ═══════════ BOTTOM BAR ═══════════ */}
+      <div className="border-t border-white/5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-4 gap-y-1 text-xs text-slate-500">
+              <span>© {currentYear} Syncline IT Solutions. All rights reserved.</span>
+              <span className="hidden sm:inline text-slate-700">·</span>
+              <span>ABN: XX XXX XXX XXX</span>
+            </div>
+
+            <div className="flex items-center gap-5">
+              <a
+                href="#privacy"
+                className="text-xs text-slate-500 hover:text-white transition-colors"
+              >
                 Privacy Policy
               </a>
-              <a href="#terms" className="text-sm text-slate-500 hover:text-white transition-colors">
+              <a
+                href="#terms"
+                className="text-xs text-slate-500 hover:text-white transition-colors"
+              >
                 Terms of Service
               </a>
               <button
+                type="button"
                 onClick={scrollToTop}
                 aria-label="Scroll to top"
-                className="p-2 bg-white/5 rounded-lg hover:bg-blue-500/20 transition-colors group"
+                className="p-2 rounded-lg bg-white/5 border border-white/5
+                           hover:bg-cyan-500/15 hover:border-cyan-500/30 transition-colors group"
               >
-                <ArrowUp className="w-4 h-4 text-slate-400 group-hover:text-blue-400" />
+                <ArrowUp className="w-3.5 h-3.5 text-slate-400 group-hover:text-cyan-400" />
               </button>
             </div>
           </div>
