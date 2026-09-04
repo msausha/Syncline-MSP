@@ -213,3 +213,13 @@ p, li, .text-base { font-size: var(--text-base); line-height: 1.55; }
 nav a, nav button {
   font-size: 15px;
 }
+
+
+/* Universal suppression of text selection and cursor carets across the entire site */
+*, *::before, *::after {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+

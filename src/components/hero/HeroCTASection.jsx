@@ -146,23 +146,11 @@ const HeroCTASection = () => {
                 <span>Live Tech Update</span>
               </div>
 
-              <div className="w-px h-5 bg-cyan-500/40" />
-
               <p
                 ref={newsRef}
                 className="text-xs sm:text-sm text-slate-100 font-medium truncate"
               />
               </div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center gap-2 self-start px-4 py-2
-                         bg-white/10 rounded-full border border-white/20
-                         text-white text-sm font-bold backdrop-blur-sm"
-            >
-              🇦🇺 Free IT Health Check
-            </motion.div>
 
             <motion.h1
               initial={{ opacity: 0, y: 16 }}
