@@ -1,5 +1,5 @@
 ﻿// src/pages/ResourcesHub.jsx
-// Real landing page for the "Resources" nav item â€” same fix as
+// Real landing page for the "Resources" nav item — same fix as
 // ServicesHub.jsx: gives Google and users an actual URL to land on.
 import React from 'react';
 import { BookOpen, Users, FileCheck, Database } from 'lucide-react';

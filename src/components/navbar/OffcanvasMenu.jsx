@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 // FIXED: these were previously imported as `import X from '@lucide/x'` etc.
-// `@lucide/x` is not a package your project has installed â€” only
+// `@lucide/x` is not a package your project has installed — only
 // `lucide-react` is in package.json, and it exports icons as named
 // exports, not per-icon subpackages. That import would fail at build
 // time. Correct usage below.
@@ -48,7 +48,7 @@ const OffcanvasMenu = ({ isOpen, onClose }) => {
       items: [
         { icon: BookOpen, title: 'Case Studies', href: '/case-studies' },
         // FIXED: was '/about-Syncline' (capital S), which didn't match
-        // the route registered in App.jsx ('/about-syncline') â€” a 404.
+        // the route registered in App.jsx ('/about-syncline') — a 404.
         { icon: Users, title: 'About Syncline', href: '/about-syncline' },
         { icon: FileCheck, title: 'IT Health Check', href: '/it-health-check' },
         { icon: Shield, title: 'Client workspace (coming soon)', href: '/customer-portal' }

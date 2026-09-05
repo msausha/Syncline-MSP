@@ -11,14 +11,14 @@ const ManagedITPage = () => {
   const features = [
     { icon: Clock, title: 'proactive monitoring & Alerting', desc: 'Proactive detection before issues impact your business' },
     { icon: Shield, title: 'Rapid Onsite & Remote Response', desc: '<2hr average for critical incidents' },
-    { icon: Users, title: 'Dedicated Account Manager', desc: 'Your single point of contact â€“ no phone menus' },
+    { icon: Users, title: 'Dedicated Account Manager', desc: 'Your single point of contact – no phone menus' },
     { icon: CheckCircle, title: 'High uptime targets', desc: '99.9% backed by credits if we miss it' }
   ];
   return (
     <section className="relative py-20 lg:py-32 bg-gradient-to-b from-slate-950 via-indigo-950/20 to-slate-950">
       <SEO
         title="Managed IT Support for Victorian SMBs | Syncline IT Solutions"
-        description="proactive monitoring, rapid onsite & remote response, a dedicated account manager, and a High uptime and stable performance SLA â€” managed IT support built for Victorian small businesses."
+        description="proactive monitoring, rapid onsite & remote response, a dedicated account manager, and a High uptime and stable performance SLA — managed IT support built for Victorian small businesses."
         path="/managed-it"
       />
       <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">

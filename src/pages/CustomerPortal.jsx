@@ -16,14 +16,14 @@ const CustomerPortal = () => {
     <section className="relative py-20 lg:py-32 bg-gradient-to-b from-slate-950 via-indigo-950/20 to-slate-950">
       <SEO
         title="Client workspace (coming soon) | Syncline IT Solutions"
-        description="Log in to track support tickets, access documentation, and view your security and asset status â€” all in one place."
+        description="Log in to track support tickets, access documentation, and view your security and asset status — all in one place."
         path="/customer-portal"
       />
       <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
           <h1 className="text-5xl lg:text-6xl font-black text-white mb-6">
             Client workspace (coming soon)
-            <span className="block text-4xl lg:text-5xl text-indigo-400 mt-2">Your IT â€” Fully Transparent</span>
+            <span className="block text-4xl lg:text-5xl text-indigo-400 mt-2">Your IT — Fully Transparent</span>
           </h1>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
             Everything you need in one place: tickets, documentation, security status, and asset visibility.

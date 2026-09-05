@@ -8,7 +8,7 @@ import SEO from '../SEO';
 const EMPTY_FORM = { name: '', business: '', email: '', phone: '', message: '' };
 
 const contactInfo = [
-  { icon: Phone,  title: 'Phone',        content: '0406 001 444',        detail: 'Monâ€“Fri, 8amâ€“6pm AEST' },
+  { icon: Phone,  title: 'Phone',        content: '0406 001 444',        detail: 'Mon–Fri, 8am–6pm AEST' },
   { icon: Mail,   title: 'Email',        content: 'info@syncline.com.au', detail: 'Fast response times' },
   { icon: MapPin, title: 'Service Area', content: 'Victoria, Australia',  detail: 'Melbourne & Regional VIC' },
   { icon: Clock,  title: 'Emergency',   content: '24/7 Available',       detail: 'For managed clients' },
@@ -128,7 +128,7 @@ const ContactSection = () => {
                     </div>
                     <h3 className="text-2xl font-bold text-white mb-3">Thank You!</h3>
                     <p className="text-slate-300 text-lg">
-                      Your message is on its way â€” we'll be in touch within 24 hours.
+                      Your message is on its way — we'll be in touch within 24 hours.
                     </p>
                   </motion.div>
 
@@ -229,7 +229,7 @@ const ContactSection = () => {
                       {isSubmitting ? (
                         <>
                           <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                          Sendingâ€¦
+                          Sending…
                         </>
                       ) : (
                         <>
