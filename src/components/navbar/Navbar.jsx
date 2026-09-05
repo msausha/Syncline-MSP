@@ -5,8 +5,8 @@ import { NavLink } from 'react-router-dom';
 import { Menu, Phone, ChevronDown } from 'lucide-react';
 import MegaMenu from './MegaMenu';
 import OffcanvasMenu from './OffcanvasMenu';
-import logo from "/src/assets/brand/synclineLogo.png"; // Adjust the path to your logo image
-
+//import logo from "/src/assets/brand/synclineLogo.png"; // Adjust the path to your logo image
+import logo from "/src/assets/brand/synclineLogo.svg"; // Updated to optimized SVG
 
 //"C:\Temp\syncline-website_MAIN\src\assets\brand\syncline-full-768.png"
 
@@ -100,13 +100,13 @@ useEffect(() => {
               className="flex items-center gap-2 sm:gap-3 group focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg px-2 py-1"
             >
               <div className="relative flex-shrink-0 inline-block">
-                <img
-                  src={logo}
-                  alt="Syncline IT Logo"
-                  width="72"
-                  height="72"
-                  className="h-10 w-auto sm:h-12 lg:h-18 object-contain"
-                />
+            <img
+              src={logo}
+              alt="Syncline IT Solutions Logo"
+              width="212"
+              height="56"
+              className="h-10 w-auto sm:h-12 object-contain"
+            />
                 <div className="absolute -bottom-0.5 -right-3.5 w-2.5 h-2.5 sm:w-3 sm:h-3 bg-green-500 rounded-full border-2 border-slate-900 animate-pulse flex-shrink-0" />
               </div>
               <div className="min-w-0 hidden sm:block">

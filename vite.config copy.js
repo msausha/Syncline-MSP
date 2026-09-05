@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 import tsconfigPaths from 'vite-tsconfig-paths';
-
 export default defineConfig({
   plugins: [
     react(),
@@ -14,21 +13,6 @@ export default defineConfig({
     sourcemap: false,
     reportCompressedSize: true,
     chunkSizeWarningLimit: 1200,
-    rollupOptions: {
-      output: {
-        manualChunks(id) {
-          if (id.includes('node_modules')) {
-            if (id.includes('react') || id.includes('react-dom')) {
-              return 'vendor-react';
-            }
-            if (id.includes('framer-motion') || id.includes('lucide-react')) {
-              return 'vendor-ui';
-            }
-            return 'vendor-misc';
-          }
-        }
-      }
-    }
   },
   server: {
     hmr: {
