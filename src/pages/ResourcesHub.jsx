@@ -110,7 +110,7 @@ export default function ResourcesHub() {
       <div className="relative pt-28 pb-20 lg:pt-36 lg:pb-28">
         <div className="absolute inset-0">
           <img
-            src={deskSetup}
+            src={workspaceTools}
             alt=""
             className="w-full h-full object-cover opacity-25"
           />

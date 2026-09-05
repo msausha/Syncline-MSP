@@ -206,120 +206,156 @@ const Footer = () => {
             </p>
           </div>
 
+
+
+
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
 
-            {/* Primary — dark */}
-            <div className="group rounded-xl border border-white/10 bg-slate-950 p-5
-                            flex flex-col items-center justify-center gap-3 min-h-[120px]
-                            hover:border-cyan-500/30 transition-colors">
-              <img
-                src={BrandPrimary}
-                alt="Primary logo"
-                className="h-10 w-auto object-contain max-w-full"
-              />
-              <span className="text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-400">
-                Primary
-              </span>
-            </div>
+                      {/* Primary — dark */}
+                      <div className="group rounded-xl border border-white/10 bg-slate-950 p-5
+                                      flex flex-col items-center justify-between gap-3 min-h-[140px]
+                                      hover:border-cyan-500/30 transition-colors">
+                        <div className="flex-1 flex items-center justify-center w-full py-2">
+                          <img
+                            src={BrandPrimary}
+                            alt="Primary logo"
+                            className="max-h-12 w-auto object-contain"
+                          />
+                        </div>
+                        <span className="text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-400">
+                          Primary
+                        </span>
+                      </div>
 
-            {/* Symbol — dark */}
-            <div className="group rounded-xl border border-white/10 bg-slate-950 p-5
-                            flex flex-col items-center justify-center gap-3 min-h-[120px]
-                            hover:border-cyan-500/30 transition-colors">
-              <img
-                src={BrandSymbol}
-                alt="Symbol mark"
-                className="h-12 w-12 object-contain"
-              />
-              <span className="text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-400">
-                Symbol
-              </span>
-            </div>
+                      {/* Symbol — dark */}
+                      <div className="group rounded-xl border border-white/10 bg-slate-950 p-5
+                                      flex flex-col items-center justify-between gap-3 min-h-[140px]
+                                      hover:border-cyan-500/30 transition-colors">
+                        <div className="flex-1 flex items-center justify-center w-full py-2">
+                          <img
+                            src={BrandSymbol}
+                            alt="Symbol mark"
+                            className="max-h-14 w-auto object-contain"
+                          />
+                        </div>
+                        <span className="text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-400">
+                          Symbol
+                        </span>
+                      </div>
 
-            {/* Full colour lockup — dark */}
-            <div className="group rounded-xl border border-white/10 bg-slate-950 p-5
-                            flex flex-col items-center justify-center gap-3 min-h-[120px]
-                            hover:border-cyan-500/30 transition-colors">
-              <img
-                src={BrandFull1024}
-                alt="Full colour lockup"
-                className="h-9 w-auto object-contain max-w-full"
-              />
-              <span className="text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-400">
-                Full colour
-              </span>
-            </div>
+                      {/* Full colour lockup — dark */}
+                      <div className="group rounded-xl border border-white/10 bg-slate-950 p-5
+                                      flex flex-col items-center justify-between gap-3 min-h-[140px]
+                                      hover:border-cyan-500/30 transition-colors">
+                        <div className="flex-1 flex items-center justify-center w-full py-2">
+                          <img
+                            src={BrandFull1024}
+                            alt="Full colour lockup"
+                            className="max-h-12 w-auto object-contain"
+                          />
+                        </div>
+                        <span className="text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-400">
+                          Full colour
+                        </span>
+                      </div>
 
-            {/* White full — dark (white asset needs dark ground) */}
-            <div className="group rounded-xl border border-white/10 bg-slate-950 p-5
-                            flex flex-col items-center justify-center gap-3 min-h-[120px]
-                            hover:border-cyan-500/30 transition-colors">
-              <img
-                src={BrandFullWhite512}
-                alt="White lockup"
-                className="h-9 w-auto object-contain max-w-full"
-              />
-              <span className="text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-400">
-                White lockup
-              </span>
-            </div>
+                      {/* White full — dark */}
+                      <div className="group rounded-xl border border-white/10 bg-slate-950 p-5
+                                      flex flex-col items-center justify-between gap-3 min-h-[140px]
+                                      hover:border-cyan-500/30 transition-colors">
+                        <div className="flex-1 flex items-center justify-center w-full py-2">
+                          <img
+                            src={BrandFullWhite512}
+                            alt="White lockup"
+                            className="max-h-12 w-auto object-contain"
+                          />
+                        </div>
+                        <span className="text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-400">
+                          White lockup
+                        </span>
+                      </div>
 
-            {/* Social blue — light tile so blue mark reads clearly */}
-            <div className="group rounded-xl border border-white/10 bg-slate-100 p-5
-                            flex flex-col items-center justify-center gap-3 min-h-[120px]
-                            hover:border-cyan-500/40 transition-colors">
-              <img
-                src={BrandSocialBlue}
-                alt="Social blue"
-                className="h-11 w-11 object-contain"
-              />
-              <span className="text-[10px] uppercase tracking-wider text-slate-600 group-hover:text-slate-800">
+
+
+
+
+
+
+{/* Social blue — light */}
+            <div className="group rounded-xl border border-white/10 bg-slate-100 p-2
+                            flex flex-col items-center justify-between gap-2 min-h-[150px]
+                            overflow-hidden hover:border-cyan-500/40 transition-colors">
+              <div className="flex-1 flex items-center justify-center w-full h-full">
+                <img
+                  src={BrandSocialBlue}
+                  alt="Social blue"
+                  className="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+              <span className="text-[10px] uppercase tracking-wider text-slate-600 group-hover:text-slate-800 pb-1">
                 Social · blue
               </span>
             </div>
 
             {/* Social white — dark */}
-            <div className="group rounded-xl border border-white/10 bg-slate-950 p-5
-                            flex flex-col items-center justify-center gap-3 min-h-[120px]
-                            hover:border-cyan-500/30 transition-colors">
-              <img
-                src={BrandSocialWhite}
-                alt="Social white"
-                className="h-11 w-11 object-contain"
-              />
-              <span className="text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-400">
+            <div className="group rounded-xl border border-white/10 bg-slate-950 p-2
+                            flex flex-col items-center justify-between gap-2 min-h-[150px]
+                            overflow-hidden hover:border-cyan-500/30 transition-colors">
+              <div className="flex-1 flex items-center justify-center w-full h-full">
+                <img
+                  src={BrandSocialWhite}
+                  alt="Social white"
+                  className="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+              <span className="text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-400 pb-1">
                 Social · white
               </span>
             </div>
 
             {/* Social navy — light */}
-            <div className="group rounded-xl border border-white/10 bg-slate-100 p-5
-                            flex flex-col items-center justify-center gap-3 min-h-[120px]
-                            hover:border-cyan-500/40 transition-colors">
-              <img
-                src={BrandSocialNavy}
-                alt="Social navy"
-                className="h-11 w-11 object-contain"
-              />
-              <span className="text-[10px] uppercase tracking-wider text-slate-600 group-hover:text-slate-800">
+            <div className="group rounded-xl border border-white/10 bg-slate-100 p-2
+                            flex flex-col items-center justify-between gap-2 min-h-[150px]
+                            overflow-hidden hover:border-cyan-500/40 transition-colors">
+              <div className="flex-1 flex items-center justify-center w-full h-full">
+                <img
+                  src={BrandSocialNavy}
+                  alt="Social navy"
+                  className="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+              <span className="text-[10px] uppercase tracking-wider text-slate-600 group-hover:text-slate-800 pb-1">
                 Social · navy
               </span>
             </div>
 
-            {/* Watermark / grey — dark, muted */}
-            <div className="group rounded-xl border border-white/10 bg-slate-950 p-5
-                            flex flex-col items-center justify-center gap-3 min-h-[120px]
-                            hover:border-cyan-500/30 transition-colors">
-              <img
-                src={BrandSocialGrey}
-                alt="Watermark"
-                className="h-11 w-11 object-contain opacity-70 group-hover:opacity-100 transition-opacity"
-              />
-              <span className="text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-400">
+            {/* Watermark / grey — dark */}
+            <div className="group rounded-xl border border-white/10 bg-slate-950 p-2
+                            flex flex-col items-center justify-between gap-2 min-h-[150px]
+                            overflow-hidden hover:border-cyan-500/30 transition-colors">
+              <div className="flex-1 flex items-center justify-center w-full h-full">
+                <img
+                  src={BrandSocialGrey}
+                  alt="Watermark"
+                  className="w-full h-full object-cover rounded-lg opacity-70 group-hover:opacity-100 transition-opacity"
+                />
+              </div>
+              <span className="text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-400 pb-1">
                 Watermark
               </span>
             </div>
+
+
+            
+
+
+
           </div>
+
+
+
+
+
         </div>
       </div>
 

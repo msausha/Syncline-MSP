@@ -1,8 +1,8 @@
 /* src/index.css - UNIQUE ENTERPRISE GLOW NAVBAR VERSION */
 
 /* Imports */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+@import './assets/fonts/inter.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -223,8 +223,7 @@ section .max-w-7xl {
 
 *:focus-visible {
   outline: 2px solid #3b82f6;
-  outline-offset: 2px;
-  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+  outline-offset: 0px; /* Changed from 2px to 0px */
 }
 
 :focus:not(:focus-visible) { outline: none; }
@@ -246,3 +245,18 @@ nav a, nav button {
   -ms-user-select: none;
 }
 
+
+
+
+/* Pulls the first element of every route immediately flush against the navbar */
+main > *:first-child {
+  padding-top: 0px !important;
+  margin-top: 0px !important;
+}
+
+
+
+/* Pulls the home page live tech banner up closer to the navbar */
+main > div:first-child {
+  margin-top: -1.5rem !important;
+}
