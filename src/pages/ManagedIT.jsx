@@ -23,13 +23,17 @@ const ManagedITPage = () => {
       />
       <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
+
           <h1 className="text-5xl lg:text-6xl font-black text-white mb-6">
-            Managed IT Support
-            <span className="block text-4xl lg:text-5xl text-indigo-400 mt-2">Always On â€“ So You Can Be</span>
-          </h1>
+              Managed IT Support
+              <span className="block text-4xl lg:text-5xl text-indigo-400 mt-2">
+                Always on - so you don't have to be
+              </span>
+            </h1>
+
+
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            Stop reacting to IT problems. We prevent them â€” proactive monitoring, rapid response, and a dedicated team that treats your business like our own.
-          </p>
+            Stop reacting to IT problems. We prevent them - proactive monitoring, rapid response, and a dedicated team that treats your business like our own.          </p>
         </motion.div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {features.map((f, i) => (

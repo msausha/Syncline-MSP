@@ -89,7 +89,7 @@ useEffect(() => {
   initial={{ y: -100 }}
   animate={{ y: 0 }}
   transition={{ duration: 0.5, ease: 'easeOut' }}
-  className="fixed top-0 left-0 right-0 z-[1000] navbar"
+  className="fixed top-0 left-0 right-0 z-[1000] navbar w-full"
 >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20 py-3">
@@ -146,15 +146,33 @@ useEffect(() => {
               ))}
             </nav>
 
-            {/* Desktop CTA */}
 
-          <div className="hidden lg:flex items-center gap-4">
+            {/* Desktop CTA & Widgets */}
+          <div className="hidden lg:flex items-center justify-end gap-4 min-w-[320px]">
+
+            {/* Weather Widget - Fixed Size Container to prevent layout shifts */}
+            <div className="flex items-center justify-end min-w-[110px]">
+              {weather ? (
+                <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl 
+                              bg-white/5 border border-white/10 backdrop-blur-sm
+                              text-slate-200 text-sm font-medium">
+                  <span className="text-cyan-300 text-lg">
+                    {weather.temperature > 18 ? "☀️" : weather.temperature > 10 ? "⛅" : "🌧️"}
+                  </span>
+                  <span className="font-semibold">{weather.temperature}°C</span>
+                  <span className="text-slate-400">MEL</span>
+                </div>
+              ) : (
+                /* Invisible placeholder matching the weather chip dimensions to prevent layout pop-in */
+                <div className="h-[36px] w-[105px] opacity-0 pointer-events-none" aria-hidden="true" />
+              )}
+            </div>
 
             {/* Phone */}
             <a
-              href="tel:1300000000"
+              href="tel:0406 001 444"
               className="flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors 
-                        focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg px-2 py-1"
+                        focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg px-2 py-1 flex-shrink-0"
             >
               <Phone className="w-4 h-4" />
               <span className="font-medium text-sm">0406 001 444</span>
@@ -167,31 +185,11 @@ useEffect(() => {
               className="px-5 py-2.5 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold 
                         text-sm rounded-xl hover:shadow-lg hover:shadow-blue-500/30 transition-all 
                         hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 
-                        focus:ring-offset-2 focus:ring-offset-slate-950"
+                        focus:ring-offset-2 focus:ring-offset-slate-950 flex-shrink-0"
             >
               Free Assessment
             </NavLink>
-
-            {/* Modern Weather Chip */}
-            {weather && (
-              <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl 
-                              bg-white/5 border border-white/10 backdrop-blur-sm
-                              text-slate-200 text-sm font-medium">
-
-                {/* Weather Icon */}
-                <span className="text-cyan-300 text-lg">
-                  {weather.temperature > 18 ? "☀️" : weather.temperature > 10 ? "⛅" : "🌧️"}
-                </span>
-
-                {/* Temperature */}
-                <span className="font-semibold">{weather.temperature}°C</span>
-
-                {/* Location */}
-                <span className="text-slate-400">Melbourne</span>
-              </div>
-            )}
           </div>
-
             
 
             {/* Mobile Menu Button */}

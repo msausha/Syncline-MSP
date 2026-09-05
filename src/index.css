@@ -44,6 +44,11 @@
 /* ──────────────────────────────────────────────────────────────
    GLOBAL BASE & SCROLL FIXES
 ──────────────────────────────────────────────────────────────── */
+html {
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+}
+
 html, body {
   height: auto;
   overflow-x: hidden;
@@ -140,19 +145,35 @@ p, li, .text-base { font-size: var(--text-base); line-height: 1.55; }
 /* ──────────────────────────────────────────────────────────────
    WIDER CONTENT – balanced side space
 ──────────────────────────────────────────────────────────────── */
+
+/* Wider content – but NEVER affect the navbar */
 .container,
-.max-w-5xl, .max-w-6xl, .max-w-7xl,
-.mx-auto {
+.max-w-5xl:not(.navbar *),
+.max-w-6xl:not(.navbar *),
+.max-w-7xl:not(.navbar *) {
   max-width: var(--content-max-width) !important;
   margin-left: auto !important;
   margin-right: auto !important;
+}
+
+/* Only force side padding on page content, not navbar */
+main .max-w-5xl,
+main .max-w-6xl,
+main .max-w-7xl,
+section .max-w-5xl,
+section .max-w-6xl,
+section .max-w-7xl {
   padding-left: var(--side-padding) !important;
   padding-right: var(--side-padding) !important;
 }
 
 @media (min-width: 1024px) {
-  .container,
-  .max-w-5xl, .max-w-6xl, .max-w-7xl {
+  main .max-w-5xl,
+  main .max-w-6xl,
+  main .max-w-7xl,
+  section .max-w-5xl,
+  section .max-w-6xl,
+  section .max-w-7xl {
     padding-left: var(--side-padding-lg) !important;
     padding-right: var(--side-padding-lg) !important;
   }
@@ -160,7 +181,9 @@ p, li, .text-base { font-size: var(--text-base); line-height: 1.55; }
 
 @media (min-width: 1536px) {
   .container,
-  .max-w-5xl, .max-w-6xl, .max-w-7xl {
+  .max-w-5xl:not(.navbar *),
+  .max-w-6xl:not(.navbar *),
+  .max-w-7xl:not(.navbar *) {
     max-width: 1600px !important;
   }
 }
