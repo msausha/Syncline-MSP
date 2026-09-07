@@ -11,9 +11,9 @@
     {
       "source": "/(.*)",
       "has": [
-        { "type": "host", "value": "www.syncline.com.au" }
+        { "type": "host", "value": "syncline.com.au" }
       ],
-      "destination": "https://syncline.com.au/$1",
+      "destination": "https://www.syncline.com.au/$1",
       "permanent": true
     }
   ],
