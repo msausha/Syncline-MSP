@@ -131,16 +131,17 @@ p, li, .text-base { font-size: var(--text-base); line-height: 1.55; }
 .text-sm, small { font-size: var(--text-sm); line-height: 1.45; }
 .text-xs { font-size: var(--text-xs); line-height: 1.4; }
 
-/* Hero-specific font reduction */
-#hero h1, #hero .text-6xl, #hero .text-5xl {
-  font-size: clamp(2.5rem, 7vw, 4.5rem) !important;
-  line-height: 1.05 !important;
+
+#hero h1 {
+  font-size: 1.02em;
 }
 
-#hero p, #hero .text-xl, #hero .text-lg {
-  font-size: clamp(1rem, 3.5vw, 1.25rem) !important;
-  line-height: 1.5 !important;
+#hero p {
+  font-size: 1.00em;
 }
+
+
+
 
 /* ──────────────────────────────────────────────────────────────
    WIDER CONTENT – balanced side space
@@ -248,15 +249,13 @@ nav a, nav button {
 
 
 
-/* Pulls the first element of every route immediately flush against the navbar */
+/* Navbar clearance – clean & safe */
 main > *:first-child {
-  padding-top: 0px !important;
-  margin-top: 0px !important;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
 }
 
-
-
-/* Pulls the home page live tech banner up closer to the navbar */
-main > div:first-child {
-  margin-top: -1.5rem !important;
+/* Tiny soft pull for the home hero only */
+main > section#hero {
+  margin-top: -0.25rem !important;
 }
