@@ -349,7 +349,7 @@ const Footer = () => {
             <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-4 gap-y-1 text-xs text-slate-400">
               <span>© {currentYear} Syncline IT Solutions. All rights reserved.</span>
               <span className="hidden sm:inline text-slate-600">·</span>
-              <span>ABN: XX XXX XXX XXX</span>
+              <span>ABN: 21 793 978 212</span>
             </div>
 
             <div className="flex items-center gap-5">
