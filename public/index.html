@@ -3,19 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Syncline - Enterprise IT Solutions</title>
 
-    <!-- Preconnect & load Inter font (variable, best performance) -->
+    <!-- Strong defaults – these are what crawlers see before JS runs -->
+    <title>Syncline IT Solutions | Managed IT, Cloud & Security for Victorian SMBs</title>
+    <meta name="description" content="Professional managed IT support, cloud migration, Microsoft 365, cybersecurity and automation for Victorian small and medium businesses. Local Victorian support and 99.9% uptime SLA." />
+    <link rel="canonical" href="https://www.syncline.com.au/" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph defaults -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Syncline IT Solutions | Managed IT & Cloud Services" />
+    <meta property="og:description" content="Professional IT support, cloud services, automation and security for Victorian SMBs." />
+    <meta property="og:url" content="https://www.syncline.com.au/" />
+    <meta property="og:site_name" content="Syncline IT Solutions" />
+    <meta property="og:locale" content="en_AU" />
+
+    <!-- Fonts (keep your existing setup) -->
     <link rel="preconnect" href="https://rsms.me/" crossorigin />
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-
-    <!-- Optional: If you prefer Google Fonts instead (slightly slower but easier) -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
-
-    <!-- Your existing meta tags, favicon, etc. go here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- Critical fallback for non-JS crawlers and empty-shell problem -->
+    <noscript>
+      <main>
+        <h1>Syncline IT Solutions — Managed IT & Cloud Services for Victorian SMBs</h1>
+        <p>Professional managed IT support, cloud solutions, cybersecurity and automation for small and medium businesses across Victoria.</p>
+        <nav>
+          <ul>
+            <li><a href="/managed-it">Managed IT Support</a></li>
+            <li><a href="/cloud">Cloud Solutions</a></li>
+            <li><a href="/security">Business Security &amp; Backups</a></li>
+            <li><a href="/automation">Automation &amp; AI</a></li>
+            <li><a href="/services">All Services</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/it-health-check">Free IT Health Check</a></li>
+          </ul>
+        </nav>
+      </main>
+    </noscript>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

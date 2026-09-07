@@ -7,10 +7,12 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 const SITE_URL = 'https://www.syncline.com.au';
-const DEFAULT_IMAGE = '/og-image.jpg';
+const DEFAULT_IMAGE = '/favicon-512.png';
 
 export default function SEO({ title, description, path, image = DEFAULT_IMAGE, noindex = false }) {
-  const url = `${SITE_URL}${path}`;
+  const url = path === '/' || path === '' 
+  ? SITE_URL 
+  : `${SITE_URL}${path.startsWith('/') ? path : `/${path}`}`;
   const imageUrl = image.startsWith('http') ? image : `${SITE_URL}${image}`;
 
   return (

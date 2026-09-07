@@ -1,0 +1,4187 @@
+[
+  {
+    "url": "https://www.syncline.com.au/",
+    "finalUrl": "https://www.syncline.com.au/",
+    "status": 200,
+    "responseHeaders": {
+      "accept-ranges": "bytes",
+      "access-control-allow-origin": "*",
+      "age": "1358722",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline",
+      "content-length": "931",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Sun, 06 Sep 2026 22:11:43 GMT",
+      "etag": "\"23acc592542c56e5bdbda8fab9be7ada\"",
+      "last-modified": "Sat, 22 Aug 2026 04:46:20 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "DENY",
+      "x-robots-tag": "index, follow",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "syd1::4b9t8-1788732703340-a989cade902b"
+    },
+    "title": "Syncline - Enterprise IT Solutions",
+    "description": null,
+    "canonical": null,
+    "robots": null,
+    "lang": "en",
+    "h1": [],
+    "h2": [],
+    "links": [],
+    "internalLinks": [],
+    "externalLinks": [],
+    "images": [],
+    "schema": [],
+    "textLength": 0,
+    "htmlLength": 2965,
+    "renderedTextLength": 0,
+    "performance": {
+      "ttfb": 20.100000023841858,
+      "domContentLoaded": 7955,
+      "load": 7957.100000023842,
+      "fcp": null
+    },
+    "issues": [
+      {
+        "severity": "high",
+        "category": "metadata",
+        "code": "MISSING_DESCRIPTION",
+        "message": "Meta description is missing",
+        "url": "https://www.syncline.com.au/",
+        "recommendation": "Add a unique, useful meta description.",
+        "score": 10
+      },
+      {
+        "severity": "high",
+        "category": "canonical",
+        "code": "MISSING_CANONICAL",
+        "message": "Canonical link is missing",
+        "url": "https://www.syncline.com.au/",
+        "recommendation": "Add one canonical URL in the HTML head.",
+        "score": 10
+      },
+      {
+        "severity": "high",
+        "category": "content",
+        "code": "MISSING_H1",
+        "message": "No H1 heading found",
+        "url": "https://www.syncline.com.au/",
+        "recommendation": "Add one clear primary H1 describing the page.",
+        "score": 10
+      },
+      {
+        "severity": "medium",
+        "category": "structured-data",
+        "code": "NO_STRUCTURED_DATA",
+        "message": "No JSON-LD structured data found",
+        "url": "https://www.syncline.com.au/",
+        "recommendation": "Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.",
+        "score": 5
+      },
+      {
+        "severity": "medium",
+        "category": "content",
+        "code": "THIN_RENDERED_CONTENT",
+        "message": "Rendered body text contains only 0 characters",
+        "url": "https://www.syncline.com.au/",
+        "recommendation": "Verify that the page contains meaningful crawlable content.",
+        "score": 5
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_CONTENT-SECURITY-POLICY",
+        "message": "CSP header is missing",
+        "url": "https://www.syncline.com.au/",
+        "recommendation": "Consider configuring CSP at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_REFERRER-POLICY",
+        "message": "Referrer-Policy header is missing",
+        "url": "https://www.syncline.com.au/",
+        "recommendation": "Consider configuring Referrer-Policy at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_PERMISSIONS-POLICY",
+        "message": "Permissions-Policy header is missing",
+        "url": "https://www.syncline.com.au/",
+        "recommendation": "Consider configuring Permissions-Policy at the hosting/CDN layer.",
+        "score": 2
+      }
+    ]
+  },
+  {
+    "url": "https://www.syncline.com.au/services",
+    "finalUrl": "https://syncline.com.au/services",
+    "status": 200,
+    "responseHeaders": {
+      "accept-ranges": "bytes",
+      "access-control-allow-origin": "*",
+      "age": "305391",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"index.html\"",
+      "content-length": "931",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Sun, 06 Sep 2026 22:11:45 GMT",
+      "etag": "\"23acc592542c56e5bdbda8fab9be7ada\"",
+      "last-modified": "Thu, 03 Sep 2026 09:21:54 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-robots-tag": "index, follow",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "syd1::4b9t8-1788732705645-cca292d99c8e"
+    },
+    "title": "IT Services for Victorian SMBs | Syncline IT Solutions",
+    "description": "Managed IT support, cloud & Microsoft 365, business security, and automation — explore all the IT services Syncline provides for Victorian small businesses.",
+    "canonical": "https://www.syncline.com.au/services",
+    "robots": "index, follow",
+    "lang": "en",
+    "h1": [
+      "Our Services"
+    ],
+    "h2": [],
+    "links": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Learn moreabout Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Learn moreabout Cloud & Microsoft 365",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Learn moreabout Business Protection",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Learn moreabout Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "internalLinks": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Learn moreabout Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Learn moreabout Cloud & Microsoft 365",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Learn moreabout Business Protection",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Learn moreabout Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "externalLinks": [],
+    "images": [
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Logo",
+        "width": "72",
+        "height": "72"
+      },
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Solutions Logo",
+        "width": "48",
+        "height": "48"
+      }
+    ],
+    "schema": [],
+    "textLength": 1191,
+    "htmlLength": 21326,
+    "renderedTextLength": 1240,
+    "performance": {
+      "ttfb": 17.399999976158142,
+      "domContentLoaded": 71.80000001192093,
+      "load": 71.80000001192093,
+      "fcp": 452
+    },
+    "issues": [
+      {
+        "severity": "medium",
+        "category": "structured-data",
+        "code": "NO_STRUCTURED_DATA",
+        "message": "No JSON-LD structured data found",
+        "url": "https://www.syncline.com.au/services",
+        "recommendation": "Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.",
+        "score": 5
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_CONTENT-SECURITY-POLICY",
+        "message": "CSP header is missing",
+        "url": "https://www.syncline.com.au/services",
+        "recommendation": "Consider configuring CSP at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_X-CONTENT-TYPE-OPTIONS",
+        "message": "X-Content-Type-Options header is missing",
+        "url": "https://www.syncline.com.au/services",
+        "recommendation": "Consider configuring X-Content-Type-Options at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_REFERRER-POLICY",
+        "message": "Referrer-Policy header is missing",
+        "url": "https://www.syncline.com.au/services",
+        "recommendation": "Consider configuring Referrer-Policy at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_PERMISSIONS-POLICY",
+        "message": "Permissions-Policy header is missing",
+        "url": "https://www.syncline.com.au/services",
+        "recommendation": "Consider configuring Permissions-Policy at the hosting/CDN layer.",
+        "score": 2
+      }
+    ]
+  },
+  {
+    "url": "https://www.syncline.com.au/managed-it",
+    "finalUrl": "https://syncline.com.au/managed-it",
+    "status": 200,
+    "responseHeaders": {
+      "accept-ranges": "bytes",
+      "access-control-allow-origin": "*",
+      "age": "305392",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"index.html\"",
+      "content-length": "931",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Sun, 06 Sep 2026 22:11:46 GMT",
+      "etag": "\"23acc592542c56e5bdbda8fab9be7ada\"",
+      "last-modified": "Thu, 03 Sep 2026 09:21:54 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-robots-tag": "index, follow",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "syd1::dw6wc-1788732706699-86a5df3a97d3"
+    },
+    "title": "Managed IT Support for Victorian SMBs | Syncline IT Solutions",
+    "description": "24/7 monitoring, rapid onsite & remote response, a dedicated account manager, and a 99.9% uptime SLA — managed IT support built for Victorian small businesses.",
+    "canonical": "https://www.syncline.com.au/managed-it",
+    "robots": "index, follow",
+    "lang": "en",
+    "h1": [
+      "Managed IT SupportAlways On – So You Can Be"
+    ],
+    "h2": [
+      "Ready to Stop Fighting IT?"
+    ],
+    "links": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Get Your Free IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "internalLinks": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Get Your Free IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "externalLinks": [],
+    "images": [
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Logo",
+        "width": "72",
+        "height": "72"
+      },
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Solutions Logo",
+        "width": "48",
+        "height": "48"
+      }
+    ],
+    "schema": [],
+    "textLength": 1072,
+    "htmlLength": 21188,
+    "renderedTextLength": 1116,
+    "performance": {
+      "ttfb": 16.400000035762787,
+      "domContentLoaded": 54.799999952316284,
+      "load": 55.89999997615814,
+      "fcp": 472
+    },
+    "issues": [
+      {
+        "severity": "medium",
+        "category": "structured-data",
+        "code": "NO_STRUCTURED_DATA",
+        "message": "No JSON-LD structured data found",
+        "url": "https://www.syncline.com.au/managed-it",
+        "recommendation": "Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.",
+        "score": 5
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_CONTENT-SECURITY-POLICY",
+        "message": "CSP header is missing",
+        "url": "https://www.syncline.com.au/managed-it",
+        "recommendation": "Consider configuring CSP at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_X-CONTENT-TYPE-OPTIONS",
+        "message": "X-Content-Type-Options header is missing",
+        "url": "https://www.syncline.com.au/managed-it",
+        "recommendation": "Consider configuring X-Content-Type-Options at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_REFERRER-POLICY",
+        "message": "Referrer-Policy header is missing",
+        "url": "https://www.syncline.com.au/managed-it",
+        "recommendation": "Consider configuring Referrer-Policy at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_PERMISSIONS-POLICY",
+        "message": "Permissions-Policy header is missing",
+        "url": "https://www.syncline.com.au/managed-it",
+        "recommendation": "Consider configuring Permissions-Policy at the hosting/CDN layer.",
+        "score": 2
+      }
+    ]
+  },
+  {
+    "url": "https://www.syncline.com.au/cloud",
+    "finalUrl": "https://syncline.com.au/cloud",
+    "status": 200,
+    "responseHeaders": {
+      "accept-ranges": "bytes",
+      "access-control-allow-origin": "*",
+      "age": "305393",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"index.html\"",
+      "content-length": "931",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Sun, 06 Sep 2026 22:11:47 GMT",
+      "etag": "\"23acc592542c56e5bdbda8fab9be7ada\"",
+      "last-modified": "Thu, 03 Sep 2026 09:21:54 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-robots-tag": "index, follow",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "syd1::95dh8-1788732707683-2461c3141cf6"
+    },
+    "title": "Cloud Solutions for Victorian SMBs | Syncline IT Solutions",
+    "description": "Cloud migration, Microsoft 365 support, and Azure Virtual Desktop — modern, secure cloud solutions managed for Victorian small businesses.",
+    "canonical": "https://www.syncline.com.au/cloud",
+    "robots": "index, follow",
+    "lang": "en",
+    "h1": [
+      "Cloud SolutionsModern. Secure. Yours."
+    ],
+    "h2": [
+      "Cloud Done Right – No Guesswork"
+    ],
+    "links": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Book Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "internalLinks": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Book Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "externalLinks": [],
+    "images": [
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Logo",
+        "width": "72",
+        "height": "72"
+      },
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Solutions Logo",
+        "width": "48",
+        "height": "48"
+      }
+    ],
+    "schema": [],
+    "textLength": 1177,
+    "htmlLength": 20008,
+    "renderedTextLength": 1221,
+    "performance": {
+      "ttfb": 16.399999976158142,
+      "domContentLoaded": 57.10000002384186,
+      "load": 58.30000001192093,
+      "fcp": 392
+    },
+    "issues": [
+      {
+        "severity": "medium",
+        "category": "structured-data",
+        "code": "NO_STRUCTURED_DATA",
+        "message": "No JSON-LD structured data found",
+        "url": "https://www.syncline.com.au/cloud",
+        "recommendation": "Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.",
+        "score": 5
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_CONTENT-SECURITY-POLICY",
+        "message": "CSP header is missing",
+        "url": "https://www.syncline.com.au/cloud",
+        "recommendation": "Consider configuring CSP at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_X-CONTENT-TYPE-OPTIONS",
+        "message": "X-Content-Type-Options header is missing",
+        "url": "https://www.syncline.com.au/cloud",
+        "recommendation": "Consider configuring X-Content-Type-Options at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_REFERRER-POLICY",
+        "message": "Referrer-Policy header is missing",
+        "url": "https://www.syncline.com.au/cloud",
+        "recommendation": "Consider configuring Referrer-Policy at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_PERMISSIONS-POLICY",
+        "message": "Permissions-Policy header is missing",
+        "url": "https://www.syncline.com.au/cloud",
+        "recommendation": "Consider configuring Permissions-Policy at the hosting/CDN layer.",
+        "score": 2
+      }
+    ]
+  },
+  {
+    "url": "https://www.syncline.com.au/security",
+    "finalUrl": "https://syncline.com.au/security",
+    "status": 200,
+    "responseHeaders": {
+      "accept-ranges": "bytes",
+      "access-control-allow-origin": "*",
+      "age": "305394",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"index.html\"",
+      "content-length": "931",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Sun, 06 Sep 2026 22:11:48 GMT",
+      "etag": "\"23acc592542c56e5bdbda8fab9be7ada\"",
+      "last-modified": "Thu, 03 Sep 2026 09:21:54 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-robots-tag": "index, follow",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "syd1::cxfn8-1788732708577-f38d46b86af5"
+    },
+    "title": "Business Security & Backups for Victorian SMBs | Syncline IT Solutions",
+    "description": "Practical, everyday security basics — secure sign-in, device protection, and dependable backups — built on the Microsoft 365 tools you already have.",
+    "canonical": "https://www.syncline.com.au/security",
+    "robots": "index, follow",
+    "lang": "en",
+    "h1": [
+      "Business Security & Backups for Victorian SMBs"
+    ],
+    "h2": [
+      "Everyday Protection Made Simple"
+    ],
+    "links": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Talk to Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "internalLinks": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Talk to Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "externalLinks": [],
+    "images": [
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Logo",
+        "width": "72",
+        "height": "72"
+      },
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Solutions Logo",
+        "width": "48",
+        "height": "48"
+      }
+    ],
+    "schema": [],
+    "textLength": 2192,
+    "htmlLength": 34233,
+    "renderedTextLength": 2268,
+    "performance": {
+      "ttfb": 16.30000001192093,
+      "domContentLoaded": 59.90000003576279,
+      "load": 61.60000002384186,
+      "fcp": 388
+    },
+    "issues": [
+      {
+        "severity": "low",
+        "category": "metadata",
+        "code": "LONG_TITLE",
+        "message": "Title is 70 characters",
+        "url": "https://www.syncline.com.au/security",
+        "recommendation": "Consider shortening the title while preserving important terms.",
+        "score": 2
+      },
+      {
+        "severity": "medium",
+        "category": "structured-data",
+        "code": "NO_STRUCTURED_DATA",
+        "message": "No JSON-LD structured data found",
+        "url": "https://www.syncline.com.au/security",
+        "recommendation": "Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.",
+        "score": 5
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_CONTENT-SECURITY-POLICY",
+        "message": "CSP header is missing",
+        "url": "https://www.syncline.com.au/security",
+        "recommendation": "Consider configuring CSP at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_X-CONTENT-TYPE-OPTIONS",
+        "message": "X-Content-Type-Options header is missing",
+        "url": "https://www.syncline.com.au/security",
+        "recommendation": "Consider configuring X-Content-Type-Options at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_REFERRER-POLICY",
+        "message": "Referrer-Policy header is missing",
+        "url": "https://www.syncline.com.au/security",
+        "recommendation": "Consider configuring Referrer-Policy at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_PERMISSIONS-POLICY",
+        "message": "Permissions-Policy header is missing",
+        "url": "https://www.syncline.com.au/security",
+        "recommendation": "Consider configuring Permissions-Policy at the hosting/CDN layer.",
+        "score": 2
+      }
+    ]
+  },
+  {
+    "url": "https://www.syncline.com.au/automation",
+    "finalUrl": "https://syncline.com.au/automation",
+    "status": 200,
+    "responseHeaders": {
+      "accept-ranges": "bytes",
+      "access-control-allow-origin": "*",
+      "age": "305395",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"index.html\"",
+      "content-length": "931",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Sun, 06 Sep 2026 22:11:49 GMT",
+      "etag": "\"23acc592542c56e5bdbda8fab9be7ada\"",
+      "last-modified": "Thu, 03 Sep 2026 09:21:54 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-robots-tag": "index, follow",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "syd1::45rlv-1788732709472-9a557d8b49e3"
+    },
+    "title": "Automation & AI for Victorian SMBs | Syncline IT Solutions",
+    "description": "Custom workflow automation, Python & PowerShell scripting, and AI-powered IT assistance that saves Victorian small businesses hours every week.",
+    "canonical": "https://www.syncline.com.au/automation",
+    "robots": "index, follow",
+    "lang": "en",
+    "h1": [
+      "Automation & AIWork Smarter, Not Harder"
+    ],
+    "h2": [
+      "Let Technology Work for You"
+    ],
+    "links": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Discover Your Automation Opportunities",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "internalLinks": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Discover Your Automation Opportunities",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "externalLinks": [],
+    "images": [
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Logo",
+        "width": "72",
+        "height": "72"
+      },
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Solutions Logo",
+        "width": "48",
+        "height": "48"
+      }
+    ],
+    "schema": [],
+    "textLength": 1042,
+    "htmlLength": 19330,
+    "renderedTextLength": 1084,
+    "performance": {
+      "ttfb": 17.600000023841858,
+      "domContentLoaded": 55.19999998807907,
+      "load": 56.39999997615814,
+      "fcp": 416
+    },
+    "issues": [
+      {
+        "severity": "medium",
+        "category": "structured-data",
+        "code": "NO_STRUCTURED_DATA",
+        "message": "No JSON-LD structured data found",
+        "url": "https://www.syncline.com.au/automation",
+        "recommendation": "Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.",
+        "score": 5
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_CONTENT-SECURITY-POLICY",
+        "message": "CSP header is missing",
+        "url": "https://www.syncline.com.au/automation",
+        "recommendation": "Consider configuring CSP at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_X-CONTENT-TYPE-OPTIONS",
+        "message": "X-Content-Type-Options header is missing",
+        "url": "https://www.syncline.com.au/automation",
+        "recommendation": "Consider configuring X-Content-Type-Options at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_REFERRER-POLICY",
+        "message": "Referrer-Policy header is missing",
+        "url": "https://www.syncline.com.au/automation",
+        "recommendation": "Consider configuring Referrer-Policy at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_PERMISSIONS-POLICY",
+        "message": "Permissions-Policy header is missing",
+        "url": "https://www.syncline.com.au/automation",
+        "recommendation": "Consider configuring Permissions-Policy at the hosting/CDN layer.",
+        "score": 2
+      }
+    ]
+  },
+  {
+    "url": "https://www.syncline.com.au/resources",
+    "finalUrl": "https://syncline.com.au/resources",
+    "status": 200,
+    "responseHeaders": {
+      "accept-ranges": "bytes",
+      "access-control-allow-origin": "*",
+      "age": "305396",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"index.html\"",
+      "content-length": "931",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Sun, 06 Sep 2026 22:11:50 GMT",
+      "etag": "\"23acc592542c56e5bdbda8fab9be7ada\"",
+      "last-modified": "Thu, 03 Sep 2026 09:21:54 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-robots-tag": "index, follow",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "syd1::45rlv-1788732710385-13cbb24fc2ef"
+    },
+    "title": "Resources & Guides for Victorian SMBs | Syncline IT Solutions",
+    "description": "Case studies, free IT health checks, and helpful guides for Victorian small and medium businesses managing their IT.",
+    "canonical": "https://www.syncline.com.au/resources",
+    "robots": "index, follow",
+    "lang": "en",
+    "h1": [
+      "Resources"
+    ],
+    "h2": [],
+    "links": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Learn moreabout Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "Learn moreabout Free IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "Learn moreabout About Syncline",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Learn moreabout Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "internalLinks": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Learn moreabout Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "Learn moreabout Free IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "Learn moreabout About Syncline",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Learn moreabout Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "externalLinks": [],
+    "images": [
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Logo",
+        "width": "72",
+        "height": "72"
+      },
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Solutions Logo",
+        "width": "48",
+        "height": "48"
+      }
+    ],
+    "schema": [],
+    "textLength": 1129,
+    "htmlLength": 21322,
+    "renderedTextLength": 1178,
+    "performance": {
+      "ttfb": 16.700000047683716,
+      "domContentLoaded": 54.60000002384186,
+      "load": 55.90000003576279,
+      "fcp": 404
+    },
+    "issues": [
+      {
+        "severity": "medium",
+        "category": "structured-data",
+        "code": "NO_STRUCTURED_DATA",
+        "message": "No JSON-LD structured data found",
+        "url": "https://www.syncline.com.au/resources",
+        "recommendation": "Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.",
+        "score": 5
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_CONTENT-SECURITY-POLICY",
+        "message": "CSP header is missing",
+        "url": "https://www.syncline.com.au/resources",
+        "recommendation": "Consider configuring CSP at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_X-CONTENT-TYPE-OPTIONS",
+        "message": "X-Content-Type-Options header is missing",
+        "url": "https://www.syncline.com.au/resources",
+        "recommendation": "Consider configuring X-Content-Type-Options at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_REFERRER-POLICY",
+        "message": "Referrer-Policy header is missing",
+        "url": "https://www.syncline.com.au/resources",
+        "recommendation": "Consider configuring Referrer-Policy at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_PERMISSIONS-POLICY",
+        "message": "Permissions-Policy header is missing",
+        "url": "https://www.syncline.com.au/resources",
+        "recommendation": "Consider configuring Permissions-Policy at the hosting/CDN layer.",
+        "score": 2
+      }
+    ]
+  },
+  {
+    "url": "https://www.syncline.com.au/case-studies",
+    "finalUrl": "https://syncline.com.au/case-studies",
+    "status": 200,
+    "responseHeaders": {
+      "accept-ranges": "bytes",
+      "access-control-allow-origin": "*",
+      "age": "305396",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"index.html\"",
+      "content-length": "931",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Sun, 06 Sep 2026 22:11:51 GMT",
+      "etag": "\"23acc592542c56e5bdbda8fab9be7ada\"",
+      "last-modified": "Thu, 03 Sep 2026 09:21:54 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-robots-tag": "index, follow",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "syd1::v2vlf-1788732711017-537d237910c4"
+    },
+    "title": "Case Studies | Syncline IT Solutions",
+    "description": "Real IT outcomes for Victorian businesses — downtime reduction, faster ticket resolution, and secure multi-site networks.",
+    "canonical": "https://www.syncline.com.au/case-studies",
+    "robots": "index, follow",
+    "lang": "en",
+    "h1": [
+      "Case StudiesReal Results from Victorian Businesses"
+    ],
+    "h2": [
+      "Let's Build Your IT Future - Together - Book a Consultation"
+    ],
+    "links": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact Me",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "internalLinks": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact Me",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "externalLinks": [],
+    "images": [
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Logo",
+        "width": "72",
+        "height": "72"
+      },
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Solutions Logo",
+        "width": "48",
+        "height": "48"
+      }
+    ],
+    "schema": [],
+    "textLength": 1179,
+    "htmlLength": 20213,
+    "renderedTextLength": 1221,
+    "performance": {
+      "ttfb": 16.599999964237213,
+      "domContentLoaded": 54.19999998807907,
+      "load": 55.39999997615814,
+      "fcp": 412
+    },
+    "issues": [
+      {
+        "severity": "medium",
+        "category": "structured-data",
+        "code": "NO_STRUCTURED_DATA",
+        "message": "No JSON-LD structured data found",
+        "url": "https://www.syncline.com.au/case-studies",
+        "recommendation": "Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.",
+        "score": 5
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_CONTENT-SECURITY-POLICY",
+        "message": "CSP header is missing",
+        "url": "https://www.syncline.com.au/case-studies",
+        "recommendation": "Consider configuring CSP at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_X-CONTENT-TYPE-OPTIONS",
+        "message": "X-Content-Type-Options header is missing",
+        "url": "https://www.syncline.com.au/case-studies",
+        "recommendation": "Consider configuring X-Content-Type-Options at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_REFERRER-POLICY",
+        "message": "Referrer-Policy header is missing",
+        "url": "https://www.syncline.com.au/case-studies",
+        "recommendation": "Consider configuring Referrer-Policy at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_PERMISSIONS-POLICY",
+        "message": "Permissions-Policy header is missing",
+        "url": "https://www.syncline.com.au/case-studies",
+        "recommendation": "Consider configuring Permissions-Policy at the hosting/CDN layer.",
+        "score": 2
+      }
+    ]
+  },
+  {
+    "url": "https://www.syncline.com.au/it-health-check",
+    "finalUrl": "https://syncline.com.au/it-health-check",
+    "status": 200,
+    "responseHeaders": {
+      "accept-ranges": "bytes",
+      "access-control-allow-origin": "*",
+      "age": "305397",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"index.html\"",
+      "content-length": "931",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Sun, 06 Sep 2026 22:11:51 GMT",
+      "etag": "\"23acc592542c56e5bdbda8fab9be7ada\"",
+      "last-modified": "Thu, 03 Sep 2026 09:21:54 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-robots-tag": "index, follow",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "syd1::7mpts-1788732711661-1630e7a688a7"
+    },
+    "title": "Free IT Health Check for Victorian SMBs | Syncline IT Solutions",
+    "description": "A complete, no-obligation assessment of your IT environment — security, performance, reliability, and business continuity — with a report in 48 hours.",
+    "canonical": "https://www.syncline.com.au/it-health-check",
+    "robots": "index, follow",
+    "lang": "en",
+    "h1": [
+      "Free IT Health CheckKnow Your Risks Before They Cost You"
+    ],
+    "h2": [
+      "Ready to Stop Fighting IT? Get Your Free Assessment"
+    ],
+    "links": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Get Your Free IT Health Check - Book Now",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "internalLinks": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Get Your Free IT Health Check - Book Now",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "externalLinks": [],
+    "images": [
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Logo",
+        "width": "72",
+        "height": "72"
+      },
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Solutions Logo",
+        "width": "48",
+        "height": "48"
+      }
+    ],
+    "schema": [],
+    "textLength": 1139,
+    "htmlLength": 21240,
+    "renderedTextLength": 1183,
+    "performance": {
+      "ttfb": 16.69999998807907,
+      "domContentLoaded": 60.40000003576279,
+      "load": 61.700000047683716,
+      "fcp": 436
+    },
+    "issues": [
+      {
+        "severity": "medium",
+        "category": "structured-data",
+        "code": "NO_STRUCTURED_DATA",
+        "message": "No JSON-LD structured data found",
+        "url": "https://www.syncline.com.au/it-health-check",
+        "recommendation": "Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.",
+        "score": 5
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_CONTENT-SECURITY-POLICY",
+        "message": "CSP header is missing",
+        "url": "https://www.syncline.com.au/it-health-check",
+        "recommendation": "Consider configuring CSP at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_X-CONTENT-TYPE-OPTIONS",
+        "message": "X-Content-Type-Options header is missing",
+        "url": "https://www.syncline.com.au/it-health-check",
+        "recommendation": "Consider configuring X-Content-Type-Options at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_REFERRER-POLICY",
+        "message": "Referrer-Policy header is missing",
+        "url": "https://www.syncline.com.au/it-health-check",
+        "recommendation": "Consider configuring Referrer-Policy at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_PERMISSIONS-POLICY",
+        "message": "Permissions-Policy header is missing",
+        "url": "https://www.syncline.com.au/it-health-check",
+        "recommendation": "Consider configuring Permissions-Policy at the hosting/CDN layer.",
+        "score": 2
+      }
+    ]
+  },
+  {
+    "url": "https://www.syncline.com.au/about-syncline",
+    "finalUrl": "https://syncline.com.au/about-syncline",
+    "status": 200,
+    "responseHeaders": {
+      "accept-ranges": "bytes",
+      "access-control-allow-origin": "*",
+      "age": "305398",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"index.html\"",
+      "content-length": "931",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Sun, 06 Sep 2026 22:11:52 GMT",
+      "etag": "\"23acc592542c56e5bdbda8fab9be7ada\"",
+      "last-modified": "Thu, 03 Sep 2026 09:21:54 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-robots-tag": "index, follow",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "syd1::45rlv-1788732712590-114b42f422e1"
+    },
+    "title": "About Syncline | Syncline IT Solutions",
+    "description": "Meet the dedicated IT partner behind Syncline — enterprise-grade standards, outcome-driven support, and direct access with no call centres.",
+    "canonical": "https://www.syncline.com.au/about-syncline",
+    "robots": "index, follow",
+    "lang": "en",
+    "h1": [
+      "About SynclineYour Dedicated IT Partner"
+    ],
+    "h2": [
+      "Let's Build Your IT Future"
+    ],
+    "links": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact Me",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "internalLinks": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact Me",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "externalLinks": [],
+    "images": [
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Logo",
+        "width": "72",
+        "height": "72"
+      },
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Solutions Logo",
+        "width": "48",
+        "height": "48"
+      }
+    ],
+    "schema": [],
+    "textLength": 1147,
+    "htmlLength": 21474,
+    "renderedTextLength": 1191,
+    "performance": {
+      "ttfb": 24,
+      "domContentLoaded": 59.89999997615814,
+      "load": 61,
+      "fcp": 416
+    },
+    "issues": [
+      {
+        "severity": "medium",
+        "category": "structured-data",
+        "code": "NO_STRUCTURED_DATA",
+        "message": "No JSON-LD structured data found",
+        "url": "https://www.syncline.com.au/about-syncline",
+        "recommendation": "Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.",
+        "score": 5
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_CONTENT-SECURITY-POLICY",
+        "message": "CSP header is missing",
+        "url": "https://www.syncline.com.au/about-syncline",
+        "recommendation": "Consider configuring CSP at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_X-CONTENT-TYPE-OPTIONS",
+        "message": "X-Content-Type-Options header is missing",
+        "url": "https://www.syncline.com.au/about-syncline",
+        "recommendation": "Consider configuring X-Content-Type-Options at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_REFERRER-POLICY",
+        "message": "Referrer-Policy header is missing",
+        "url": "https://www.syncline.com.au/about-syncline",
+        "recommendation": "Consider configuring Referrer-Policy at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_PERMISSIONS-POLICY",
+        "message": "Permissions-Policy header is missing",
+        "url": "https://www.syncline.com.au/about-syncline",
+        "recommendation": "Consider configuring Permissions-Policy at the hosting/CDN layer.",
+        "score": 2
+      }
+    ]
+  },
+  {
+    "url": "https://www.syncline.com.au/contact",
+    "finalUrl": "https://syncline.com.au/contact",
+    "status": 200,
+    "responseHeaders": {
+      "accept-ranges": "bytes",
+      "access-control-allow-origin": "*",
+      "age": "305399",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"index.html\"",
+      "content-length": "931",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Sun, 06 Sep 2026 22:11:53 GMT",
+      "etag": "\"23acc592542c56e5bdbda8fab9be7ada\"",
+      "last-modified": "Thu, 03 Sep 2026 09:21:54 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-robots-tag": "index, follow",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "syd1::v2vlf-1788732713474-cc4d3706d2ff"
+    },
+    "title": "Contact Us | Syncline IT Solutions",
+    "description": "Get in touch with Syncline IT Solutions for IT support, cloud services, automation, and security. We respond within 24 hours.",
+    "canonical": "https://www.syncline.com.au/contact",
+    "robots": "index, follow",
+    "lang": "en",
+    "h1": [
+      "Contact Syncline IT Solutions"
+    ],
+    "h2": [
+      "Contact Syncline IT Solutions",
+      "Ready to Transform Your IT?"
+    ],
+    "links": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "internalLinks": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "externalLinks": [],
+    "images": [
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Logo",
+        "width": "72",
+        "height": "72"
+      },
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Solutions Logo",
+        "width": "48",
+        "height": "48"
+      }
+    ],
+    "schema": [],
+    "textLength": 1301,
+    "htmlLength": 24946,
+    "renderedTextLength": 1364,
+    "performance": {
+      "ttfb": 16.600000023841858,
+      "domContentLoaded": 51.799999952316284,
+      "load": 53,
+      "fcp": 396
+    },
+    "issues": [
+      {
+        "severity": "medium",
+        "category": "structured-data",
+        "code": "NO_STRUCTURED_DATA",
+        "message": "No JSON-LD structured data found",
+        "url": "https://www.syncline.com.au/contact",
+        "recommendation": "Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.",
+        "score": 5
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_CONTENT-SECURITY-POLICY",
+        "message": "CSP header is missing",
+        "url": "https://www.syncline.com.au/contact",
+        "recommendation": "Consider configuring CSP at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_X-CONTENT-TYPE-OPTIONS",
+        "message": "X-Content-Type-Options header is missing",
+        "url": "https://www.syncline.com.au/contact",
+        "recommendation": "Consider configuring X-Content-Type-Options at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_REFERRER-POLICY",
+        "message": "Referrer-Policy header is missing",
+        "url": "https://www.syncline.com.au/contact",
+        "recommendation": "Consider configuring Referrer-Policy at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_PERMISSIONS-POLICY",
+        "message": "Permissions-Policy header is missing",
+        "url": "https://www.syncline.com.au/contact",
+        "recommendation": "Consider configuring Permissions-Policy at the hosting/CDN layer.",
+        "score": 2
+      }
+    ]
+  },
+  {
+    "url": "https://www.syncline.com.au/customer-portal",
+    "finalUrl": "https://syncline.com.au/customer-portal",
+    "status": 200,
+    "responseHeaders": {
+      "accept-ranges": "bytes",
+      "access-control-allow-origin": "*",
+      "age": "305398",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"index.html\"",
+      "content-length": "931",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Sun, 06 Sep 2026 22:11:54 GMT",
+      "etag": "\"23acc592542c56e5bdbda8fab9be7ada\"",
+      "last-modified": "Thu, 03 Sep 2026 09:21:54 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-robots-tag": "index, follow",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "syd1::45rlv-1788732714115-2efa815fec58"
+    },
+    "title": "Customer Portal | Syncline IT Solutions",
+    "description": "Log in to track support tickets, access documentation, and view your security and asset status — all in one place.",
+    "canonical": "https://www.syncline.com.au/customer-portal",
+    "robots": "index, follow",
+    "lang": "en",
+    "h1": [
+      "Customer PortalYour IT — Fully Transparent"
+    ],
+    "h2": [
+      "Portal Login"
+    ],
+    "links": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/login",
+        "text": "Go to Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "internalLinks": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/login",
+        "text": "Go to Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "externalLinks": [],
+    "images": [
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Logo",
+        "width": "72",
+        "height": "72"
+      },
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Solutions Logo",
+        "width": "48",
+        "height": "48"
+      }
+    ],
+    "schema": [],
+    "textLength": 1032,
+    "htmlLength": 20506,
+    "renderedTextLength": 1076,
+    "performance": {
+      "ttfb": 16.19999998807907,
+      "domContentLoaded": 57.09999996423721,
+      "load": 58.299999952316284,
+      "fcp": 400
+    },
+    "issues": [
+      {
+        "severity": "medium",
+        "category": "structured-data",
+        "code": "NO_STRUCTURED_DATA",
+        "message": "No JSON-LD structured data found",
+        "url": "https://www.syncline.com.au/customer-portal",
+        "recommendation": "Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.",
+        "score": 5
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_CONTENT-SECURITY-POLICY",
+        "message": "CSP header is missing",
+        "url": "https://www.syncline.com.au/customer-portal",
+        "recommendation": "Consider configuring CSP at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_X-CONTENT-TYPE-OPTIONS",
+        "message": "X-Content-Type-Options header is missing",
+        "url": "https://www.syncline.com.au/customer-portal",
+        "recommendation": "Consider configuring X-Content-Type-Options at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_REFERRER-POLICY",
+        "message": "Referrer-Policy header is missing",
+        "url": "https://www.syncline.com.au/customer-portal",
+        "recommendation": "Consider configuring Referrer-Policy at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_PERMISSIONS-POLICY",
+        "message": "Permissions-Policy header is missing",
+        "url": "https://www.syncline.com.au/customer-portal",
+        "recommendation": "Consider configuring Permissions-Policy at the hosting/CDN layer.",
+        "score": 2
+      }
+    ]
+  },
+  {
+    "url": "https://www.syncline.com.au/security-guide",
+    "finalUrl": "https://syncline.com.au/security-guide",
+    "status": 200,
+    "responseHeaders": {
+      "accept-ranges": "bytes",
+      "access-control-allow-origin": "*",
+      "age": "305398",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"index.html\"",
+      "content-length": "931",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Sun, 06 Sep 2026 22:11:54 GMT",
+      "etag": "\"23acc592542c56e5bdbda8fab9be7ada\"",
+      "last-modified": "Thu, 03 Sep 2026 09:21:54 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-robots-tag": "index, follow",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "syd1::45rlv-1788732714739-8513590bd737"
+    },
+    "title": "Cybersecurity Guide for Victorian SMBs | Syncline IT Solutions",
+    "description": "Practical cybersecurity guides, best practices, and threat protection strategies for small and medium businesses in Victoria.",
+    "canonical": "https://www.syncline.com.au/security-guide",
+    "robots": "index, follow",
+    "lang": "en",
+    "h1": [
+      "Cybersecurity Guide"
+    ],
+    "h2": [],
+    "links": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "internalLinks": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "externalLinks": [],
+    "images": [
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Logo",
+        "width": "72",
+        "height": "72"
+      },
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Solutions Logo",
+        "width": "48",
+        "height": "48"
+      }
+    ],
+    "schema": [],
+    "textLength": 645,
+    "htmlLength": 14116,
+    "renderedTextLength": 678,
+    "performance": {
+      "ttfb": 16.100000023841858,
+      "domContentLoaded": 57.30000001192093,
+      "load": 58.5,
+      "fcp": 388
+    },
+    "issues": [
+      {
+        "severity": "medium",
+        "category": "structured-data",
+        "code": "NO_STRUCTURED_DATA",
+        "message": "No JSON-LD structured data found",
+        "url": "https://www.syncline.com.au/security-guide",
+        "recommendation": "Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.",
+        "score": 5
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_CONTENT-SECURITY-POLICY",
+        "message": "CSP header is missing",
+        "url": "https://www.syncline.com.au/security-guide",
+        "recommendation": "Consider configuring CSP at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_X-CONTENT-TYPE-OPTIONS",
+        "message": "X-Content-Type-Options header is missing",
+        "url": "https://www.syncline.com.au/security-guide",
+        "recommendation": "Consider configuring X-Content-Type-Options at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_REFERRER-POLICY",
+        "message": "Referrer-Policy header is missing",
+        "url": "https://www.syncline.com.au/security-guide",
+        "recommendation": "Consider configuring Referrer-Policy at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_PERMISSIONS-POLICY",
+        "message": "Permissions-Policy header is missing",
+        "url": "https://www.syncline.com.au/security-guide",
+        "recommendation": "Consider configuring Permissions-Policy at the hosting/CDN layer.",
+        "score": 2
+      }
+    ]
+  },
+  {
+    "url": "https://www.syncline.com.au/checklist",
+    "finalUrl": "https://syncline.com.au/checklist",
+    "status": 200,
+    "responseHeaders": {
+      "accept-ranges": "bytes",
+      "access-control-allow-origin": "*",
+      "age": "305401",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"index.html\"",
+      "content-length": "931",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Sun, 06 Sep 2026 22:11:55 GMT",
+      "etag": "\"23acc592542c56e5bdbda8fab9be7ada\"",
+      "last-modified": "Thu, 03 Sep 2026 09:21:54 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-robots-tag": "index, follow",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "syd1::bxzb4-1788732715641-cf8e9acfaac3"
+    },
+    "title": "IT Infrastructure Checklist | Syncline IT Solutions",
+    "description": "Download our comprehensive IT infrastructure checklist to audit your business network, backups, and security postures.",
+    "canonical": "https://www.syncline.com.au/checklist",
+    "robots": "index, follow",
+    "lang": "en",
+    "h1": [
+      "Business IT Checklist"
+    ],
+    "h2": [],
+    "links": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "internalLinks": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "externalLinks": [],
+    "images": [
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Logo",
+        "width": "72",
+        "height": "72"
+      },
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Solutions Logo",
+        "width": "48",
+        "height": "48"
+      }
+    ],
+    "schema": [],
+    "textLength": 635,
+    "htmlLength": 14036,
+    "renderedTextLength": 668,
+    "performance": {
+      "ttfb": 17.299999952316284,
+      "domContentLoaded": 70.79999995231628,
+      "load": 71.89999997615814,
+      "fcp": 420
+    },
+    "issues": [
+      {
+        "severity": "medium",
+        "category": "structured-data",
+        "code": "NO_STRUCTURED_DATA",
+        "message": "No JSON-LD structured data found",
+        "url": "https://www.syncline.com.au/checklist",
+        "recommendation": "Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.",
+        "score": 5
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_CONTENT-SECURITY-POLICY",
+        "message": "CSP header is missing",
+        "url": "https://www.syncline.com.au/checklist",
+        "recommendation": "Consider configuring CSP at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_X-CONTENT-TYPE-OPTIONS",
+        "message": "X-Content-Type-Options header is missing",
+        "url": "https://www.syncline.com.au/checklist",
+        "recommendation": "Consider configuring X-Content-Type-Options at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_REFERRER-POLICY",
+        "message": "Referrer-Policy header is missing",
+        "url": "https://www.syncline.com.au/checklist",
+        "recommendation": "Consider configuring Referrer-Policy at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_PERMISSIONS-POLICY",
+        "message": "Permissions-Policy header is missing",
+        "url": "https://www.syncline.com.au/checklist",
+        "recommendation": "Consider configuring Permissions-Policy at the hosting/CDN layer.",
+        "score": 2
+      }
+    ]
+  },
+  {
+    "url": "https://www.syncline.com.au/login",
+    "finalUrl": "https://syncline.com.au/login",
+    "status": 200,
+    "responseHeaders": {
+      "accept-ranges": "bytes",
+      "access-control-allow-origin": "*",
+      "age": "305402",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline; filename=\"index.html\"",
+      "content-length": "931",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Sun, 06 Sep 2026 22:11:56 GMT",
+      "etag": "\"23acc592542c56e5bdbda8fab9be7ada\"",
+      "last-modified": "Thu, 03 Sep 2026 09:21:54 GMT",
+      "server": "Vercel",
+      "strict-transport-security": "max-age=63072000",
+      "x-robots-tag": "index, follow",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "syd1::bxzb4-1788732716527-71ca881394ca"
+    },
+    "title": "Client Login | Syncline IT Solutions",
+    "description": "Secure client sign-in to access active support ticketing, cloud telemetry dashboards, and IT documentation.",
+    "canonical": "https://www.syncline.com.au/login",
+    "robots": "index, follow",
+    "lang": "en",
+    "h1": [
+      "Client Portal Access"
+    ],
+    "h2": [],
+    "links": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "internalLinks": [
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Syncline IT SolutionsEnterprise IT Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/",
+        "text": "Home",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/services",
+        "text": "Services",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/resources",
+        "text": "Resources",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Free Assessment",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/managed-it",
+        "text": "Managed IT Support",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/cloud",
+        "text": "Cloud Solutions",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security",
+        "text": "Cybersecurity",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/automation",
+        "text": "Automation & AI",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/about-syncline",
+        "text": "About Us",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/customer-portal",
+        "text": "Customer Portal",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/contact",
+        "text": "Contact",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/it-health-check",
+        "text": "IT Health Check",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/case-studies",
+        "text": "Case Studies",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/security-guide",
+        "text": "Security Guide",
+        "rel": ""
+      },
+      {
+        "href": "https://www.syncline.com.au/checklist",
+        "text": "SMB IT Checklist",
+        "rel": ""
+      }
+    ],
+    "externalLinks": [],
+    "images": [
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Logo",
+        "width": "72",
+        "height": "72"
+      },
+      {
+        "src": "/assets/Syncline_Master_512-DeRCWZk0.png",
+        "alt": "Syncline IT Solutions Logo",
+        "width": "48",
+        "height": "48"
+      }
+    ],
+    "schema": [],
+    "textLength": 721,
+    "htmlLength": 18585,
+    "renderedTextLength": 758,
+    "performance": {
+      "ttfb": 16.80000001192093,
+      "domContentLoaded": 60.80000001192093,
+      "load": 62,
+      "fcp": 400
+    },
+    "issues": [
+      {
+        "severity": "medium",
+        "category": "structured-data",
+        "code": "NO_STRUCTURED_DATA",
+        "message": "No JSON-LD structured data found",
+        "url": "https://www.syncline.com.au/login",
+        "recommendation": "Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.",
+        "score": 5
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_CONTENT-SECURITY-POLICY",
+        "message": "CSP header is missing",
+        "url": "https://www.syncline.com.au/login",
+        "recommendation": "Consider configuring CSP at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_X-CONTENT-TYPE-OPTIONS",
+        "message": "X-Content-Type-Options header is missing",
+        "url": "https://www.syncline.com.au/login",
+        "recommendation": "Consider configuring X-Content-Type-Options at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_REFERRER-POLICY",
+        "message": "Referrer-Policy header is missing",
+        "url": "https://www.syncline.com.au/login",
+        "recommendation": "Consider configuring Referrer-Policy at the hosting/CDN layer.",
+        "score": 2
+      },
+      {
+        "severity": "low",
+        "category": "security",
+        "code": "MISSING_PERMISSIONS-POLICY",
+        "message": "Permissions-Policy header is missing",
+        "url": "https://www.syncline.com.au/login",
+        "recommendation": "Consider configuring Permissions-Policy at the hosting/CDN layer.",
+        "score": 2
+      }
+    ]
+  }
+]

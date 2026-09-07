@@ -1,0 +1,2266 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1">
+
+<title>Syncline SEO Intelligence Report</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family:
+        Inter,
+        system-ui,
+        sans-serif;
+    background: #f1f5f9;
+    color: #0f172a;
+}
+
+header {
+    background: #0f172a;
+    color: white;
+    padding: 32px 40px;
+}
+
+main {
+    max-width: 1600px;
+    margin: auto;
+    padding: 32px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 22px;
+    box-shadow:
+        0 2px 10px rgba(0,0,0,.06);
+}
+
+.metric {
+    font-size: 34px;
+    font-weight: 800;
+}
+
+.label {
+    color: #64748b;
+    margin-top: 4px;
+}
+
+.score {
+    font-size: 64px;
+    font-weight: 900;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: top;
+}
+
+th {
+    background: #f8fafc;
+}
+
+.severity {
+    color: white;
+    border-radius: 999px;
+    padding: 4px 8px;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.section {
+    margin-top: 32px;
+}
+
+code {
+    background: #e2e8f0;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Syncline SEO Intelligence Audit</h1>
+
+<div>
+Generated:
+2026-09-06T22:11:57.263Z
+</div>
+
+<div>
+Git branch:
+<strong>
+development
+</strong>
+</div>
+
+<div>
+Commit:
+<code>
+d777a1c
+</code>
+</div>
+
+</header>
+
+
+<main>
+
+
+<div class="grid">
+
+<div class="card">
+
+<div class="label">
+OVERALL SEO SCORE
+</div>
+
+<div class="score">
+84/100
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="metric">
+0
+</div>
+
+<div class="label">
+Critical
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="metric">
+5
+</div>
+
+<div class="label">
+High
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="metric">
+61
+</div>
+
+<div class="label">
+Medium
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="metric">
+15
+</div>
+
+<div class="label">
+Pages crawled
+</div>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>Production Summary</h2>
+
+<div class="card">
+
+<p>
+<strong>Website:</strong>
+https://www.syncline.com.au
+</p>
+
+<p>
+<strong>Pages crawled:</strong>
+15
+</p>
+
+<p>
+<strong>Sitemap URLs:</strong>
+15
+</p>
+
+<p>
+<strong>robots.txt:</strong>
+HTTP 200
+</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>Issues</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Severity</th>
+<th>Category</th>
+<th>Code</th>
+<th>Issue</th>
+<th>URL</th>
+<th>Recommendation</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+
+<tr>
+<td>
+<span class="severity"
+style="background:#dc2626">
+HIGH
+</span>
+</td>
+<td>indexability</td>
+<td>LOCAL_NOINDEX</td>
+<td>Potential noindex directive detected in src\components\SEO.jsx</td>
+<td>src\components\SEO.jsx</td>
+<td>Verify this is intentional for the corresponding production route.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#dc2626">
+HIGH
+</span>
+</td>
+<td>indexability</td>
+<td>LOCAL_NOINDEX</td>
+<td>Potential noindex directive detected in src\pages\MonitoringDashboardPage.jsx</td>
+<td>src\pages\MonitoringDashboardPage.jsx</td>
+<td>Verify this is intentional for the corresponding production route.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#dc2626">
+HIGH
+</span>
+</td>
+<td>metadata</td>
+<td>MISSING_DESCRIPTION</td>
+<td>Meta description is missing</td>
+<td>https://www.syncline.com.au/</td>
+<td>Add a unique, useful meta description.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#dc2626">
+HIGH
+</span>
+</td>
+<td>canonical</td>
+<td>MISSING_CANONICAL</td>
+<td>Canonical link is missing</td>
+<td>https://www.syncline.com.au/</td>
+<td>Add one canonical URL in the HTML head.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#dc2626">
+HIGH
+</span>
+</td>
+<td>content</td>
+<td>MISSING_H1</td>
+<td>No H1 heading found</td>
+<td>https://www.syncline.com.au/</td>
+<td>Add one clear primary H1 describing the page.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>internal-links</td>
+<td>ORPHAN_CANDIDATE</td>
+<td>Page has no inbound internal links discovered by crawler</td>
+<td>https://www.syncline.com.au/services</td>
+<td>Add contextual internal links if the page is important.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>internal-links</td>
+<td>ORPHAN_CANDIDATE</td>
+<td>Page has no inbound internal links discovered by crawler</td>
+<td>https://www.syncline.com.au/managed-it</td>
+<td>Add contextual internal links if the page is important.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>internal-links</td>
+<td>ORPHAN_CANDIDATE</td>
+<td>Page has no inbound internal links discovered by crawler</td>
+<td>https://www.syncline.com.au/cloud</td>
+<td>Add contextual internal links if the page is important.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>internal-links</td>
+<td>ORPHAN_CANDIDATE</td>
+<td>Page has no inbound internal links discovered by crawler</td>
+<td>https://www.syncline.com.au/security</td>
+<td>Add contextual internal links if the page is important.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>internal-links</td>
+<td>ORPHAN_CANDIDATE</td>
+<td>Page has no inbound internal links discovered by crawler</td>
+<td>https://www.syncline.com.au/automation</td>
+<td>Add contextual internal links if the page is important.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>internal-links</td>
+<td>ORPHAN_CANDIDATE</td>
+<td>Page has no inbound internal links discovered by crawler</td>
+<td>https://www.syncline.com.au/resources</td>
+<td>Add contextual internal links if the page is important.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>internal-links</td>
+<td>ORPHAN_CANDIDATE</td>
+<td>Page has no inbound internal links discovered by crawler</td>
+<td>https://www.syncline.com.au/case-studies</td>
+<td>Add contextual internal links if the page is important.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>internal-links</td>
+<td>ORPHAN_CANDIDATE</td>
+<td>Page has no inbound internal links discovered by crawler</td>
+<td>https://www.syncline.com.au/it-health-check</td>
+<td>Add contextual internal links if the page is important.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>internal-links</td>
+<td>ORPHAN_CANDIDATE</td>
+<td>Page has no inbound internal links discovered by crawler</td>
+<td>https://www.syncline.com.au/about-syncline</td>
+<td>Add contextual internal links if the page is important.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>internal-links</td>
+<td>ORPHAN_CANDIDATE</td>
+<td>Page has no inbound internal links discovered by crawler</td>
+<td>https://www.syncline.com.au/contact</td>
+<td>Add contextual internal links if the page is important.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>internal-links</td>
+<td>ORPHAN_CANDIDATE</td>
+<td>Page has no inbound internal links discovered by crawler</td>
+<td>https://www.syncline.com.au/customer-portal</td>
+<td>Add contextual internal links if the page is important.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>internal-links</td>
+<td>ORPHAN_CANDIDATE</td>
+<td>Page has no inbound internal links discovered by crawler</td>
+<td>https://www.syncline.com.au/security-guide</td>
+<td>Add contextual internal links if the page is important.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>internal-links</td>
+<td>ORPHAN_CANDIDATE</td>
+<td>Page has no inbound internal links discovered by crawler</td>
+<td>https://www.syncline.com.au/checklist</td>
+<td>Add contextual internal links if the page is important.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>internal-links</td>
+<td>ORPHAN_CANDIDATE</td>
+<td>Page has no inbound internal links discovered by crawler</td>
+<td>https://www.syncline.com.au/login</td>
+<td>Add contextual internal links if the page is important.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>configuration</td>
+<td>LOCALHOST_REFERENCE</td>
+<td>Localhost URL detected in .unlighthouse\www.syncline.com.au\8cdd\assets\payload.js</td>
+<td>.unlighthouse\www.syncline.com.au\8cdd\assets\payload.js</td>
+<td>Check that development URLs are not accidentally shipped to production.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in backup-before-replace\AboutSection.jsx</td>
+<td>backup-before-replace\AboutSection.jsx</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in backup-before-replace\ContactSection-B2rxaKsW.js</td>
+<td>backup-before-replace\ContactSection-B2rxaKsW.js</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in backup-before-replace\ContactSection.jsx</td>
+<td>backup-before-replace\ContactSection.jsx</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in backup-before-replace\CTASection.jsx</td>
+<td>backup-before-replace\CTASection.jsx</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in backup-before-replace\CustomToolsSection-CunesXU_.js</td>
+<td>backup-before-replace\CustomToolsSection-CunesXU_.js</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in backup-before-replace\CustomToolsSection.jsx</td>
+<td>backup-before-replace\CustomToolsSection.jsx</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in backup-before-replace\HeroCTASection.jsx</td>
+<td>backup-before-replace\HeroCTASection.jsx</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in backup-before-replace\Home-5pOtWOst.js</td>
+<td>backup-before-replace\Home-5pOtWOst.js</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in backup-before-replace\Home.jsx</td>
+<td>backup-before-replace\Home.jsx</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in backup-before-replace\ServicesHub.jsx</td>
+<td>backup-before-replace\ServicesHub.jsx</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in backup-before-replace\TestimonialsSection.jsx</td>
+<td>backup-before-replace\TestimonialsSection.jsx</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in src\components\about\AboutSection.jsx</td>
+<td>src\components\about\AboutSection.jsx</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in src\components\contact\ContactSection.jsx</td>
+<td>src\components\contact\ContactSection.jsx</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in src\components\cta\CTASection.jsx</td>
+<td>src\components\cta\CTASection.jsx</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in src\components\hero\HeroCTASection copy 2.jsx</td>
+<td>src\components\hero\HeroCTASection copy 2.jsx</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in src\components\hero\HeroCTASection copy.jsx</td>
+<td>src\components\hero\HeroCTASection copy.jsx</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in src\components\hero\HeroCTASection.jsx</td>
+<td>src\components\hero\HeroCTASection.jsx</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in src\components\security\SecuritySection.jsx</td>
+<td>src\components\security\SecuritySection.jsx</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in src\components\services\ServiceCard.jsx</td>
+<td>src\components\services\ServiceCard.jsx</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in src\components\services\ServiceModule.jsx</td>
+<td>src\components\services\ServiceModule.jsx</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in src\components\services\ServiceTeaser.jsx</td>
+<td>src\components\services\ServiceTeaser.jsx</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in src\components\testimonials\TestimonialsSection.jsx</td>
+<td>src\components\testimonials\TestimonialsSection.jsx</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in src\components\tools\CustomToolsSection.jsx</td>
+<td>src\components\tools\CustomToolsSection.jsx</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in src\pages\AboutSyncline.jsx</td>
+<td>src\pages\AboutSyncline.jsx</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in src\pages\Home.jsx</td>
+<td>src\pages\Home.jsx</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in src\pages\MonitoringDashboardPage.jsx</td>
+<td>src\pages\MonitoringDashboardPage.jsx</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in src\pages\ServicesHub copy.jsx</td>
+<td>src\pages\ServicesHub copy.jsx</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>local-seo</td>
+<td>LOCAL_MISSING_TITLE_SIGNAL</td>
+<td>No obvious title implementation found in src\pages\ServicesHub.jsx</td>
+<td>src\pages\ServicesHub.jsx</td>
+<td>Ensure the rendered route has a unique &lt;title&gt;.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>configuration</td>
+<td>LOCALHOST_REFERENCE</td>
+<td>Localhost URL detected in vite.config copy.js</td>
+<td>vite.config copy.js</td>
+<td>Check that development URLs are not accidentally shipped to production.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>configuration</td>
+<td>LOCALHOST_REFERENCE</td>
+<td>Localhost URL detected in vite.config.js</td>
+<td>vite.config.js</td>
+<td>Check that development URLs are not accidentally shipped to production.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>structured-data</td>
+<td>NO_STRUCTURED_DATA</td>
+<td>No JSON-LD structured data found</td>
+<td>https://www.syncline.com.au/</td>
+<td>Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>content</td>
+<td>THIN_RENDERED_CONTENT</td>
+<td>Rendered body text contains only 0 characters</td>
+<td>https://www.syncline.com.au/</td>
+<td>Verify that the page contains meaningful crawlable content.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>structured-data</td>
+<td>NO_STRUCTURED_DATA</td>
+<td>No JSON-LD structured data found</td>
+<td>https://www.syncline.com.au/services</td>
+<td>Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>structured-data</td>
+<td>NO_STRUCTURED_DATA</td>
+<td>No JSON-LD structured data found</td>
+<td>https://www.syncline.com.au/managed-it</td>
+<td>Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>structured-data</td>
+<td>NO_STRUCTURED_DATA</td>
+<td>No JSON-LD structured data found</td>
+<td>https://www.syncline.com.au/cloud</td>
+<td>Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>structured-data</td>
+<td>NO_STRUCTURED_DATA</td>
+<td>No JSON-LD structured data found</td>
+<td>https://www.syncline.com.au/security</td>
+<td>Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>structured-data</td>
+<td>NO_STRUCTURED_DATA</td>
+<td>No JSON-LD structured data found</td>
+<td>https://www.syncline.com.au/automation</td>
+<td>Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>structured-data</td>
+<td>NO_STRUCTURED_DATA</td>
+<td>No JSON-LD structured data found</td>
+<td>https://www.syncline.com.au/resources</td>
+<td>Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>structured-data</td>
+<td>NO_STRUCTURED_DATA</td>
+<td>No JSON-LD structured data found</td>
+<td>https://www.syncline.com.au/case-studies</td>
+<td>Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>structured-data</td>
+<td>NO_STRUCTURED_DATA</td>
+<td>No JSON-LD structured data found</td>
+<td>https://www.syncline.com.au/it-health-check</td>
+<td>Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>structured-data</td>
+<td>NO_STRUCTURED_DATA</td>
+<td>No JSON-LD structured data found</td>
+<td>https://www.syncline.com.au/about-syncline</td>
+<td>Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>structured-data</td>
+<td>NO_STRUCTURED_DATA</td>
+<td>No JSON-LD structured data found</td>
+<td>https://www.syncline.com.au/contact</td>
+<td>Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>structured-data</td>
+<td>NO_STRUCTURED_DATA</td>
+<td>No JSON-LD structured data found</td>
+<td>https://www.syncline.com.au/customer-portal</td>
+<td>Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>structured-data</td>
+<td>NO_STRUCTURED_DATA</td>
+<td>No JSON-LD structured data found</td>
+<td>https://www.syncline.com.au/security-guide</td>
+<td>Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>structured-data</td>
+<td>NO_STRUCTURED_DATA</td>
+<td>No JSON-LD structured data found</td>
+<td>https://www.syncline.com.au/checklist</td>
+<td>Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#d97706">
+MEDIUM
+</span>
+</td>
+<td>structured-data</td>
+<td>NO_STRUCTURED_DATA</td>
+<td>No JSON-LD structured data found</td>
+<td>https://www.syncline.com.au/login</td>
+<td>Consider appropriate Schema.org structured data such as Organization, LocalBusiness, Service or Article.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_CONTENT-SECURITY-POLICY</td>
+<td>CSP header is missing</td>
+<td>https://www.syncline.com.au/</td>
+<td>Consider configuring CSP at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_REFERRER-POLICY</td>
+<td>Referrer-Policy header is missing</td>
+<td>https://www.syncline.com.au/</td>
+<td>Consider configuring Referrer-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_PERMISSIONS-POLICY</td>
+<td>Permissions-Policy header is missing</td>
+<td>https://www.syncline.com.au/</td>
+<td>Consider configuring Permissions-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_CONTENT-SECURITY-POLICY</td>
+<td>CSP header is missing</td>
+<td>https://www.syncline.com.au/services</td>
+<td>Consider configuring CSP at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_X-CONTENT-TYPE-OPTIONS</td>
+<td>X-Content-Type-Options header is missing</td>
+<td>https://www.syncline.com.au/services</td>
+<td>Consider configuring X-Content-Type-Options at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_REFERRER-POLICY</td>
+<td>Referrer-Policy header is missing</td>
+<td>https://www.syncline.com.au/services</td>
+<td>Consider configuring Referrer-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_PERMISSIONS-POLICY</td>
+<td>Permissions-Policy header is missing</td>
+<td>https://www.syncline.com.au/services</td>
+<td>Consider configuring Permissions-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_CONTENT-SECURITY-POLICY</td>
+<td>CSP header is missing</td>
+<td>https://www.syncline.com.au/managed-it</td>
+<td>Consider configuring CSP at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_X-CONTENT-TYPE-OPTIONS</td>
+<td>X-Content-Type-Options header is missing</td>
+<td>https://www.syncline.com.au/managed-it</td>
+<td>Consider configuring X-Content-Type-Options at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_REFERRER-POLICY</td>
+<td>Referrer-Policy header is missing</td>
+<td>https://www.syncline.com.au/managed-it</td>
+<td>Consider configuring Referrer-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_PERMISSIONS-POLICY</td>
+<td>Permissions-Policy header is missing</td>
+<td>https://www.syncline.com.au/managed-it</td>
+<td>Consider configuring Permissions-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_CONTENT-SECURITY-POLICY</td>
+<td>CSP header is missing</td>
+<td>https://www.syncline.com.au/cloud</td>
+<td>Consider configuring CSP at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_X-CONTENT-TYPE-OPTIONS</td>
+<td>X-Content-Type-Options header is missing</td>
+<td>https://www.syncline.com.au/cloud</td>
+<td>Consider configuring X-Content-Type-Options at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_REFERRER-POLICY</td>
+<td>Referrer-Policy header is missing</td>
+<td>https://www.syncline.com.au/cloud</td>
+<td>Consider configuring Referrer-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_PERMISSIONS-POLICY</td>
+<td>Permissions-Policy header is missing</td>
+<td>https://www.syncline.com.au/cloud</td>
+<td>Consider configuring Permissions-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>metadata</td>
+<td>LONG_TITLE</td>
+<td>Title is 70 characters</td>
+<td>https://www.syncline.com.au/security</td>
+<td>Consider shortening the title while preserving important terms.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_CONTENT-SECURITY-POLICY</td>
+<td>CSP header is missing</td>
+<td>https://www.syncline.com.au/security</td>
+<td>Consider configuring CSP at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_X-CONTENT-TYPE-OPTIONS</td>
+<td>X-Content-Type-Options header is missing</td>
+<td>https://www.syncline.com.au/security</td>
+<td>Consider configuring X-Content-Type-Options at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_REFERRER-POLICY</td>
+<td>Referrer-Policy header is missing</td>
+<td>https://www.syncline.com.au/security</td>
+<td>Consider configuring Referrer-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_PERMISSIONS-POLICY</td>
+<td>Permissions-Policy header is missing</td>
+<td>https://www.syncline.com.au/security</td>
+<td>Consider configuring Permissions-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_CONTENT-SECURITY-POLICY</td>
+<td>CSP header is missing</td>
+<td>https://www.syncline.com.au/automation</td>
+<td>Consider configuring CSP at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_X-CONTENT-TYPE-OPTIONS</td>
+<td>X-Content-Type-Options header is missing</td>
+<td>https://www.syncline.com.au/automation</td>
+<td>Consider configuring X-Content-Type-Options at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_REFERRER-POLICY</td>
+<td>Referrer-Policy header is missing</td>
+<td>https://www.syncline.com.au/automation</td>
+<td>Consider configuring Referrer-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_PERMISSIONS-POLICY</td>
+<td>Permissions-Policy header is missing</td>
+<td>https://www.syncline.com.au/automation</td>
+<td>Consider configuring Permissions-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_CONTENT-SECURITY-POLICY</td>
+<td>CSP header is missing</td>
+<td>https://www.syncline.com.au/resources</td>
+<td>Consider configuring CSP at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_X-CONTENT-TYPE-OPTIONS</td>
+<td>X-Content-Type-Options header is missing</td>
+<td>https://www.syncline.com.au/resources</td>
+<td>Consider configuring X-Content-Type-Options at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_REFERRER-POLICY</td>
+<td>Referrer-Policy header is missing</td>
+<td>https://www.syncline.com.au/resources</td>
+<td>Consider configuring Referrer-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_PERMISSIONS-POLICY</td>
+<td>Permissions-Policy header is missing</td>
+<td>https://www.syncline.com.au/resources</td>
+<td>Consider configuring Permissions-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_CONTENT-SECURITY-POLICY</td>
+<td>CSP header is missing</td>
+<td>https://www.syncline.com.au/case-studies</td>
+<td>Consider configuring CSP at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_X-CONTENT-TYPE-OPTIONS</td>
+<td>X-Content-Type-Options header is missing</td>
+<td>https://www.syncline.com.au/case-studies</td>
+<td>Consider configuring X-Content-Type-Options at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_REFERRER-POLICY</td>
+<td>Referrer-Policy header is missing</td>
+<td>https://www.syncline.com.au/case-studies</td>
+<td>Consider configuring Referrer-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_PERMISSIONS-POLICY</td>
+<td>Permissions-Policy header is missing</td>
+<td>https://www.syncline.com.au/case-studies</td>
+<td>Consider configuring Permissions-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_CONTENT-SECURITY-POLICY</td>
+<td>CSP header is missing</td>
+<td>https://www.syncline.com.au/it-health-check</td>
+<td>Consider configuring CSP at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_X-CONTENT-TYPE-OPTIONS</td>
+<td>X-Content-Type-Options header is missing</td>
+<td>https://www.syncline.com.au/it-health-check</td>
+<td>Consider configuring X-Content-Type-Options at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_REFERRER-POLICY</td>
+<td>Referrer-Policy header is missing</td>
+<td>https://www.syncline.com.au/it-health-check</td>
+<td>Consider configuring Referrer-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_PERMISSIONS-POLICY</td>
+<td>Permissions-Policy header is missing</td>
+<td>https://www.syncline.com.au/it-health-check</td>
+<td>Consider configuring Permissions-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_CONTENT-SECURITY-POLICY</td>
+<td>CSP header is missing</td>
+<td>https://www.syncline.com.au/about-syncline</td>
+<td>Consider configuring CSP at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_X-CONTENT-TYPE-OPTIONS</td>
+<td>X-Content-Type-Options header is missing</td>
+<td>https://www.syncline.com.au/about-syncline</td>
+<td>Consider configuring X-Content-Type-Options at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_REFERRER-POLICY</td>
+<td>Referrer-Policy header is missing</td>
+<td>https://www.syncline.com.au/about-syncline</td>
+<td>Consider configuring Referrer-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_PERMISSIONS-POLICY</td>
+<td>Permissions-Policy header is missing</td>
+<td>https://www.syncline.com.au/about-syncline</td>
+<td>Consider configuring Permissions-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_CONTENT-SECURITY-POLICY</td>
+<td>CSP header is missing</td>
+<td>https://www.syncline.com.au/contact</td>
+<td>Consider configuring CSP at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_X-CONTENT-TYPE-OPTIONS</td>
+<td>X-Content-Type-Options header is missing</td>
+<td>https://www.syncline.com.au/contact</td>
+<td>Consider configuring X-Content-Type-Options at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_REFERRER-POLICY</td>
+<td>Referrer-Policy header is missing</td>
+<td>https://www.syncline.com.au/contact</td>
+<td>Consider configuring Referrer-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_PERMISSIONS-POLICY</td>
+<td>Permissions-Policy header is missing</td>
+<td>https://www.syncline.com.au/contact</td>
+<td>Consider configuring Permissions-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_CONTENT-SECURITY-POLICY</td>
+<td>CSP header is missing</td>
+<td>https://www.syncline.com.au/customer-portal</td>
+<td>Consider configuring CSP at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_X-CONTENT-TYPE-OPTIONS</td>
+<td>X-Content-Type-Options header is missing</td>
+<td>https://www.syncline.com.au/customer-portal</td>
+<td>Consider configuring X-Content-Type-Options at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_REFERRER-POLICY</td>
+<td>Referrer-Policy header is missing</td>
+<td>https://www.syncline.com.au/customer-portal</td>
+<td>Consider configuring Referrer-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_PERMISSIONS-POLICY</td>
+<td>Permissions-Policy header is missing</td>
+<td>https://www.syncline.com.au/customer-portal</td>
+<td>Consider configuring Permissions-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_CONTENT-SECURITY-POLICY</td>
+<td>CSP header is missing</td>
+<td>https://www.syncline.com.au/security-guide</td>
+<td>Consider configuring CSP at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_X-CONTENT-TYPE-OPTIONS</td>
+<td>X-Content-Type-Options header is missing</td>
+<td>https://www.syncline.com.au/security-guide</td>
+<td>Consider configuring X-Content-Type-Options at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_REFERRER-POLICY</td>
+<td>Referrer-Policy header is missing</td>
+<td>https://www.syncline.com.au/security-guide</td>
+<td>Consider configuring Referrer-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_PERMISSIONS-POLICY</td>
+<td>Permissions-Policy header is missing</td>
+<td>https://www.syncline.com.au/security-guide</td>
+<td>Consider configuring Permissions-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_CONTENT-SECURITY-POLICY</td>
+<td>CSP header is missing</td>
+<td>https://www.syncline.com.au/checklist</td>
+<td>Consider configuring CSP at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_X-CONTENT-TYPE-OPTIONS</td>
+<td>X-Content-Type-Options header is missing</td>
+<td>https://www.syncline.com.au/checklist</td>
+<td>Consider configuring X-Content-Type-Options at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_REFERRER-POLICY</td>
+<td>Referrer-Policy header is missing</td>
+<td>https://www.syncline.com.au/checklist</td>
+<td>Consider configuring Referrer-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_PERMISSIONS-POLICY</td>
+<td>Permissions-Policy header is missing</td>
+<td>https://www.syncline.com.au/checklist</td>
+<td>Consider configuring Permissions-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_CONTENT-SECURITY-POLICY</td>
+<td>CSP header is missing</td>
+<td>https://www.syncline.com.au/login</td>
+<td>Consider configuring CSP at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_X-CONTENT-TYPE-OPTIONS</td>
+<td>X-Content-Type-Options header is missing</td>
+<td>https://www.syncline.com.au/login</td>
+<td>Consider configuring X-Content-Type-Options at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_REFERRER-POLICY</td>
+<td>Referrer-Policy header is missing</td>
+<td>https://www.syncline.com.au/login</td>
+<td>Consider configuring Referrer-Policy at the hosting/CDN layer.</td>
+</tr>
+
+<tr>
+<td>
+<span class="severity"
+style="background:#2563eb">
+LOW
+</span>
+</td>
+<td>security</td>
+<td>MISSING_PERMISSIONS-POLICY</td>
+<td>Permissions-Policy header is missing</td>
+<td>https://www.syncline.com.au/login</td>
+<td>Consider configuring Permissions-Policy at the hosting/CDN layer.</td>
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<div class="section">
+
+<h2>Pages</h2>
+
+<table>
+
+<thead>
+
+<tr>
+<th>URL</th>
+<th>HTTP</th>
+<th>Title</th>
+<th>H1</th>
+<th>Internal links</th>
+<th>Rendered text</th>
+<th>TTFB</th>
+<th>Issues</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+
+<tr>
+<td>https://www.syncline.com.au/</td>
+<td>200</td>
+<td>Syncline - Enterprise IT Solutions</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>20 ms</td>
+<td>8</td>
+</tr>
+
+<tr>
+<td>https://www.syncline.com.au/services</td>
+<td>200</td>
+<td>IT Services for Victorian SMBs | Syncline IT Solutions</td>
+<td>1</td>
+<td>21</td>
+<td>1240</td>
+<td>17 ms</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>https://www.syncline.com.au/managed-it</td>
+<td>200</td>
+<td>Managed IT Support for Victorian SMBs | Syncline IT Solutions</td>
+<td>1</td>
+<td>18</td>
+<td>1116</td>
+<td>16 ms</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>https://www.syncline.com.au/cloud</td>
+<td>200</td>
+<td>Cloud Solutions for Victorian SMBs | Syncline IT Solutions</td>
+<td>1</td>
+<td>18</td>
+<td>1221</td>
+<td>16 ms</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>https://www.syncline.com.au/security</td>
+<td>200</td>
+<td>Business Security &amp; Backups for Victorian SMBs | Syncline IT Solutions</td>
+<td>1</td>
+<td>18</td>
+<td>2268</td>
+<td>16 ms</td>
+<td>6</td>
+</tr>
+
+<tr>
+<td>https://www.syncline.com.au/automation</td>
+<td>200</td>
+<td>Automation &amp; AI for Victorian SMBs | Syncline IT Solutions</td>
+<td>1</td>
+<td>18</td>
+<td>1084</td>
+<td>18 ms</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>https://www.syncline.com.au/resources</td>
+<td>200</td>
+<td>Resources &amp; Guides for Victorian SMBs | Syncline IT Solutions</td>
+<td>1</td>
+<td>21</td>
+<td>1178</td>
+<td>17 ms</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>https://www.syncline.com.au/case-studies</td>
+<td>200</td>
+<td>Case Studies | Syncline IT Solutions</td>
+<td>1</td>
+<td>18</td>
+<td>1221</td>
+<td>17 ms</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>https://www.syncline.com.au/it-health-check</td>
+<td>200</td>
+<td>Free IT Health Check for Victorian SMBs | Syncline IT Solutions</td>
+<td>1</td>
+<td>18</td>
+<td>1183</td>
+<td>17 ms</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>https://www.syncline.com.au/about-syncline</td>
+<td>200</td>
+<td>About Syncline | Syncline IT Solutions</td>
+<td>1</td>
+<td>18</td>
+<td>1191</td>
+<td>24 ms</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>https://www.syncline.com.au/contact</td>
+<td>200</td>
+<td>Contact Us | Syncline IT Solutions</td>
+<td>1</td>
+<td>17</td>
+<td>1364</td>
+<td>17 ms</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>https://www.syncline.com.au/customer-portal</td>
+<td>200</td>
+<td>Customer Portal | Syncline IT Solutions</td>
+<td>1</td>
+<td>18</td>
+<td>1076</td>
+<td>16 ms</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>https://www.syncline.com.au/security-guide</td>
+<td>200</td>
+<td>Cybersecurity Guide for Victorian SMBs | Syncline IT Solutions</td>
+<td>1</td>
+<td>17</td>
+<td>678</td>
+<td>16 ms</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>https://www.syncline.com.au/checklist</td>
+<td>200</td>
+<td>IT Infrastructure Checklist | Syncline IT Solutions</td>
+<td>1</td>
+<td>17</td>
+<td>668</td>
+<td>17 ms</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>https://www.syncline.com.au/login</td>
+<td>200</td>
+<td>Client Login | Syncline IT Solutions</td>
+<td>1</td>
+<td>17</td>
+<td>758</td>
+<td>17 ms</td>
+<td>5</td>
+</tr>
+
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<div class="section">
+
+<h2>Git</h2>
+
+<div class="card">
+
+<p>
+<strong>Branch:</strong>
+development
+</p>
+
+<p>
+<strong>Commit:</strong>
+d777a1c
+</p>
+
+<p>
+<strong>Working tree changes:</strong>
+3
+</p>
+
+</div>
+
+</div>
+
+
+</main>
+
+</body>
+
+</html>

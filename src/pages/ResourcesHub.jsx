@@ -111,7 +111,7 @@ export default function ResourcesHub() {
         <div className="absolute inset-0">
           <img
             src={workspaceTools}
-            alt=""
+            alt="Workspace tools and technology background representing resources and guides"
             className="w-full h-full object-cover opacity-25"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-slate-950/85 via-slate-950/90 to-slate-950" />

@@ -18,7 +18,7 @@ const ManagedITPage = () => {
     <section className="relative py-20 lg:py-32 bg-gradient-to-b from-slate-950 via-indigo-950/20 to-slate-950">
       <SEO
         title="Managed IT Support for Victorian SMBs | Syncline IT Solutions"
-        description="proactive monitoring, rapid onsite & remote response, a dedicated account manager, and a High uptime and stable performance SLA — managed IT support built for Victorian small businesses."
+        description="Proactive managed IT support for Victorian SMBs — monitoring, rapid response, Microsoft 365, and a dedicated account manager so your systems stay reliable."
         path="/managed-it"
       />
       <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">

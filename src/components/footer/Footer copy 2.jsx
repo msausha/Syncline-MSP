@@ -55,8 +55,6 @@ const Footer = () => {
             <Link to="/" className="inline-flex items-center gap-3 mb-5 group">
               <img
                 src={BrandPrimary}
-                width="180"
-                height="48"
                 alt="Syncline IT Solutions"
                 className="h-12 w-auto object-contain"
               />
@@ -178,7 +176,7 @@ const Footer = () => {
                 alt="Syncline symbol"
                 className="h-16 w-16 object-contain"
               />
-              <p className="text-[11px] text-slate-400 text-center leading-snug">
+              <p className="text-[11px] text-slate-500 text-center leading-snug">
                 Syncline IT Solutions
                 <br />
                 Victoria, Australia
@@ -188,93 +186,102 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* ═══════════ BRAND SHOWCASE ═══════════ */}
+      {/* ═══════════ BRAND SHOWCASE ═══════════
+          Professional introduction of logo variants for web viewers.
+          Each tile uses a background that suits that asset. */}
       <div className="border-t border-white/5 bg-slate-900/40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-6">
             <div>
-              <p className="text-xs uppercase tracking-widest text-slate-400 font-medium mb-1">
+              <p className="text-xs uppercase tracking-widest text-slate-500 font-medium mb-1">
                 Brand system
               </p>
               <h3 className="text-base font-semibold text-white">
                 Syncline logos & marks
               </h3>
             </div>
-            <p className="text-xs text-slate-400 max-w-md sm:text-right">
+            <p className="text-xs text-slate-500 max-w-md sm:text-right">
               Primary, symbol, full lockup, and social variants — shown on the
               backgrounds they are designed for.
             </p>
           </div>
 
+
+
+
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
 
-            {/* Primary — dark */}
-            <div className="group rounded-xl border border-white/10 bg-slate-950 p-5
-                            flex flex-col items-center justify-between gap-3 min-h-[140px]
-                            hover:border-cyan-500/30 transition-colors">
-              <div className="flex-1 flex items-center justify-center w-full py-2">
-                <img
-                  src={BrandPrimary}
-                  alt="Primary logo"
-                  width="180"
-                  height="48"
-                  className="max-h-12 w-auto object-contain"
-                />
-              </div>
-              <span className="text-[10px] uppercase tracking-wider text-slate-400 group-hover:text-slate-300">
-                Primary
-              </span>
-            </div>
+                      {/* Primary — dark */}
+                      <div className="group rounded-xl border border-white/10 bg-slate-950 p-5
+                                      flex flex-col items-center justify-between gap-3 min-h-[140px]
+                                      hover:border-cyan-500/30 transition-colors">
+                        <div className="flex-1 flex items-center justify-center w-full py-2">
+                          <img
+                            src={BrandPrimary}
+                            alt="Primary logo"
+                            className="max-h-12 w-auto object-contain"
+                          />
+                        </div>
+                        <span className="text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-400">
+                          Primary
+                        </span>
+                      </div>
 
-            {/* Symbol — dark */}
-            <div className="group rounded-xl border border-white/10 bg-slate-950 p-5
-                            flex flex-col items-center justify-between gap-3 min-h-[140px]
-                            hover:border-cyan-500/30 transition-colors">
-              <div className="flex-1 flex items-center justify-center w-full py-2">
-                <img
-                  src={BrandSymbol}
-                  alt="Symbol mark"
-                  className="max-h-14 w-auto object-contain"
-                />
-              </div>
-              <span className="text-[10px] uppercase tracking-wider text-slate-400 group-hover:text-slate-300">
-                Symbol
-              </span>
-            </div>
+                      {/* Symbol — dark */}
+                      <div className="group rounded-xl border border-white/10 bg-slate-950 p-5
+                                      flex flex-col items-center justify-between gap-3 min-h-[140px]
+                                      hover:border-cyan-500/30 transition-colors">
+                        <div className="flex-1 flex items-center justify-center w-full py-2">
+                          <img
+                            src={BrandSymbol}
+                            alt="Symbol mark"
+                            className="max-h-14 w-auto object-contain"
+                          />
+                        </div>
+                        <span className="text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-400">
+                          Symbol
+                        </span>
+                      </div>
 
-            {/* Full colour lockup — dark */}
-            <div className="group rounded-xl border border-white/10 bg-slate-950 p-5
-                            flex flex-col items-center justify-between gap-3 min-h-[140px]
-                            hover:border-cyan-500/30 transition-colors">
-              <div className="flex-1 flex items-center justify-center w-full py-2">
-                <img
-                  src={BrandFull1024}
-                  alt="Full colour lockup"
-                  className="max-h-12 w-auto object-contain"
-                />
-              </div>
-              <span className="text-[10px] uppercase tracking-wider text-slate-400 group-hover:text-slate-300">
-                Full colour
-              </span>
-            </div>
+                      {/* Full colour lockup — dark */}
+                      <div className="group rounded-xl border border-white/10 bg-slate-950 p-5
+                                      flex flex-col items-center justify-between gap-3 min-h-[140px]
+                                      hover:border-cyan-500/30 transition-colors">
+                        <div className="flex-1 flex items-center justify-center w-full py-2">
+                          <img
+                            src={BrandFull1024}
+                            alt="Full colour lockup"
+                            className="max-h-12 w-auto object-contain"
+                          />
+                        </div>
+                        <span className="text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-400">
+                          Full colour
+                        </span>
+                      </div>
 
-            {/* White full — dark */}
-            <div className="group rounded-xl border border-white/10 bg-slate-950 p-5
-                            flex flex-col items-center justify-between gap-3 min-h-[140px]
-                            hover:border-cyan-500/30 transition-colors">
-              <div className="flex-1 flex items-center justify-center w-full py-2">
-                <img
-                  src={BrandFullWhite512}
-                  alt="White lockup"
-                  className="max-h-12 w-auto object-contain"
-                />
-              </div>
-              <span className="text-[10px] uppercase tracking-wider text-slate-400 group-hover:text-slate-300">
-                White lockup
-              </span>
-            </div>
+                      {/* White full — dark */}
+                      <div className="group rounded-xl border border-white/10 bg-slate-950 p-5
+                                      flex flex-col items-center justify-between gap-3 min-h-[140px]
+                                      hover:border-cyan-500/30 transition-colors">
+                        <div className="flex-1 flex items-center justify-center w-full py-2">
+                          <img
+                            src={BrandFullWhite512}
+                            alt="White lockup"
+                            className="max-h-12 w-auto object-contain"
+                          />
+                        </div>
+                        <span className="text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-400">
+                          White lockup
+                        </span>
+                      </div>
 
-            {/* Social blue — light */}
+
+
+
+
+
+
+{/* Social blue — light */}
             <div className="group rounded-xl border border-white/10 bg-slate-100 p-2
                             flex flex-col items-center justify-between gap-2 min-h-[150px]
                             overflow-hidden hover:border-cyan-500/40 transition-colors">
@@ -285,7 +292,7 @@ const Footer = () => {
                   className="w-full h-full object-cover rounded-lg"
                 />
               </div>
-              <span className="text-[10px] uppercase tracking-wider text-slate-700 group-hover:text-slate-900 pb-1">
+              <span className="text-[10px] uppercase tracking-wider text-slate-600 group-hover:text-slate-800 pb-1">
                 Social · blue
               </span>
             </div>
@@ -301,7 +308,7 @@ const Footer = () => {
                   className="w-full h-full object-cover rounded-lg"
                 />
               </div>
-              <span className="text-[10px] uppercase tracking-wider text-slate-400 group-hover:text-slate-300 pb-1">
+              <span className="text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-400 pb-1">
                 Social · white
               </span>
             </div>
@@ -317,7 +324,7 @@ const Footer = () => {
                   className="w-full h-full object-cover rounded-lg"
                 />
               </div>
-              <span className="text-[10px] uppercase tracking-wider text-slate-700 group-hover:text-slate-900 pb-1">
+              <span className="text-[10px] uppercase tracking-wider text-slate-600 group-hover:text-slate-800 pb-1">
                 Social · navy
               </span>
             </div>
@@ -333,12 +340,22 @@ const Footer = () => {
                   className="w-full h-full object-cover rounded-lg opacity-70 group-hover:opacity-100 transition-opacity"
                 />
               </div>
-              <span className="text-[10px] uppercase tracking-wider text-slate-400 group-hover:text-slate-300 pb-1">
+              <span className="text-[10px] uppercase tracking-wider text-slate-500 group-hover:text-slate-400 pb-1">
                 Watermark
               </span>
             </div>
 
+
+            
+
+
+
           </div>
+
+
+
+
+
         </div>
       </div>
 
@@ -346,29 +363,29 @@ const Footer = () => {
       <div className="border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-4 gap-y-1 text-xs text-slate-400">
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-4 gap-y-1 text-xs text-slate-500">
               <span>© {currentYear} Syncline IT Solutions. All rights reserved.</span>
-              <span className="hidden sm:inline text-slate-600">·</span>
+              <span className="hidden sm:inline text-slate-700">·</span>
               <span>ABN: XX XXX XXX XXX</span>
             </div>
 
             <div className="flex items-center gap-5">
               <a
                 href="#privacy"
-                className="text-xs text-slate-400 hover:text-white transition-colors"
+                className="text-xs text-slate-500 hover:text-white transition-colors"
               >
                 Privacy Policy
               </a>
               <a
                 href="#terms"
-                className="text-xs text-slate-400 hover:text-white transition-colors"
+                className="text-xs text-slate-500 hover:text-white transition-colors"
               >
                 Terms of Service
               </a>
               <button
                 type="button"
                 onClick={scrollToTop}
-                aria-label="Scroll to top of page"
+                aria-label="Scroll to top"
                 className="p-2 rounded-lg bg-white/5 border border-white/5
                            hover:bg-cyan-500/15 hover:border-cyan-500/30 transition-colors group"
               >

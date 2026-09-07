@@ -124,7 +124,7 @@ export default function ServicesHub() {
         <div className="absolute inset-0">
           <img
             src={cityData}
-            alt=""
+            alt="City skyline background representing Syncline IT Solutions"
             className="w-full h-full object-cover opacity-30"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/90 to-slate-950" />
