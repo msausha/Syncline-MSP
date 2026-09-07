@@ -31,11 +31,11 @@ const BENEFITS = [
   { Icon: Activity,    text: 'Smooth, reliable day‑to‑day performance',     c: 'blue' },
   { Icon: Cloud,       text: 'Simple, organised cloud & Microsoft 365 setup', c: 'cyan' },
   { Icon: Database,    text: 'Backups you can trust when you need them',    c: 'purple' },
-  { Icon: TrendingUp,  text: 'Technology that grows with your business',     c: 'orange' },
+  { Icon: TrendingUp,  text: 'Technology that grows with your business',    c: 'orange' },
 ];
 
 const TERMINAL_LINES = [
-  { text: '> Checking device status…',         cls: 'text-cyan-400' },
+  { text: '> Checking device status…',        cls: 'text-cyan-400' },
   { text: '> Reviewing cloud setup…',          cls: 'text-blue-400' },
   { text: '> Confirming backup availability…', cls: 'text-purple-400' },
   { text: '> Routine checks completed ✓',      cls: 'text-green-400' },
@@ -56,7 +56,6 @@ const TECH_NEWS = [
   'Teams performance upgrade supports hybrid SMB workflows',
 ];
 
-/* Static class maps — Tailwind cannot generate dynamic bg-${c} classes at runtime */
 const ICON_COLOR = {
   green:  'text-green-400',
   blue:   'text-blue-400',
@@ -158,32 +157,30 @@ const HeroCTASection = () => {
       </div>
 
       {/* HERO */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-12">
-        
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-36 pb-12">
         <div className="flex flex-col lg:flex-row lg:items-start gap-10 lg:gap-16 min-h-[calc(100vh-8rem)]">
 
           {/* LEFT */}
-          <div className="flex-1 flex flex-col gap-8 min-w-0">
+          <div className="flex-1 flex flex-col gap-6 min-w-0">
 
-            {/* Live Tech Update — 34px matches .sl-badge */}
-            <div className="flex items-center gap-3 h-[34px] px-4 rounded-full
-                          bg-slate-900/70 border border-cyan-500/40 shadow-sm w-full max-w-4xl
-                          mb-4">
+            {/* Live Tech Update — Flexible height container to prevent clipping */}
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 py-2 px-4 rounded-xl
+                            bg-slate-900/70 border border-cyan-500/40 shadow-sm w-full max-w-4xl">
               <div className="flex items-center gap-1.5 text-[11px] sm:text-xs font-semibold
                               text-cyan-300 uppercase tracking-wide flex-shrink-0">
                 <Activity className="w-3.5 h-3.5 text-cyan-400 animate-pulse" />
                 <span>Live Tech Update</span>
               </div>
-
               <p
                 ref={newsRef}
-                className="text-sm sm:text-[15px] font-medium truncate select-none
-             leading-none min-w-0 flex-1 text-right
-             italic text-cyan-300"
+                className="text-sm sm:text-[15px] font-medium select-none
+                           leading-snug min-w-0 flex-1 sm:text-right
+                           italic text-cyan-300"
               >
                 {TECH_NEWS[0]}
               </p>
             </div>
+
             <motion.h1
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
@@ -208,7 +205,8 @@ const HeroCTASection = () => {
               Stop firefighting, start scaling.
             </motion.p>
 
-            <div className="relative h-[88px]">
+            {/* Replaced fixed h-[88px] with flexible auto height wrapper to prevent text clipping */}
+            <div className="relative min-h-[100px] sm:min-h-[80px]">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={problemIdx}
@@ -216,9 +214,9 @@ const HeroCTASection = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -12 }}
                   transition={{ duration: 0.4 }}
-                  className="absolute inset-0 flex items-stretch gap-3"
+                  className="inset-0 flex flex-col sm:flex-row items-stretch gap-3"
                 >
-                  <div className="flex-1 p-3 bg-red-500/10 border border-red-500/30 rounded-xl flex flex-col justify-center">
+                  <div className="flex-1 p-3.5 bg-red-500/10 border border-red-500/30 rounded-xl flex flex-col justify-center">
                     <p className="text-red-400 text-xs font-semibold mb-1 flex items-center gap-1.5">
                       <AlertTriangle className="w-3.5 h-3.5" /> Problem
                     </p>
@@ -226,10 +224,10 @@ const HeroCTASection = () => {
                       {PROBLEMS[problemIdx].problem}
                     </p>
                   </div>
-                  <div className="flex items-center flex-shrink-0">
-                    <ArrowRight className="w-5 h-5 text-cyan-400" />
+                  <div className="hidden sm:flex items-center justify-center flex-shrink-0">
+                    <ArrowRight className="w-5 h-5 text-cyan-400 rotate-90 sm:rotate-0" />
                   </div>
-                  <div className="flex-1 p-3 bg-green-500/10 border border-green-500/30 rounded-xl flex flex-col justify-center">
+                  <div className="flex-1 p-3.5 bg-green-500/10 border border-green-500/30 rounded-xl flex flex-col justify-center">
                     <p className="text-green-400 text-xs font-semibold mb-1 flex items-center gap-1.5">
                       <CheckCircle className="w-3.5 h-3.5" /> Solution
                     </p>
@@ -316,7 +314,6 @@ const HeroCTASection = () => {
 
       {/* BELOW FOLD */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
         <div className="py-16 lg:py-24">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-10 text-center">
             How We Support Victorian SMBs
