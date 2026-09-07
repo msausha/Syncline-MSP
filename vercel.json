@@ -13,7 +13,7 @@
       "has": [
         { "type": "host", "value": "www.syncline.com.au" }
       ],
-      "destination": "https://syncline.com.au/:1",
+      "destination": "https://syncline.com.au/$1",
       "permanent": true
     }
   ],
