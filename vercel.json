@@ -1,20 +1,20 @@
 {
   "buildCommand": "npm run build:vercel",
   "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        { "type": "host", "value": "syncline.com.au" }
+      ],
+      "destination": "https://www.syncline.com.au/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
       "destination": "/index.html"
-    }
-  ],
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "has": [
-        { "type": "host", "value": "syncline.com.au" }
-      ],
-      "destination": "https://www.syncline.com.au/$1",
-      "permanent": true
     }
   ],
   "headers": [
@@ -25,19 +25,12 @@
       ]
     },
     {
-      "source": "/",
+      "source": "/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" },
         { "key": "X-Robots-Tag", "value": "index, follow" },
         { "key": "Strict-Transport-Security", "value": "max-age=31536000; includeSubDomains" },
         { "key": "X-Frame-Options", "value": "DENY" },
         { "key": "X-Content-Type-Options", "value": "nosniff" }
-      ]
-    },
-    {
-      "source": "/(.*)",
-      "headers": [
-        { "key": "X-Robots-Tag", "value": "index, follow" }
       ]
     }
   ]

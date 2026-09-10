@@ -1,0 +1,134 @@
+Brand Name Typography System
+Purpose  
+A single, authoritative specification for Syncline IT Solutions brand name styling to use across website, hero, navbar, invoices, letterhead, email signatures, social profiles, and print. This system ensures a consistent, premium, and recognisable identity.
+
+Core Typeface and Color
+Primary Typeface: Inter (variable) — use the hosted web variable or local OTF for print.
+
+Fallback Stack: Inter, "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif.
+
+Primary Brand Color: #0077FF (Syncline Blue) for accents and logo ties.
+
+Primary Text Colors: #0A0A0A (near‑black) on light backgrounds; #FFFFFF on dark backgrounds.
+
+Secondary Text Color: #A7B0C0 (cool grey) for metadata and subtle labels.
+
+Contrast Rule: Ensure WCAG AA contrast for body text and WCAG AAA for the brand name on hero backgrounds.
+
+Brand Name Structure and Tone
+Wordmark Composition
+
+Primary word: Syncline — visual emphasis, heavier weight.
+
+Descriptor: IT Solutions — lighter weight, same family, visually subordinate.
+
+Case: Title case for primary use (Syncline IT Solutions). Use UPPERCASE only for compact badges or legal headers.
+
+Spacing: Keep the wordmark as a single horizontal lockup where possible; stacked lockup allowed for narrow spaces with Syncline above IT Solutions.
+
+Weights, Sizes, Tracking, Line Height
+Context	Font Weight	Size	Letter Spacing	Line Height
+Hero Brand Name	600 (SemiBold) for Syncline; 500 (Medium) for IT Solutions	48–64 px responsive (desktop hero)	0.22em → 0.18em animated easing	1.02–1.12
+Navbar	500 (Medium)	18–20 px	0 to 0.02em	1.1
+Letterhead Company Name	600 (SemiBold)	18–20 pt	0.04em	1.05
+Invoice Header	600 (SemiBold)	20–22 pt	0.02–0.04em	1.05
+Email Signature Name	600 (SemiBold)	16–18 px	0.02em	1.1
+Social Profile Name	600 (SemiBold)	20–28 px (varies by platform)	0.02–0.04em	1.05
+Notes
+
+Use Inter SemiBold (600) for the primary word to create a premium, confident presence.
+
+Use Inter Medium (500) for the descriptor to maintain hierarchy without competing weight.
+
+Letter‑spacing animation for the hero brand name: start at 0.30em and ease to 0.22em during reveal for a premium feel; do not animate letter spacing in static print assets.
+
+Layout, Alignment, and Lockup Rules
+Primary Lockup: Horizontal — Syncline (left) + small separator + IT Solutions (right). Keep vertical center alignment.
+
+Stacked Lockup: Use when width < 340px. Syncline on top, IT Solutions below with 4–6 px vertical gap.
+
+Clear Space: Minimum clear space = height of the capital S in the wordmark on all sides. Never place other elements inside this zone.
+
+Minimum Size: Wordmark should never render smaller than 36 px on screen or 12 mm in print.
+
+Alignment: Left‑align on documents; center for hero and social banners; right‑align only for special layouts.
+
+Color Usage and Treatments
+Primary usage: Wordmark in #0A0A0A on white; #FFFFFF on dark.
+
+Accent usage: Use #0077FF for small elements in the wordmark (dot, separator, or small underline) only when the logo lockup supports it.
+
+Gradient: Do not apply gradients to the wordmark. Gradients are allowed in hero headline text but not in the wordmark.
+
+Shadow and Effects: Avoid drop shadows on the wordmark for print. On digital hero only, use a subtle glow or soft shadow no larger than 2px blur and 10% opacity.
+
+Accessibility and Readability
+Contrast: Wordmark must meet WCAG AA contrast ratio against its background. If background is busy, place the wordmark on a solid or semi‑opaque panel.
+
+Legibility: Avoid ultra‑tight tracking for small sizes. For sizes ≤14 px, set letter spacing to 0 and increase weight if needed.
+
+Color Blindness: Do not rely on color alone to convey brand hierarchy; use weight and size.
+
+File Formats and Exports
+Vector: Provide the wordmark as SVG and PDF for web and print. SVG must include a single path for the wordmark and a separate path for any accent so they can be recolored.
+
+Raster: Export PNG at 2x and 3x for web thumbnails and social. Provide transparent and white background variants.
+
+Font Licensing: Ensure Inter is licensed for web and print; host variable font for web to preserve weights and letter‑spacing animation.
+
+Usage Examples and CSS Snippets
+Hero brand name CSS (Tailwind-like)
+
+css
+/* Hero wordmark */
+.hero-wordmark {
+  font-family: Inter, system-ui, sans-serif;
+  font-weight: 600; /* Syncline */
+  font-size: clamp(48px, 4.5vw, 64px);
+  letter-spacing: 0.22em;
+  line-height: 1.06;
+  color: #ffffff;
+  text-transform: none;
+}
+.hero-descriptor {
+  font-weight: 500;
+  font-size: clamp(16px, 1.6vw, 20px);
+  color: #A7B0C0;
+  letter-spacing: 0.12em;
+}
+Invoice header example
+
+Place wordmark top-left, 18–20 pt, SemiBold.
+
+Company details right-aligned in 10–11 pt Regular.
+
+Maintain clear space equal to the height of the capital S.
+
+Do’s and Don’ts
+Do use SemiBold for Syncline and Medium for IT Solutions.
+
+Do keep the wordmark monochrome for legal and financial documents.
+
+Do animate letter spacing only in hero or short digital reveals.
+
+Don’t apply gradients, heavy shadows, or outlines to the wordmark.
+
+Don’t compress the wordmark below minimum size.
+
+Don’t change typeface for the wordmark; use Inter family only.
+
+Quick Brand‑Name Checklist for Each Asset
+Website Hero: Inter 600 / 500; animated reveal; color white on dark; center lockup.
+
+Navbar: Inter 500; 18–20 px; single-line horizontal lockup; high contrast.
+
+Letterhead: Inter 600; 18–20 pt; left-aligned; monochrome.
+
+Invoice: Inter 600; 20–22 pt for header; totals emphasized with SemiBold.
+
+Email Signature: Inter 600 for name 16–18 px; contact details 13–14 px.
+
+Social Profiles: Use SVG wordmark; ensure legibility at platform thumbnail sizes.
+
+Deliverable offer  
+I can now generate a one‑page Brand Name Typography Spec (printable PDF or Figma tokens) that includes exact CSS/Tailwind tokens, SVG export checklist, and ready‑to‑copy sizes for invoices and letterheads. Tell me which format you prefer and I’ll prepare the spec.
