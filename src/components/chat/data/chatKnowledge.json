@@ -1,22 +1,29 @@
 ﻿{
   "services": "We offer comprehensive IT solutions including Managed IT Support, Cloud Services, Cybersecurity, Network Monitoring, and Software Development. Would you like more details on any specific service?",
-  "security": "Our security services cover firewall management, endpoint protection, vulnerability assessments, security audits, and incident response. We ensure your business data is fully protected.",
-  "monitoring": "We provide 24/7 system monitoring, performance tracking, and alert management. Our proactive monitoring ensures minimal downtime and optimal performance for your IT infrastructure.",
+  
+  "security": "Our security services include firewall management, endpoint protection, vulnerability assessments, security audits, and incident response. We help strengthen the protection of your business data using industry best practices.",
+  
+  "monitoring": "We provide 24/7 system monitoring, performance tracking, and alert management. Our proactive monitoring is designed to help reduce downtime and maintain stable performance across your IT environment.",
+  
   "contact": "You can contact our team via phone at 0406 001 444, email at info@syncline.com.au, or book a consultation using our online form. Which method would you prefer?",
-  "pricing": "Our IT support plans start from $199/month for small businesses, including proactive monitoring, unlimited remote support, and security management. Interested in a custom quote?",
-  "assessment": "Our free IT health check includes a full security audit, performance review, and custom recommendations. I can help schedule a session with Syncline. What time works best for you?",
-  "emergency": "For urgent IT issues, please call 0406 001 444 immediately. Our emergency line is monitored 24/7 for managed clients. Are you experiencing a critical issue right now?",
-  "response": "We guarantee less than 2-hour response times for all managed clients, with 24/7 emergency support available. Same-day onsite visits are available in Melbourne metro. Would you like more details on our SLA?",
-  "hello": "Hello! ðŸ‘‹ How can I assist you today with services, security, monitoring, or contacting our team?",
-  "hi": "Hi there! ðŸ‘‹ Welcome to Syncline IT Solutions. How can I help you today?",
   
-  "about": "Syncline IT is your dedicated IT partner in Victoria. We help businesses build secure, reliable, and future-proof IT foundations without the complexity of corporate overhead. Our services include infrastructure architecture, professional-grade standards, and outcome-driven technology solutions. Would you like more details on our approach?",
+  "pricing": "Our IT support plans start from $199/month for small businesses, including proactive monitoring, unlimited remote support, and security best‑practice alignment. Would you like a tailored quote for your environment?",
   
-  "service_area": "We provide local IT support across Victoria. Click any location on the map to see detailed coverage, response times, and services available. Key locations include Melbourne (same-day onsite), Geelong (same/next-day), Ballarat (24-48 hours), Bendigo (24-72 hours), Warrnambool (48-72 hours), and Mildura (remote priority). Full remote support is available Australia-wide.",
+  "assessment": "Our free IT health check includes a security review, performance assessment, and practical recommendations. I can help schedule a session with Syncline. What time works best for you?",
   
-  "custom_it": "We provide custom IT solutions tailored to your business needs, including specialized software development, network architecture, cloud solutions, and cybersecurity measures. Would you like to discuss a custom plan?",
+  "emergency": "For urgent IT issues, please call 0406 001 444 immediately. Our emergency line is monitored for managed clients. Are you experiencing a critical issue right now?",
+  
+  "response": "Managed clients typically receive responses within 2 hours, with extended support available when needed. Same‑day onsite visits are available in Melbourne metro. Would you like more details on our support options?",
+  
+  "hello": "Hello! 👋 How can I assist you today with services, security, monitoring, or contacting our team?",
+  
+  "hi": "Hi there! 👋 Welcome to Syncline IT Solutions. How can I help you today?",
+  
+  "about": "Syncline IT is your dedicated IT partner in Victoria. We help businesses build stable, secure, and future‑ready IT foundations without the complexity of corporate overhead. Our services include infrastructure architecture, professional‑grade standards, and practical technology solutions. Would you like more details on our approach?",
+  
+  "service_area": "We provide local IT support across Victoria. Click any location on the map to see coverage, response expectations, and available services. Key locations include Melbourne (same‑day onsite), Geelong (same/next‑day), Ballarat (24–48 hours), Bendigo (24–72 hours), Warrnambool (48–72 hours), and Mildura (remote priority). Full remote support is available Australia‑wide.",
+  
+  "custom_it": "We provide custom IT solutions tailored to your business needs, including software development, network architecture, cloud solutions, and cybersecurity improvements. Would you like to discuss a tailored plan?",
   
   "fallback": "I may not have that information. Would you like to contact our team for assistance?"
 }
-
-
