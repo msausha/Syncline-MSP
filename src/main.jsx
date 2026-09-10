@@ -1,27 +1,21 @@
 // src/main.jsx
-import React, { useEffect } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import { HelmetProvider } from 'react-helmet-async'; // was installed, never used
-import ScrollToTop from './components/ScrollToTop';
 import App from './App.jsx';
 import './index.css';
 
-function Root() {
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, []);
+const container = document.getElementById('root');
 
-  return (
-    <React.StrictMode>
-      <HelmetProvider>
-        <BrowserRouter>
-          <ScrollToTop />
-          <App />
-        </BrowserRouter>
-      </HelmetProvider>
-    </React.StrictMode>
-  );
+// Prevent duplicate root creation during development / HMR
+if (!container._reactRootContainer) {
+  container._reactRootContainer = ReactDOM.createRoot(container);
 }
 
-ReactDOM.createRoot(document.getElementById('root')).render(<Root />);
+container._reactRootContainer.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+);

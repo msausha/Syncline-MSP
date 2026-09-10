@@ -5,8 +5,8 @@ import { NavLink } from 'react-router-dom';
 import { Menu, Phone, ChevronDown } from 'lucide-react';
 import MegaMenu from './MegaMenu';
 import OffcanvasMenu from './OffcanvasMenu';
-//import logo from "/src/assets/brand/synclineLogo.png"; // Adjust the path to your logo image
-import logo from "/src/assets/brand/synclineLogo.svg"; // Updated to optimized SVG
+import logo from "/src/assets/brand/synclineLogo.png"; // Adjust the path to your logo image
+
 
 //"C:\Temp\syncline-website_MAIN\src\assets\brand\syncline-full-768.png"
 
@@ -59,37 +59,13 @@ const Navbar = () => {
     { label: 'Contact', to: '/contact', hasDropdown: false },
   ];
 
-
-const [weather, setWeather] = useState(null);
-
-useEffect(() => {
-  const fetchWeather = async () => {
-    try {
-      const res = await fetch(
-        "https://api.open-meteo.com/v1/forecast?latitude=-37.8136&longitude=144.9631&current_weather=true"
-      );
-      const data = await res.json();
-      setWeather(data.current_weather);
-    } catch (err) {
-      console.error("Weather fetch failed", err);
-    }
-  };
-
-  fetchWeather();
-  const id = setInterval(fetchWeather, 600000); // refresh every 10 min
-
-  return () => clearInterval(id);
-}, []);
-
-
-
   return (
     <>
 <motion.nav
   initial={{ y: -100 }}
   animate={{ y: 0 }}
   transition={{ duration: 0.5, ease: 'easeOut' }}
-  className="fixed top-0 left-0 right-0 z-[1000] navbar w-full"
+  className="fixed top-0 left-0 right-0 z-[1000] navbar"
 >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20 py-3">
@@ -100,13 +76,13 @@ useEffect(() => {
               className="flex items-center gap-2 sm:gap-3 group focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg px-2 py-1"
             >
               <div className="relative flex-shrink-0 inline-block">
-            <img
-              src={logo}
-              alt="Syncline IT Solutions Logo"
-              width="212"
-              height="56"
-              className="h-10 w-auto sm:h-12 object-contain"
-            />
+                <img
+                  src={logo}
+                  alt="Syncline IT Logo"
+                  width="72"
+                  height="72"
+                  className="h-10 w-auto sm:h-12 lg:h-18 object-contain"
+                />
                 <div className="absolute -bottom-0.5 -right-3.5 w-2.5 h-2.5 sm:w-3 sm:h-3 bg-green-500 rounded-full border-2 border-slate-900 animate-pulse flex-shrink-0" />
               </div>
               <div className="min-w-0 hidden sm:block">
@@ -146,51 +122,23 @@ useEffect(() => {
               ))}
             </nav>
 
-
-            {/* Desktop CTA & Widgets */}
-          <div className="hidden lg:flex items-center justify-end gap-4 min-w-[320px]">
-
-            {/* Weather Widget - Fixed Size Container to prevent layout shifts */}
-            <div className="flex items-center justify-end min-w-[110px]">
-              {weather ? (
-                <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl 
-                              bg-white/5 border border-white/10 backdrop-blur-sm
-                              text-slate-200 text-sm font-medium">
-                  <span className="text-cyan-300 text-lg">
-                    {weather.temperature > 18 ? "☀️" : weather.temperature > 10 ? "⛅" : "🌧️"}
-                  </span>
-                  <span className="font-semibold">{weather.temperature}°C</span>
-                  <span className="text-slate-400">MEL</span>
-                </div>
-              ) : (
-                /* Invisible placeholder matching the weather chip dimensions to prevent layout pop-in */
-                <div className="h-[36px] w-[105px] opacity-0 pointer-events-none" aria-hidden="true" />
-              )}
+            {/* Desktop CTA */}
+            <div className="hidden lg:flex items-center gap-3">
+              <a
+                href="tel:1300000000"
+                className="flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg px-2 py-1"
+              >
+                <Phone className="w-4 h-4" />
+                <span className="font-medium text-sm">0406 001 444</span>
+              </a>
+              <NavLink
+                to="/contact"
+                onClick={handleLinkClick}
+                className="px-5 py-2.5 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold text-sm rounded-xl hover:shadow-lg hover:shadow-blue-500/30 transition-all hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-slate-950"
+              >
+                Free Assessment
+              </NavLink>
             </div>
-
-            {/* Phone */}
-            <a
-              href="tel:0406 001 444"
-              className="flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors 
-                        focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg px-2 py-1 flex-shrink-0"
-            >
-              <Phone className="w-4 h-4" />
-              <span className="font-medium text-sm">0406 001 444</span>
-            </a>
-
-            {/* CTA */}
-            <NavLink
-              to="/contact"
-              onClick={handleLinkClick}
-              className="px-5 py-2.5 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold 
-                        text-sm rounded-xl hover:shadow-lg hover:shadow-blue-500/30 transition-all 
-                        hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 
-                        focus:ring-offset-2 focus:ring-offset-slate-950 flex-shrink-0"
-            >
-              Free Assessment
-            </NavLink>
-          </div>
-            
 
             {/* Mobile Menu Button */}
             <button
