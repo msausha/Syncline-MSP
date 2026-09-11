@@ -172,13 +172,10 @@ const Footer = () => {
           {/* Mini logo mark card */}
           <div className="lg:col-span-2 flex lg:justify-end">
             <div className="rounded-2xl border border-white/10 bg-slate-900/60 p-5
-                           flex flex-col items-center justify-center gap-3 w-full max-w-[180px]">
+                            flex flex-col items-center justify-center gap-3 w-full max-w-[180px]">
               <img
                 src={BrandSymbol}
                 alt="Syncline symbol"
-                width="64"
-                height="64"
-                loading="lazy"
                 className="h-16 w-16 object-contain"
               />
               <p className="text-[11px] text-slate-400 text-center leading-snug">
@@ -221,7 +218,6 @@ const Footer = () => {
                   alt="Primary logo"
                   width="180"
                   height="48"
-                  loading="lazy"
                   className="max-h-12 w-auto object-contain"
                 />
               </div>
@@ -238,9 +234,6 @@ const Footer = () => {
                 <img
                   src={BrandSymbol}
                   alt="Symbol mark"
-                  width="56"
-                  height="56"
-                  loading="lazy"
                   className="max-h-14 w-auto object-contain"
                 />
               </div>
@@ -257,9 +250,6 @@ const Footer = () => {
                 <img
                   src={BrandFull1024}
                   alt="Full colour lockup"
-                  width="180"
-                  height="48"
-                  loading="lazy"
                   className="max-h-12 w-auto object-contain"
                 />
               </div>
@@ -276,9 +266,6 @@ const Footer = () => {
                 <img
                   src={BrandFullWhite512}
                   alt="White lockup"
-                  width="180"
-                  height="48"
-                  loading="lazy"
                   className="max-h-12 w-auto object-contain"
                 />
               </div>
@@ -295,9 +282,6 @@ const Footer = () => {
                 <img
                   src={BrandSocialBlue}
                   alt="Social blue"
-                  width="120"
-                  height="120"
-                  loading="lazy"
                   className="w-full h-full object-cover rounded-lg"
                 />
               </div>
@@ -314,9 +298,6 @@ const Footer = () => {
                 <img
                   src={BrandSocialWhite}
                   alt="Social white"
-                  width="120"
-                  height="120"
-                  loading="lazy"
                   className="w-full h-full object-cover rounded-lg"
                 />
               </div>
@@ -333,9 +314,6 @@ const Footer = () => {
                 <img
                   src={BrandSocialNavy}
                   alt="Social navy"
-                  width="120"
-                  height="120"
-                  loading="lazy"
                   className="w-full h-full object-cover rounded-lg"
                 />
               </div>
@@ -352,9 +330,6 @@ const Footer = () => {
                 <img
                   src={BrandSocialGrey}
                   alt="Watermark"
-                  width="120"
-                  height="120"
-                  loading="lazy"
                   className="w-full h-full object-cover rounded-lg opacity-70 group-hover:opacity-100 transition-opacity"
                 />
               </div>
@@ -378,18 +353,18 @@ const Footer = () => {
             </div>
 
             <div className="flex items-center gap-5">
-              <Link
-                to="/privacy"
+              <a
+                href="#privacy"
                 className="text-xs text-slate-400 hover:text-white transition-colors"
               >
                 Privacy Policy
-              </Link>
-              <Link
-                to="/terms"
+              </a>
+              <a
+                href="#terms"
                 className="text-xs text-slate-400 hover:text-white transition-colors"
               >
                 Terms of Service
-              </Link>
+              </a>
               <button
                 type="button"
                 onClick={scrollToTop}
