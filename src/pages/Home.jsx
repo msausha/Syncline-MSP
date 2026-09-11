@@ -1,6 +1,5 @@
 ﻿// src/pages/Home.jsx
 import React, { Suspense, lazy } from 'react';
-import Navbar from '../components/navbar/Navbar';
 import HeroCTASection from '../components/hero/HeroCTASection';
 import SEO from '../components/SEO';
 import ServiceTeaser from '../components/services/ServiceTeaser';
@@ -74,7 +73,7 @@ export default function Home() {
         Skip to main content
       </a>
 
-      <Navbar />
+
 
       <main id="main-content">
         <HeroCTASection />

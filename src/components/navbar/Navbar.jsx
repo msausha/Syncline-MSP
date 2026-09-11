@@ -77,10 +77,11 @@ const Navbar = () => {
             >
               <div className="relative flex-shrink-0 inline-block">
                 <img
+                  width="180"
+                  height="40"
+                  loading="eager"
                   src={logo}
                   alt="Syncline IT Logo"
-                  width="72"
-                  height="72"
                   className="h-10 w-auto sm:h-12 lg:h-18 object-contain"
                 />
                 <div className="absolute -bottom-0.5 -right-3.5 w-2.5 h-2.5 sm:w-3 sm:h-3 bg-green-500 rounded-full border-2 border-slate-900 animate-pulse flex-shrink-0" />
@@ -142,10 +143,10 @@ const Navbar = () => {
 
             {/* Mobile Menu Button */}
             <button
+            aria-label="Toggle navigation menu"
+            aria-expanded={mobileMenuOpen}
               onClick={() => setMobileMenuOpen(true)}
               className="lg:hidden p-2 rounded-lg hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
-              aria-label="Open menu"
-              aria-expanded={mobileMenuOpen}
             >
               <Menu className="w-6 h-6 text-white" />
             </button>

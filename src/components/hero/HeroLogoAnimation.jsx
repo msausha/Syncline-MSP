@@ -191,7 +191,8 @@ export default function HeroLogoAnimation() {
       glowRef.current.style.transition = 'none';
     }
 
-    void ring.getBoundingClientRect();
+    // Replaced forced reflow with browser animation frame batching
+requestAnimationFrame(() => {});
 
     const t1 = setTimeout(() => {
       ring.style.transition = [
