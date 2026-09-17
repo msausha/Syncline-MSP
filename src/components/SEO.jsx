@@ -1,18 +1,22 @@
 // src/components/SEO.jsx
-// Drop this at the top of every route-level page component.
-// It overrides the static <head> tags from index.html with tags
-// specific to the current route, so each page gets its own
-// title / description / canonical instead of inheriting the homepage's.
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-const SITE_URL = 'https://www.syncline.com.au';
+const SITE_URL = 'https://syncline.com.au';   // ← changed to non-www
+
 const DEFAULT_IMAGE = '/favicon-512.png';
 
-export default function SEO({ title, description, path, image = DEFAULT_IMAGE, noindex = false }) {
+export default function SEO({ 
+  title, 
+  description, 
+  path = '/', 
+  image = DEFAULT_IMAGE, 
+  noindex = false 
+}) {
   const url = path === '/' || path === '' 
-  ? SITE_URL 
-  : `${SITE_URL}${path.startsWith('/') ? path : `/${path}`}`;
+    ? SITE_URL 
+    : `${SITE_URL}${path.startsWith('/') ? path : `/${path}`}`;
+    
   const imageUrl = image.startsWith('http') ? image : `${SITE_URL}${image}`;
 
   return (
@@ -28,8 +32,9 @@ export default function SEO({ title, description, path, image = DEFAULT_IMAGE, n
       <meta property="og:url" content={url} />
       <meta property="og:image" content={imageUrl} />
       <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="Syncline IT Solutions" />
 
-      {/* Twitter Card (harmless to include, helps link previews) */}
+      {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
