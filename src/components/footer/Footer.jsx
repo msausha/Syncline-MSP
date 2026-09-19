@@ -378,12 +378,15 @@ const Footer = () => {
             </div>
 
             <div className="flex items-center gap-5">
-              <Link
-                to="/privacy"
-                className="text-xs text-slate-400 hover:text-white transition-colors"
-              >
-                Privacy Policy
-              </Link>
+
+            <Link
+              to="/privacy-policy"
+              className="text-xs text-slate-400 hover:text-white transition-colors"
+            >
+              Privacy Policy
+            </Link>
+
+
               <Link
                 to="/terms"
                 className="text-xs text-slate-400 hover:text-white transition-colors"
