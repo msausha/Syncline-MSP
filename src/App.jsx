@@ -3,26 +3,25 @@ import { Routes, Route } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 import Layout from './Layout';
 
-const HomePage          = lazy(() => import('./pages/Home'));
-const SecurityPage      = lazy(() => import('./components/security/SecuritySection'));
-const ContactPage       = lazy(() => import('./pages/Contact'));
-const ManagedIT         = lazy(() => import('./pages/ManagedIT'));
-const CloudSolutions    = lazy(() => import('./pages/Cloud'));
-const Automation        = lazy(() => import('./pages/Automation'));
-const CaseStudies       = lazy(() => import('./pages/CaseStudies'));
-const ITHealthCheck     = lazy(() => import('./pages/ITHealthCheck'));
-const AboutSyncline     = lazy(() => import('./pages/AboutSyncline'));
-const CustomerPortal    = lazy(() => import('./pages/CustomerPortal'));
-
-// Hubs & Placeholders for missing links
-const ServicesHub       = lazy(() => import('./pages/ServicesHub'));
-const ResourcesHub      = lazy(() => import('./pages/ResourcesHub'));
-// Change these imports in src/App.jsx:
-const SecurityGuide     = lazy(() => import('./pages/SecurityGuide'));
-const ChecklistPage     = lazy(() => import('./pages/Checklist'));
-const LoginPage         = lazy(() => import('./pages/Login'));
-
+const HomePage                = lazy(() => import('./pages/Home'));
+const SecurityPage            = lazy(() => import('./components/security/SecuritySection'));
+const ContactPage             = lazy(() => import('./pages/Contact'));
+const ManagedIT               = lazy(() => import('./pages/ManagedIT'));
+const CloudSolutions          = lazy(() => import('./pages/Cloud'));
+const Automation              = lazy(() => import('./pages/Automation'));
+const CaseStudies             = lazy(() => import('./pages/CaseStudies'));
+const ITHealthCheck           = lazy(() => import('./pages/ITHealthCheck'));
+const AboutSyncline           = lazy(() => import('./pages/AboutSyncline'));
+const CustomerPortal          = lazy(() => import('./pages/CustomerPortal'));
+const ServicesHub             = lazy(() => import('./pages/ServicesHub'));
+const ResourcesHub            = lazy(() => import('./pages/ResourcesHub'));
+const SecurityGuide           = lazy(() => import('./pages/SecurityGuide'));
+const ChecklistPage           = lazy(() => import('./pages/Checklist'));
+const LoginPage               = lazy(() => import('./pages/Login'));
 const MonitoringDashboardPage = lazy(() => import('./pages/MonitoringDashboardPage'));
+
+// ✅ Privacy Policy page
+const PrivacyPolicy           = lazy(() => import('./pages/PrivacyPolicy'));
 
 const PageLoader = () => (
   <div className="min-h-screen bg-slate-950 flex items-center justify-center">
@@ -52,13 +51,14 @@ export default function App() {
           <Route path="/about-syncline" element={<AboutSyncline />} />
           <Route path="/customer-portal" element={<CustomerPortal />} />
 
-          {/* Fixed Missing Routes Flagged by Audit */}
+          {/* Fixed Missing Routes */}
           <Route path="/security-guide" element={<SecurityGuide />} />
           <Route path="/checklist" element={<ChecklistPage />} />
           <Route path="/login" element={<LoginPage />} />
-
-          {/* Monitoring Dashboard */}
           <Route path="/monitoring-dashboard" element={<MonitoringDashboardPage />} />
+
+          {/* ✅ Privacy Policy */}
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
           {/* Fallback */}
           <Route path="*" element={<HomePage />} />
