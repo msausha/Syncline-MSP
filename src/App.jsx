@@ -22,6 +22,8 @@ const MonitoringDashboardPage = lazy(() => import('./pages/MonitoringDashboardPa
 
 // ✅ Privacy Policy page
 const PrivacyPolicy           = lazy(() => import('./pages/PrivacyPolicy'));
+const Terms = lazy(() => import('./pages/Terms'));
+
 
 const PageLoader = () => (
   <div className="min-h-screen bg-slate-950 flex items-center justify-center">
@@ -59,6 +61,9 @@ export default function App() {
 
           {/* ✅ Privacy Policy */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
+          {/* ✅ Terms */}
+          <Route path="/terms" element={<Terms />} />
 
           {/* Fallback */}
           <Route path="*" element={<HomePage />} />

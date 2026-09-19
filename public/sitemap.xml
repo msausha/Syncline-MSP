@@ -15,5 +15,6 @@
   <url><loc>https://syncline.com.au/security-guide</loc><priority>0.6</priority></url>
   <url><loc>https://syncline.com.au/checklist</loc><priority>0.6</priority></url>
   <url><loc>https://syncline.com.au/login</loc><priority>0.5</priority></url>
+  <url><loc>https://syncline.com.au/terms</loc><lastmod>2026-09-19</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://syncline.com.au/privacy-policy</loc><lastmod>2026-09-19</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>
